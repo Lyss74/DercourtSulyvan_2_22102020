@@ -1,0 +1,78 @@
+/*******************************CSS_CONFIGURATION_START*******************************/
+
+
+/********************STRUCTURE_START***********************/
+/*****STRUCTURE_Head*****/
+
+/*******STRUCTURE_Generic_pictures********/
+/*****STRUCTURE_Generic_pictures_size*****/
+
+/*****STRUCTURE_Body*****/
+
+/*****STRUCTURE_Footer***/
+
+/*******KEYFRAME ANIMATION CSS********/
+/****KEYFRAME ANIMATION CSS-END*******/
+
+/****MEDIA-QUERY-STRUCTURE-SETTING*****/
+/****MEDIA-QUERY-SETTING-END***********/
+
+/********************STRUCTURE-END**********************/
+
+/**********HEADER_PART************/
+/********HEADER_PART-END**********/
+
+/************BODY_PART************/
+/**********BODY_PART-END**********/
+
+/***********FOOTER_PART***********/
+/*********FOOTER_PART-END*********/
+
+/*******MEDIA-QUERY_SETTING********/
+/*****MEDIA-QUERY-SETTING-END******/
+
+/*******KEYFRAME ANIMATION CSS********/
+/****KEYFRAME ANIMATION CSS-END*******/
+
+
+/*******************************CSS_CONFIGURATION_END*******************************/
+body {
+    height: auto;
+    margin: 3%;
+}
+
+.flex-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: green;
+
+    padding-top: 2% ;
+    padding-bottom: 2% ;
+}
+
+.accommodation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 55em;
+    height: 35em;
+    background-color: yellow;
+}
+
+.popular {
+display: flex;
+flex-flow: column;
+width: 25em;
+height: 35em;
+background-color: rgb(242, 242, 242);
+/*width: 20em;*/
+
+}
