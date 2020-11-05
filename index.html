@@ -1,3 +1,6 @@
+<!--Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.
+La police du site est Raleway.-->
+
 <!--<figure>
 		<img src="doge-portrait.jpg" alt="Peinture à l'huile représentant un homme âgé portant un couvre-chef et un manteau brodé">
 	<figcaption>
@@ -7,116 +10,175 @@
 
 <!DOCTYPE html>
 <html lang='FR'>
-    <head>
+	<head>
         <meta charset="UTF8"/>
 		<!-- link rel="stylesheet" type="text/css" href="./assets/css/style.css" -->
 	</head>
-    <body class="flex-body flex-column">
+	<body>
+
 		<style type="text/css">
 			body {
 			height: auto;
-			margin: 3%;}
-			.flex-body {
-			justify-content: space-between;}
-
+			margin: 0% 3% 0% 3%;}
+			/*.flex-body {
+			justify-content: space-between;}*/
 		</style>
 		<header>
-			<div>
-				<nav class="nav-top flex-row">
-					<p>
-						<img class="img-reservia" src="assets/images/logo/Reservia.svg" alt=""/>
-					</p>	
-					<ul class="ul-top flex-row">
-						<li>
-							<a href="" class="blue-text">Hébergement</a>
-						</li>
-						<li>
-							<a href="" class="white-text">Activitès</a>
-						</li>
-						<li>
-							<a href="" class="blue-text">S'inscrire</a>
-						</li>
-					</ul>
-				</nav>
-				<style type="text/css">
-					.nav-top {justify-content: space-between}
-					.img-reservia {
-						right: 0.1em;
-						width: 4.5em;
-						border-radius: 3.75rem 3.75rem 3.75rem 3.75rem;}
-					.ul-top {list-style: none;}
-					li {margin-left: 5rem;}
-					.blue-text {
-						font: sans-serif;
-						color: blue;
-						font-size: 1rem;}
-					.white-text {
-						font: sans-serif;
-						color: black;
-						font-size: 1rem;}
-				</style>
-			</div>
-		</header>
-		<div>
-			<p class="title-1 generic-text">
-				Trouvez votre hébergements pour des vacances de rêve
-				<p class="descriptive">
-					En plein centre ville ou en pleine nature
+			<nav class="nav-top flex-row flex-btwn">
+				<p>
+					<img class="img-reservia" src="assets/images/icon/Reservia.svg" alt=""/>
 				</p>	
-			</p>
-			<div class="geoloc">
-				<img src="" alt=""/>
-				<p class="title-select">
-					GEOLOC SEARCH
+				<ul class="ul-top flex-row">
+					<li>
+						<a href="" class="blue-text generic-text flex-row">Hébergement</a>
+					</li>
+					<li>
+						<a href="" class="white-text generic-text flex-row">Activitès</a>
+					</li>
+					<li>
+						<a href="" class="blue-text generic-text flex-row">S'inscrire</a>
+					</li>
+				</ul>
+			</nav>
+			<style type="text/css">
+				.img-reservia {
+							right: 0.1em;
+							width: 4.5em;
+							border-radius: 3.75rem 3.75rem 3.75rem 3.75rem;}
+				.ul-top {list-style: none;}
+				li {margin-left: 5rem;}
+				.blue-text {
+								background-color: chartreuse;
+								height: 5rem;
+								color: blue;
+								font-size: 1rem;}
+				.white-text {
+								color: black;
+								font-size: 1rem;}
+				.blue-text:hover, .white-text:hover {
+								border-top: blue 0.2rem solid;
+								}
+				header {
+								background-color: darkgoldenrod;}
+			</style>
+		</header>
+		<main>
+
+			<div class="flex-column">
+				<p class="title-1 generic-text bold-text">
+					Trouvez votre hébergement pour des vacances de rêve
+					<p class="generic-text">
+						En plein centre ville ou en pleine nature
+					</p>	
 				</p>
 			</div>
-				Filtres 
-			<button>
-				<img src="" alt=""/>
-				<p class="title-select">
+			<div class="flex-row search">
+				<img src="assets/images/icon/map-marker-alt-solid.svg" class="map-maker" alt=""/>
+				<input type="search" placeholder="Rechercher" name="search">
+				<button class="bttn-search" type="button">
+					<p class="buttn-text generic-text bold-text">
+						Rechercher
+					</p>
+				</button>
+			</div>
+			<div class="flex-column">
+				<div class="flex-row">
+					<p class="title-filter generic-text bold-text">
+						Filtres
+					</p>
+					<button class="flex-row" type="button">
+						<img src="assets/images/icon/money-bill-wave-solid.svg" class="icon-bttn"  alt=""/>
+						<p class="buttn-text generic-text bold-text">
+							Économique
+						</p>
+					</button>
+					<button class="flex-row" type="button">
+						<img src="assets/images/icon/child-solid.svg" class="icon-bttn" alt=""/>
+						<p class="buttn-text generic-text bold-text">
+							Familial
+						</p>
+					</button>
+					<button class="flex-row" type="button">
+						<img src="assets/images/icon/heart-solid.svg" class="icon-bttn" alt=""/>
+						<p class="buttn-text generic-text bold-text">
+							Romantique
+						</p>
+					</button>
+					<button class="flex-row" type="button">
+						<img src="assets/images/icon/dog-solid.svg" class="icon-bttn" alt=""/>
+						<p class="buttn-text generic-text bold-text">
+							Animaux autorisés
+						</p>
+					</button> 
+				</div>
+				<p class="generic-text">
+					<img src="assets/images/icon/info-circle-solid.svg"  alt=""/>
+					Plus de 500 logements sont disponibles dans cette ville
+				</p>	
 
-				</p>
-			</button>
-			<button>
-				<img src="" alt=""/>
-				<p class="title-select">
+			<style type="text/css">
+				.map-maker {
+					background-color: rgb(184, 174, 174);
+					border-radius: 10px 0px 0px 10px;	
+					width: 2.5rem;	
+				}
+				.search {
+					height: 2.5rem;
+					margin-bottom: 2rem 
+				}
+				.bttn-search {
+					color: white;
+					background-color: #0065FC;
+					border-radius: 0px 10px 10px 0px;		
+				}
+				.title-filter {
+					margin-right: 2rem;
+				}
 
-				</p>
-			</button>
-			<button>
-				<img src="" alt=""/>
-				<p class="title-select">
+				button {
+					background-color: white;
+					height: 2.5rem;
+					border-top: 0.1rem solid rgb(199, 196, 196);
+					border-bottom: 0.1rem solid rgb(199, 196, 196);
+					border-right: 0.1rem solid rgb(199, 196, 196);
+					border-left: none;
+					border-radius: 20px;
+					background-color: rgb(245, 245, 245);
+					padding-left: 0rem;
+					margin-right: 2rem;
+				}
+				.icon-bttn {
+					background-color: rgb(219, 228, 248);
+					width: 2.4rem;
+					height: 2.4rem;
+					border-radius: 20px;
+					margin: 0 auto;
+				}
+									
+				.buttn-text {
+					margin: 0.5rem
+				}
+			</style>	
+			</div>
+	
 
-				</p>
-			</button>
-			<button>
-				<img src="" alt=""/>
-				<p class="title-select">
-				</p>
-				<p class="comment"></p>
-			</button> 
-			<p>
-				<img src="" alt=""/>
-				Plus de 500 logements sont disponibles dans cette ville
-			</p>
-		</div><br/>
-		<div class="flex-top flex-row">
-			<div>
-				<p class="title-1 generic-text">
-						Hébergements à Marseille
-				</p>
+			<div class="flex-row flex-btwn">
+
 				<div class="accommodation-box flex-row">
+					<p class="title-1 generic-text title-size-1">
+						Hébergements à Marseille
+					</p>
 					<div class="image-box shadow-box">
 						<a href="">
-							<img class="img-size-top" alt=""src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/>
+							<img class="img-size-top" alt="" src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/>
 						</a>
 						<p>
-								lorem ipsum
-								lorem ipsum<br>
-								lorem ipsum
-								lorem ipsum
+							lorem ipsum
+							lorem ipsum<br>
+							lorem ipsum
+							lorem ipsum
 						</p>
-						<p class="star-box">
+						<p class="star-box flex-row">
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
@@ -129,262 +191,296 @@
 							<img class="img-size-top" alt="" src="assets/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"/>
 						</a>
 						<p>
-								lorem ipsum
-								lorem ipsum
+							lorem ipsum
+							lorem ipsum<br>
+							lorem ipsum
+							lorem ipsum
 						</p>
-						<div class="star-box">
+						<p class="star-box flex-row">
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-						</div>
+						</p>
 					</div>
 					<div class="image-box shadow-box">
 						<a href="">
 							<img class="img-size-top" alt="" src="assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"/>
 						</a>
 						<p>
-								lorem ipsum
-								lorem ipsum
+							lorem ipsum
+							lorem ipsum<br>
+							lorem ipsum
+							lorem ipsum
 						</p>
-						<div class="star-box">
+						<p class="star-box flex-row">
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star-1.png"/>
-						</div>
+						</p>
 					</div>
 					<div class="image-box shadow-box">
 						<a href="">
 							<img class="img-size-top" alt="" src="assets/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"/>
 						</a>
 						<p>
-								lorem ipsum
-								lorem ipsum
+							lorem ipsum
+							lorem ipsum<br>
+							lorem ipsum
+							lorem ipsum
 						</p>
-						<div class="star-box">
+						<p class="star-box flex-row">
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star-1.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star-1.png"/>
-						</div>
+						</p>
 					</div>
 					<div class="image-box shadow-box">
 						<a href="">
 							<img class="img-size-top" alt="" src="assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"/>
 						</a>
 						<p>
-								lorem ipsum
-								lorem ipsum
+							lorem ipsum
+							lorem ipsum<br>
+							lorem ipsum
+							lorem ipsum
 						</p>
-						<div>
+						<p class="star-box flex-row">
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
 							<img class="blue-star" alt="" src="assets/images/sprites/star-1.png"/>
-						</div>
+						</p>
 					</div>
-						<div class="image-box shadow-box">
+					<div class="image-box shadow-box">
+						<a href="">
+							<img class="img-size-top" alt="" src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"/>
+						</a>
+						<p>
+							lorem ipsum
+							lorem ipsum<br>
+							lorem ipsum
+							lorem ipsum
+						</p>
+						<p class="star-box flex-row">
+							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+						</p>
+					</div>
+					<p class="generic-text title-size-1">
+						Afficher plus
+					</p>
+				</div>
+
+				<div name="popularity">
+					<div class="popular-box flex-column">
+						<p class="title-1 generic-text title-size-2 flex-row flex-btwn">
+							Les plus populaires
+							<img class="icon" alt="" src="assets/images/icon/chart-line-solid.svg"/>
+						</p>		
+
+
+						<div class="image-box-2 flex-row shadow-box"> 
 							<a href="">
-								<img class="img-size-top" alt="" src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"/>
+								<img class="img-size-top-2" alt="" src="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"/>
 							</a>
-							<p>
-								lorem ipsum
-								lorem ipsum
-							</p>
-							<div class="star-box">
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+
+							<div class="flex-column flex-betwn">
+								<p>
+									lorem ipsum<br/>
+									<span>
+										lorem ipsum
+									</span>
+								</p>
+								<div class="star-box flex-row">
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+								</div>
 							</div>
 						</div>
 
-					</div>
-					<style type="text/css">
-						.accommodation-box {
-							flex-wrap: wrap;
-							justify-content: space-between;
-							width: 55em;
-							height: 35em;
+						<div class="image-box-2 flex-row shadow-box">
+							<a href="">
+								<img class="img-size-top-2" alt="" src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"/>
+							</a>
 
-							background-color: yellow;}
-						.image-box {
+							<div class="flex-column flex-betwn">
+								<p>
+									lorem ipsum<br/>
+									<span>
+										lorem ipsum
+									</span>
+								</p>
+								<div class="star-box flex-row">
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="image-box-2 flex-row shadow-box">
+							<a href="">
+								<img class="img-size-top-2" alt="" src="assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"/>
+							</a>
+							<div class="flex-column flex-betwn">
+								<p>
+									lorem ipsum<br/>
+										<span>
+										lorem ipsum
+									</span>
+								</p>
+								<div class="star-box flex-row">
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>			
+			
+			<style type="text/css" name="accomodation">
+				.accommodation-box {
+					flex-wrap: wrap;
+					width: 65rem;
+					height: 35rem;
+					border-radius: 20px 20px 20px 20px;
+					background-color: yellow;}
+				.title-size-1 {
+					width: 60rem;
+				}
+				.image-box {
+					width: 20rem;
+					border-radius: 20px 20px 20px 20px;
+					background-color: purple;}
+				.img-size-top {
+					background-position: top;
+					border-radius: 20px 20px 0px 0px;
+					width: 20rem;
+					height: 8em;
+					}
+				.blue-star {
+					margin: 0.1%;
+					width: 1.2rem;
+					height: 1.2rem;}
+			</style>
+			<style type="text/css" name="popularity">
+				.popular-box {
+					width: 20rem;
+					height: 35rem;
+					border-radius: 20px 20px 20px 20px;
+					background-color: rgb(242, 242, 242);}
+				.title-size-2 {
+					background-color: blue;
+				}
+				.image-box-2 {
+					border-radius: 20px 20px 20px 20px;
+					height: 7rem;
+					width: 20rem;
+					background-color:maroon;}
+				.img-size-top-2 {
+					background-position: left;
+					border-radius: 20px 0px 0px 20px;
+					height: 7rem;
+					width: 8rem;
+					}
+			</style>
+			
+
+			<p class="title-1 generic-text">
+				Activités à Marseille
+			</p>
+			<div class="activities-box flex-row">
+				<div class="image-box-3-1 shadow-box-2 generic-margin generic-text">
+					<a href="">
+						<img class="img-size-3-1" alt="Reservia : Vieux port de Marseille" src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
+							Vieux port de Marseille
+					</a>
+				</div>
+				<div class="flex-column">
+					<div class="image-box-3 shadow-box-2 generic-margin">
+						<a href="">
+							<img class="img-size-3" alt="Reservia : Fort de Pomégues" src="assets/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>
+								Fort de Pomégues
+						</a>
+					</div>
+					<div class="image-box-3 shadow-box-2 generic-margin">
+						<a href="">
+							<img class="img-size-3" alt="Reservia : Îles du Frioul" src="assets/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/>
+								Îles du Frioul
+						</a>
+					</div>
+				</div>
+				<div class="image-box-3-1 shadow-box-2 generic-margin">
+					<a href="">
+						<img class="img-size-3-1" alt="Reservia : Parc National des Calanques" src="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/>
+							Parc National des Calanques
+					</a>
+				</div>
+				<div class="flex-column">
+					<div class="image-box-3 shadow-box-2 generic-margin">
+						<a href="">
+							<img class="img-size-3" alt="Reservia : Notre-Dame-de-la-Garde" src="assets/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"/>
+								Notre-Dame-de-la-Garde
+						</a>
+					</div>
+					<div class="image-box-3 shadow-box-2 generic-margin">
+						<a href="">
+							<img class="img-size-3" alt="Reservia : Parc Longchamp" src="assets/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/>
+								Parc Longchamp
+						</a>
+					</div>
+				</div>
+			</div>
+				<style type="text/css">
+						.activities-box {
+							justify-content: space-between;
+							height: 25rem;
+							background-color: red;}
+						.image-box-3 {
+							border-radius: 2rem 2rem 2rem 2rem;
+							padding: 0.2em;
+							height: 12em;						
+							
+							background-color: white;}
+						.image-box-3-1 {
 							border-radius: 2rem 2rem 2rem 2rem;
 							padding: 0.3em;
 							margin: 0.5em;
-							height: 15em;
-
-							background-color: purple;}
-						.img-size-top {
-							background-position: top;
-							border-radius: 2rem 2rem 0rem 0rem;
-							height: 8em;
-							width: 16em;}
-						.blue-star {
-							margin: 0.1%;
-							width: 1.2rem;
-							height: 1.2rem;}
-					</style>
-				</div>
-
-				<div>
-					<p class="title-1 generic-text">
-						Les plus populaires
-					</p>
-					<div class="popular-box flex-column">
-						<div class="image-box-2 flex-row shadow-box"> 
-							<a href="">
-								<img class="img-size-2" alt="" src="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"/>
-							</a>
-							<p>
-								lorem ipsum<br/>
-								lorem ipsum
-							</p>
-							<div class="star-box">
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							</div>
-						</div>
-
-						<div class="image-box-2 flex-row shadow-box">
-							<a href="">
-								<img class="img-size-2" alt="" src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"/>
-							</a>
-							<p>
-								lorem ipsum<br/>
-								lorem ipsum
-							</p>
-							<div class="star-box">
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt=""src="assets/images/sprites/star.png"/>
-							</div>
-						</div>
-
-						<div class="image-box-2 flex-row shadow-box">
-							<a href="">
-								<img class="img-size-2" alt="" src="assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"/>
-							</a>
-							<p>
-								lorem ipsum<br/>
-								lorem ipsum
-							</p>
-							<div class="star-box">
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							</div>
-						</div>
-					</div>
-					<style type="text/css">
-						.popular-box {
-							width: 25em;
-							height: 35em;
-							background-color: rgb(242, 242, 242);}
-						.image-box-2 {
-							border-radius: 2rem 2rem 2rem 2rem;
-							padding: 0.3em;
-							margin: 2em;
-
-							background-color: blue;}
-						.img-size-2 {
-							background-position: left;
-							border-radius: 2rem 0rem 0rem 2rem;
-							height: 7em;
-							width: 8em;}
-						.flex-top {
-							justify-content: space-between;}
-					</style>
-				</div>
-			</div><br/>
-		</div>
-		<p class="title-1 generic-text">
-			Activités à Marseille
-		</p>
-		<div class="activities-box flex-row">
-			<div class="image-box-3-1 shadow-box-2 generic-margin generic-text">
-				<a href="">
-					<img class="img-size-3-1" alt="Reservia : Vieux port de Marseille" src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/><br/>
-						Vieux port de Marseille
-				</a>
-			</div>
-			<div class="flex-column">
-				<div class="image-box-3 shadow-box-2 generic-margin">
-					<a href="">
-						<img class="img-size-3" alt="Reservia : Fort de Pomégues" src="assets/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/><br/>
-							Fort de Pomégues
-					</a>
-				</div>
-				<div class="image-box-3 shadow-box-2 generic-margin">
-					<a href="">
-						<img class="img-size-3" alt="Reservia : Îles du Frioul" src="assets/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/><br/>
-							Îles du Frioul
-					</a>
-				</div>
-			</div>
-			<div class="image-box-3-1 shadow-box-2 generic-margin">
-				<a href="">
-					<img class="img-size-3-1" alt="Reservia : Parc National des Calanques" src="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/><br/>
-						Parc National des Calanques
-				</a>
-			</div>
-			<div class="flex-column">
-				<div class="image-box-3 shadow-box-2 generic-margin">
-					<a href="">
-						<img class="img-size-3" alt="Reservia : Notre-Dame-de-la-Garde" src="assets/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"/><br/>
-							Notre-Dame-de-la-Garde
-					</a>
-				</div>
-				<div class="image-box-3 shadow-box-2 generic-margin">
-					<a href="">
-						<img class="img-size-3" alt="Reservia : Parc Longchamp" src="assets/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/><br/>
-							Parc Longchamp
-					</a>
-				</div>
-			</div>
-		</div>
-			<style type="text/css">
-					.activities-box {
-						justify-content: space-between;
-						height: 25rem;
-						background-color: red;}
-					.image-box-3 {
-						border-radius: 2rem 2rem 2rem 2rem;
-						padding: 0.2em;
-						height: 12em;						
-						
-						background-color: white;}
-					.image-box-3-1 {
-						border-radius: 2rem 2rem 2rem 2rem;
-						padding: 0.3em;
-						margin: 0.5em;
-						height: 23em;						
-						
-						background-color: rgb(121, 116, 116);}
-					.img-size-3 {
-						height: 10.5em;		
-						right: 1em;
-						width: 15em;
-						border-radius: 2rem 2rem 2rem 2rem;}
-					.img-size-3-1 {
-						height: 21em;		
-						width: 15em;
-						padding: 0.1em;
-						border-radius: 2rem 2rem 2rem 2rem;}
-			</style>
+							height: 23em;						
+							
+							background-color: rgb(121, 116, 116);}
+						.img-size-3 {
+							height: 10.5em;		
+							right: 1em;
+							width: 15em;
+							border-radius: 2rem 2rem 2rem 2rem;}
+						.img-size-3-1 {
+							height: 21em;		
+							width: 15em;
+							padding: 0.1em;
+							border-radius: 2rem 2rem 2rem 2rem;}
+				</style>
+		</main>
 		<footer>
 			<div class="footer flex-row">
 				<div class="about">
@@ -444,29 +540,39 @@
 					background-color: rgb(242, 242, 242);}				
 			</style>
 		</footer>
-			<!-- General css setting -->
-			
-			<style type="text/css">
-				.title-1 {font: 1.2em bold;}
-				a {
-					text-decoration: none;
-					color: black;}
-				.flex-row {
-					display: flex;
-					flex-direction: row;}
-				.flex-column {
-					display: flex;
+		<!-- General css setting -->
+		<style type="text/css">
+			/* flexbox */
+			.flex-row {display: flex;
+						flex-direction: row;}
+			.flex-column {display: flex;
 					flex-direction: column;}
-				.shadow-box {
-					box-shadow: 4px 4px 4px 4px  rgb(202, 200, 200);}
-				.shadow-box-2 {
-					box-shadow: 4px 4px 4px 4px  rgb(253, 233, 247);}
-				.generic-margin {
-					margin: 0.5rem;}
-				.generic-text {
-					font: sans-serif;
-				}
+			.flex-btwn {
+					justify-content: space-between;
+					align-content: space-between;
 
-			</style>
+					}
+			.flex-arnd {
+					justify-content: space-around;}
+			/* TEXT */
+			@font-face {
+					font-family: Raleway;
+					src: url('assets/font/Raleway-VariableFont_wght.ttf') format('ttf'),
+						url('assets/font/Raleway-VariableFont_wght.ttf') format('ttf'),
+						url('assets/font/static/Raleway-Bold.ttf') format('ttf');
+					font-weight: normal;
+					font-style: normal;}	
+
+			a {text-decoration: none;
+					color: black;}
+			.generic-text {font-family: Raleway, Helvetica, sans-serif;	}
+			.bold-text {
+					font-family: Raleway;
+					font-weight: bold;}
+			/* shadow */
+			.shadow-box {box-shadow: 4px rgb(202, 200, 200);}
+			.shadow-box-2 {box-shadow: 4px rgb(253, 233, 247);}
+
+		</style>
 	</body>
 </html>
