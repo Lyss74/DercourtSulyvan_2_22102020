@@ -11,20 +11,20 @@ La police du site est Raleway.-->
 <!DOCTYPE html>
 <html lang='FR'>
 	<head>
-        <meta charset="UTF8"/>
+		<meta charset="UTF8"/>
+		<link href="assets/images/logo/R-Reservia.png" rel="shortcut icon" >
+		<title>"Reservia : La meilleure expérience réservation"</title>
 		<!-- link rel="stylesheet" type="text/css" href="./assets/css/style.css" -->
 	</head>
-	<body>
+	<body class="flex-column">
 
 		<style type="text/css">
 			body {
-			height: auto;
-			margin: 0% 3% 0% 3%;}
-			/*.flex-body {
-			justify-content: space-between;}*/
+			display: flex;
+			height: auto;}
 		</style>
-		<header>
-			<nav class="nav-top flex-row flex-btwn">
+		<header class="margin-element2 DEBUG">
+			<nav class="nav-top flex-row flex-between">
 				<p>
 					<img class="img-reservia" src="assets/images/icon/Reservia.svg" alt=""/>
 				</p>	
@@ -48,7 +48,6 @@ La police du site est Raleway.-->
 				.ul-top {list-style: none;}
 				li {margin-left: 5rem;}
 				.blue-text {
-								background-color: chartreuse;
 								height: 5rem;
 								color: blue;
 								font-size: 1rem;}
@@ -58,11 +57,10 @@ La police du site est Raleway.-->
 				.blue-text:hover, .white-text:hover {
 								border-top: blue 0.2rem solid;
 								}
-				header {
-								background-color: darkgoldenrod;}
+
 			</style>
 		</header>
-		<main>
+		<main class="margin-element2">
 
 			<div class="flex-column">
 				<p class="title-1 generic-text bold-text">
@@ -72,7 +70,7 @@ La police du site est Raleway.-->
 					</p>	
 				</p>
 			</div>
-			<div class="flex-row search">
+			<div class="flex-row search DEBUG">
 				<img src="assets/images/icon/map-marker-alt-solid.svg" class="map-maker" alt=""/>
 				<input type="search" placeholder="Rechercher" name="search">
 				<button class="bttn-search" type="button">
@@ -86,32 +84,32 @@ La police du site est Raleway.-->
 					<p class="title-filter generic-text bold-text">
 						Filtres
 					</p>
-					<button class="flex-row" type="button">
+					<button class="flex-row DEBUG" type="button">
 						<img src="assets/images/icon/money-bill-wave-solid.svg" class="icon-bttn"  alt=""/>
 						<p class="buttn-text generic-text bold-text">
 							Économique
 						</p>
 					</button>
-					<button class="flex-row" type="button">
+					<button class="flex-row DEBUG" type="button">
 						<img src="assets/images/icon/child-solid.svg" class="icon-bttn" alt=""/>
 						<p class="buttn-text generic-text bold-text">
 							Familial
 						</p>
 					</button>
-					<button class="flex-row" type="button">
+					<button class="flex-row DEBUG" type="button">
 						<img src="assets/images/icon/heart-solid.svg" class="icon-bttn" alt=""/>
 						<p class="buttn-text generic-text bold-text">
 							Romantique
 						</p>
 					</button>
-					<button class="flex-row" type="button">
+					<button class="flex-row DEBUG" type="button">
 						<img src="assets/images/icon/dog-solid.svg" class="icon-bttn" alt=""/>
 						<p class="buttn-text generic-text bold-text">
 							Animaux autorisés
 						</p>
 					</button> 
 				</div>
-				<p class="generic-text">
+				<p class="generic-text DEBUG">
 					<img src="assets/images/icon/info-circle-solid.svg"  alt=""/>
 					Plus de 500 logements sont disponibles dans cette ville
 				</p>	
@@ -134,7 +132,6 @@ La police du site est Raleway.-->
 				.title-filter {
 					margin-right: 2rem;
 				}
-
 				button {
 					background-color: white;
 					height: 2.5rem;
@@ -154,7 +151,6 @@ La police du site est Raleway.-->
 					border-radius: 20px;
 					margin: 0 auto;
 				}
-									
 				.buttn-text {
 					margin: 0.5rem
 				}
@@ -162,9 +158,9 @@ La police du site est Raleway.-->
 			</div>
 	
 
-			<div class="flex-row flex-btwn">
+			<div class="flex-row flex-between">
 
-				<div class="accommodation-box flex-row">
+				<div class="accommodation-box flex-row flex-between">
 					<p class="title-1 generic-text title-size-1">
 						Hébergements à Marseille
 					</p>
@@ -179,11 +175,11 @@ La police du site est Raleway.-->
 							lorem ipsum
 						</p>
 						<p class="star-box flex-row">
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star-1.png"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/grey-star-solid.svg"/>
 						</p>
 					</div>
 					<div class="image-box shadow-box">
@@ -197,11 +193,11 @@ La police du site est Raleway.-->
 							lorem ipsum
 						</p>
 						<p class="star-box flex-row">
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
 						</p>
 					</div>
 					<div class="image-box shadow-box">
@@ -215,11 +211,11 @@ La police du site est Raleway.-->
 							lorem ipsum
 						</p>
 						<p class="star-box flex-row">
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star-1.png"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/grey-star-solid.svg"/>
 						</p>
 					</div>
 					<div class="image-box shadow-box">
@@ -233,11 +229,11 @@ La police du site est Raleway.-->
 							lorem ipsum
 						</p>
 						<p class="star-box flex-row">
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star-1.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star-1.png"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/grey-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/grey-star-solid.svg"/>
 						</p>
 					</div>
 					<div class="image-box shadow-box">
@@ -251,11 +247,11 @@ La police du site est Raleway.-->
 							lorem ipsum
 						</p>
 						<p class="star-box flex-row">
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star-1.png"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/grey-star-solid.svg"/>
 						</p>
 					</div>
 					<div class="image-box shadow-box">
@@ -269,11 +265,11 @@ La police du site est Raleway.-->
 							lorem ipsum
 						</p>
 						<p class="star-box flex-row">
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-							<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
 						</p>
 					</div>
 					<p class="generic-text title-size-1">
@@ -282,8 +278,8 @@ La police du site est Raleway.-->
 				</div>
 
 				<div name="popularity">
-					<div class="popular-box flex-column">
-						<p class="title-1 generic-text title-size-2 flex-row flex-btwn">
+					<div class="popular-box flex-column flex-between">
+						<p class="title-1 generic-text title-size-2 flex-row flex-between">
 							Les plus populaires
 							<img class="icon" alt="" src="assets/images/icon/chart-line-solid.svg"/>
 						</p>		
@@ -291,10 +287,32 @@ La police du site est Raleway.-->
 
 						<div class="image-box-2 flex-row shadow-box"> 
 							<a href="">
+								<img class="img-size-top-2" alt="" src="assets/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/>
+							</a>
+
+							<div class="flex-column flex-between">
+								<p>
+									lorem ipsum<br/>
+									<span>
+										lorem ipsum
+									</span>
+								</p>
+								<div class="star-box flex-row">
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="image-box-2 flex-row shadow-box">
+							<a href="">
 								<img class="img-size-top-2" alt="" src="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"/>
 							</a>
 
-							<div class="flex-column flex-betwn">
+							<div class="flex-column flex-between">
 								<p>
 									lorem ipsum<br/>
 									<span>
@@ -302,40 +320,18 @@ La police du site est Raleway.-->
 									</span>
 								</p>
 								<div class="star-box flex-row">
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
 								</div>
 							</div>
 						</div>
 
 						<div class="image-box-2 flex-row shadow-box">
 							<a href="">
-								<img class="img-size-top-2" alt="" src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"/>
-							</a>
-
-							<div class="flex-column flex-betwn">
-								<p>
-									lorem ipsum<br/>
-									<span>
-										lorem ipsum
-									</span>
-								</p>
-								<div class="star-box flex-row">
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="image-box-2 flex-row shadow-box">
-							<a href="">
-								<img class="img-size-top-2" alt="" src="assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"/>
+								<img class="img-size-top-2" alt="" src="assets/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"/>
 							</a>
 							<div class="flex-column flex-betwn">
 								<p>
@@ -345,11 +341,11 @@ La police du site est Raleway.-->
 									</span>
 								</p>
 								<div class="star-box flex-row">
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
-									<img class="blue-star" alt="" src="assets/images/sprites/star.png"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
+									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
 								</div>
 							</div>
 						</div>
@@ -361,21 +357,25 @@ La police du site est Raleway.-->
 			<style type="text/css" name="accomodation">
 				.accommodation-box {
 					flex-wrap: wrap;
-					width: 65rem;
+					width: 55rem;
 					height: 35rem;
 					border-radius: 20px 20px 20px 20px;
-					background-color: yellow;}
+					padding: 1.5rem;
+					background-color: rgb(242, 242, 242);}
 				.title-size-1 {
 					width: 60rem;
 				}
 				.image-box {
-					width: 20rem;
+					/*background-color: white;*/
+						background-color: crimson;
+					width: 15rem;
 					border-radius: 20px 20px 20px 20px;
-					background-color: purple;}
+					padding: 0.3rem;
+					}
 				.img-size-top {
 					background-position: top;
 					border-radius: 20px 20px 0px 0px;
-					width: 20rem;
+					width: 15rem;
 					height: 8em;
 					}
 				.blue-star {
@@ -388,15 +388,15 @@ La police du site est Raleway.-->
 					width: 20rem;
 					height: 35rem;
 					border-radius: 20px 20px 20px 20px;
+					padding: 1.5rem;
 					background-color: rgb(242, 242, 242);}
-				.title-size-2 {
-					background-color: blue;
-				}
 				.image-box-2 {
+					background-color: white;
 					border-radius: 20px 20px 20px 20px;
 					height: 7rem;
 					width: 20rem;
-					background-color:maroon;}
+					padding: 0.3rem;
+					}
 				.img-size-top-2 {
 					background-position: left;
 					border-radius: 20px 0px 0px 20px;
@@ -404,86 +404,103 @@ La police du site est Raleway.-->
 					width: 8rem;
 					}
 			</style>
-			
-
-			<p class="title-1 generic-text">
+		<div class="activities-box flex-column flex-between DEBUG">
+			<p class="title-1 generic-text DEBUG">
 				Activités à Marseille
-			</p>
-			<div class="activities-box flex-row">
-				<div class="image-box-3-1 shadow-box-2 generic-margin generic-text">
+			</p>				
+			<div class="inside-box flex-row flex-between">
+				<div class="image-box-3-1 shadow-box-2 generic-text">
 					<a href="">
-						<img class="img-size-3-1" alt="Reservia : Vieux port de Marseille" src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
+						<img class="img-size-3-1 shadow-box-2" alt="Reservia : Vieux port de Marseille" src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
+						<p>
 							Vieux port de Marseille
+						</p>
 					</a>
 				</div>
-				<div class="flex-column">
-					<div class="image-box-3 shadow-box-2 generic-margin">
+				<div class="flex-column flex-around">
+					<div class="image-box-3 shadow-box-2">
 						<a href="">
-							<img class="img-size-3" alt="Reservia : Fort de Pomégues" src="assets/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>
+							<img class="img-size-3 shadow-box-2" alt="Reservia : Fort de Pomégues" src="assets/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>
+							<p>
 								Fort de Pomégues
+							</p>
 						</a>
 					</div>
-					<div class="image-box-3 shadow-box-2 generic-margin">
+					<div class="image-box-3 shadow-box-2">
 						<a href="">
-							<img class="img-size-3" alt="Reservia : Îles du Frioul" src="assets/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/>
+							<img class="img-size-3 shadow-box-2" alt="Reservia : Îles du Frioul" src="assets/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/>
+							<p>
 								Îles du Frioul
+							</p>
 						</a>
 					</div>
 				</div>
-				<div class="image-box-3-1 shadow-box-2 generic-margin">
+				<div class="image-box-3-1 shadow-box-2">
 					<a href="">
-						<img class="img-size-3-1" alt="Reservia : Parc National des Calanques" src="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/>
+						<img class="img-size-3-1 shadow-box-2" alt="Reservia : Parc National des Calanques" src="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/>
+						<p>
 							Parc National des Calanques
+						</p>
 					</a>
 				</div>
-				<div class="flex-column">
-					<div class="image-box-3 shadow-box-2 generic-margin">
+				<div class="flex-column flex-around">
+					<div class="image-box-3 shadow-box-2">
 						<a href="">
-							<img class="img-size-3" alt="Reservia : Notre-Dame-de-la-Garde" src="assets/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"/>
+							<img class="img-size-3 shadow-box-2" alt="Reservia : Notre-Dame-de-la-Garde" src="assets/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"/>
+							<p>
 								Notre-Dame-de-la-Garde
+							</p>
 						</a>
 					</div>
-					<div class="image-box-3 shadow-box-2 generic-margin">
+					<div class="image-box-3 shadow-box-2">
 						<a href="">
-							<img class="img-size-3" alt="Reservia : Parc Longchamp" src="assets/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/>
+							<img class="img-size-3 shadow-box-2" alt="Reservia : Parc Longchamp" src="assets/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/>
+							<p>
 								Parc Longchamp
+							</p>
 						</a>
 					</div>
 				</div>
 			</div>
+		</div>
 				<style type="text/css">
 						.activities-box {
-							justify-content: space-between;
-							height: 25rem;
-							background-color: red;}
+							margin: 2% 0% 0% 0%;
+							padding: 0%;
+							height: auto;
+							}
 						.image-box-3 {
-							border-radius: 2rem 2rem 2rem 2rem;
-							padding: 0.2em;
-							height: 12em;						
-							
+							border-radius: 20px 20px 20px 20px;
+							padding: 0.2rem;
+							width: 20rem;
+							height: 13.5rem;						
 							background-color: white;}
 						.image-box-3-1 {
-							border-radius: 2rem 2rem 2rem 2rem;
-							padding: 0.3em;
-							margin: 0.5em;
-							height: 23em;						
-							
-							background-color: rgb(121, 116, 116);}
+							border-radius: 20px 20px 20px 20px;
+							padding: 0.3rem;
+							width: 20rem;
+							height: 30rem;						
+							padding: 0%;
+							background-color: white;}
 						.img-size-3 {
-							height: 10.5em;		
-							right: 1em;
-							width: 15em;
-							border-radius: 2rem 2rem 2rem 2rem;}
+							height: 10rem;		
+							width: 20rem;
+							border-radius: 20px 20px 0px 0px;
+							}
 						.img-size-3-1 {
-							height: 21em;		
-							width: 15em;
-							padding: 0.1em;
-							border-radius: 2rem 2rem 2rem 2rem;}
+							height: 25rem;		
+							width: 20rem;
+							padding: 0.1rem;
+							border-radius: 20px 20px 0px 0px;
+							}
+						.inside-box {
+							height: auto;
+						}
 				</style>
 		</main>
 		<footer>
-			<div class="footer flex-row">
-				<div class="about">
+			<div class="footer flex-row flex-around">
+				<div>
 					<p class="title-1 generic-text">
 						À propos
 					</p>
@@ -503,7 +520,7 @@ La police du site est Raleway.-->
 						</p>
 					</a>
 				</div>
-				<div class="our-accommodation">
+				<div>
 					<p class="title-1 generic-text">
 						Nos hébergements
 					</p>
@@ -518,7 +535,7 @@ La police du site est Raleway.-->
 						</p>
 					</a>
 				</div>
-				<div class="assistance">
+				<div>
 					<p class="title-1 generic-text">
 						Assistance
 					</p>
@@ -536,27 +553,37 @@ La police du site est Raleway.-->
 			</div>
 			<style type="text/css">
 				.footer {
-					justify-content: space-around;    
 					background-color: rgb(242, 242, 242);}				
 			</style>
 		</footer>
 		<!-- General css setting -->
+		<style type="text/css"> .DEBUG { background-color: crimson; }</style>
 		<style type="text/css">
-			/* flexbox */
+			/* FLEXBOX */
 			.flex-row {display: flex;
 						flex-direction: row;}
 			.flex-column {display: flex;
 					flex-direction: column;}
-			.flex-btwn {
-					justify-content: space-between;
+			.flex-between {
 					align-content: space-between;
-
+					justify-content: space-between;
 					}
-			.flex-arnd {
+			.flex-around {
+					align-content: space-around;
 					justify-content: space-around;}
+			.flex-ctr {
+				align-items: center;
+			}
+			/*MARGIN -PADDING*/
+			.margin-element1 {
+				margin: 1rem 1rem 1rem 1rem;
+			}
+			.margin-element2 {
+				margin: 2rem 2rem 2rem 2rem;
+			}
 			/* TEXT */
 			@font-face {
-					font-family: Raleway;
+					font-family: "Raleway";
 					src: url('assets/font/Raleway-VariableFont_wght.ttf') format('ttf'),
 						url('assets/font/Raleway-VariableFont_wght.ttf') format('ttf'),
 						url('assets/font/static/Raleway-Bold.ttf') format('ttf');
@@ -565,14 +592,13 @@ La police du site est Raleway.-->
 
 			a {text-decoration: none;
 					color: black;}
-			.generic-text {font-family: Raleway, Helvetica, sans-serif;	}
+			.generic-text {font-family: "Raleway", Helvetica, sans-serif;	}
 			.bold-text {
-					font-family: Raleway;
+					font-family: "Raleway";
 					font-weight: bold;}
 			/* shadow */
 			.shadow-box {box-shadow: 4px rgb(202, 200, 200);}
 			.shadow-box-2 {box-shadow: 4px rgb(253, 233, 247);}
-
 		</style>
 	</body>
 </html>
