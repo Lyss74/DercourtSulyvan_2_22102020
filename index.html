@@ -1,604 +1,958 @@
-<!--Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.
-La police du site est Raleway.-->
-
-<!--<figure>
-		<img src="doge-portrait.jpg" alt="Peinture à l'huile représentant un homme âgé portant un couvre-chef et un manteau brodé">
-	<figcaption>
-		Portrait du Doge Leonardo Loredan par Giovanni Bellini
-	</figcaption>
-</figure>-->
-
 <!DOCTYPE html>
-<html lang='FR'>
+<html lang='FR'> 
 	<head>
-		<meta charset="UTF8"/>
-		<link href="assets/images/logo/R-Reservia.png" rel="shortcut icon" >
-		<title>"Reservia : La meilleure expérience réservation"</title>
-		<!-- link rel="stylesheet" type="text/css" href="./assets/css/style.css" -->
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="assets/images/logo/R-Reservia.png" rel="shortcut icon"/>
+		<title>				
+			Reservia : La meilleure expérience réservation
+		</title>
+		<!-- 
+			box-shadow: 10px 10px 10px 10px grey;
+			box-shadow: 10px 10px 10px 10px pink;
+			
+					initial-scale: Définit le zoom initial de la page, que nous définissons à 1.
+					height: Definit une hauteur spécifique pour la fenêtre.
+					height: 700px;
+					width: 500px;
+					minimum-scale: Définit le niveau minimal de zoom
+					maximum-scale: Définit le niveau maximal de zoom.
+					user-scalable: Empêche le zoom si défini à no.			@media screen and (min-width: 800px) { 
+					.container { 
+						margin: 1em 2em;} }
+					order: https://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html 
+		-->
 	</head>
 	<body class="flex-column">
-
 		<style type="text/css">
 			body {
-			display: flex;
 			height: auto;}
 		</style>
-		<header class="margin-element2 DEBUG">
-			<nav class="nav-top flex-row flex-between">
-				<p>
-					<img class="img-reservia" src="assets/images/icon/Reservia.svg" alt=""/>
-				</p>	
-				<ul class="ul-top flex-row">
-					<li>
-						<a href="" class="blue-text generic-text flex-row">Hébergement</a>
+
+		<header class="margin-right margin-bottom margin-left">  
+		<!--															-->
+			<nav class="flex-row flex-between">
+			<!--															-->
+				<div>
+					<img class="img-reservia" src="assets/images/icon/Reservia.svg"
+					alt=" "/>
+				</div>
+				<ul class="header flex-row flex-between align-center" >
+					<li class="activ">
+						<a href="#Hébergements" class="blue-text activ">
+							Hébergements
+						</a>
 					</li>
-					<li>
-						<a href="" class="white-text generic-text flex-row">Activitès</a>
+					<li class="activ">
+						<a href="#Activités" class=white-text activ">
+							Activités
+						</a>
 					</li>
-					<li>
-						<a href="" class="blue-text generic-text flex-row">S'inscrire</a>
+					<li class="bold-text">
+						<a href="" class="blue-text activ">
+							S'inscrire
+						</a>
 					</li>
 				</ul>
 			</nav>
-			<style type="text/css">
-				.img-reservia {
-							right: 0.1em;
-							width: 4.5em;
-							border-radius: 3.75rem 3.75rem 3.75rem 3.75rem;}
-				.ul-top {list-style: none;}
-				li {margin-left: 5rem;}
-				.blue-text {
-								height: 5rem;
-								color: blue;
-								font-size: 1rem;}
-				.white-text {
-								color: black;
-								font-size: 1rem;}
-				.blue-text:hover, .white-text:hover {
-								border-top: blue 0.2rem solid;
+
+				<style type="text/css" name="header">
+
+				img.img-reservia {
+								right: 0.1em;
+								width: 4.5em;
+								border-radius: 3.75rem 3.75rem 3.75rem 3.75rem;
 								}
 
-			</style>
-		</header>
-		<main class="margin-element2">
+				ul.header {
+							width: 25rem;
+							display: flex;
+						}
 
-			<div class="flex-column">
-				<p class="title-1 generic-text bold-text">
-					Trouvez votre hébergement pour des vacances de rêve
-					<p class="generic-text">
-						En plein centre ville ou en pleine nature
-					</p>	
-				</p>
-			</div>
-			<div class="flex-row search DEBUG">
-				<img src="assets/images/icon/map-marker-alt-solid.svg" class="map-maker" alt=""/>
-				<input type="search" placeholder="Rechercher" name="search">
-				<button class="bttn-search" type="button">
-					<p class="buttn-text generic-text bold-text">
-						Rechercher
-					</p>
-				</button>
-			</div>
-			<div class="flex-column">
-				<div class="flex-row">
-					<p class="title-filter generic-text bold-text">
+				a.blue-text {
+								height: 5rem;
+								color: blue;
+								font-size: 1rem;
+								}
+
+				a.white-text {
+								color: black;
+								font-size: 1rem;
+								}
+
+				a.activ:activ {
+								padding-top: 5px;
+								border-top: blue 0.2rem solid;
+								width: 5px;
+								}
+				</style>
+		</header>
+
+
+		<main>
+		<!--															-->
+			<div class="main-top flex-column flex-between
+						margin-right margin-bottom margin-left">
+			<!--															-->
+				<div>
+					<div class="flex-column">
+						<h3>
+							Trouvez votre hébergement pour des vacances de rêve
+						</h3>
+						<p class="typo-grey">
+							En plein centre ville ou en pleine nature
+						</p>	
+					</div>
+				</div>
+				<!--															-->
+				<div>
+					<div class="search flex-row">
+						<div class="container-maker">
+							<img src="assets/images/icon/map-marker-alt-solid.svg" class="map-maker" alt=""/>
+						</div>
+						<input type="search" placeholder="Marseille, France" name="search">
+						<button class="button-search" type="button">
+							<span>
+								Rechercher
+							</span>
+						</button>
+					</div>
+				</div>
+				<!--															-->
+				<div class="filter flex-row flex-between">
+				<!--															-->
+					<p class="title-filter bold-text">
 						Filtres
 					</p>
-					<button class="flex-row DEBUG" type="button">
-						<img src="assets/images/icon/money-bill-wave-solid.svg" class="icon-bttn"  alt=""/>
-						<p class="buttn-text generic-text bold-text">
-							Économique
-						</p>
-					</button>
-					<button class="flex-row DEBUG" type="button">
-						<img src="assets/images/icon/child-solid.svg" class="icon-bttn" alt=""/>
-						<p class="buttn-text generic-text bold-text">
-							Familial
-						</p>
-					</button>
-					<button class="flex-row DEBUG" type="button">
-						<img src="assets/images/icon/heart-solid.svg" class="icon-bttn" alt=""/>
-						<p class="buttn-text generic-text bold-text">
-							Romantique
-						</p>
-					</button>
-					<button class="flex-row DEBUG" type="button">
-						<img src="assets/images/icon/dog-solid.svg" class="icon-bttn" alt=""/>
-						<p class="buttn-text generic-text bold-text">
-							Animaux autorisés
-						</p>
-					</button> 
+					<ul class=filter-list>
+						<li class="filter-item">
+							<input type="checkbox" id="economy"/>
+							<label for="economy" class="filter-name">
+								<div class="cropper">
+									<img src="assets/images/icon/money-bill-wave-solid.svg" class="filter-icon economy"/>
+								</div>
+								<span class="name bold-text">
+									Économique
+								</span>
+							</label>
+						</li>
+					</ul>
+					<ul class=filter-list>
+						<li class="filter-item">
+							<input type="checkbox" id="familial"/>
+							<label for="familial" class="filter-name">
+								<div class="cropper">
+									<img src="assets/images/icon/child-solid.svg" class="filter-icon familial"/>
+								</div>
+								<span class="name bold-text">
+									Familial
+								</span>
+							</label>
+						</li>
+					</ul>
+					<ul class=filter-list>
+						<li class="filter-item">
+							<input type="checkbox" id="romantique"/>
+							<label for="romantique" class="filter-name">
+								<div class="cropper">
+									<img src="assets/images/icon/heart-solid.svg" class="filter-icon romantique"/>
+								</div>
+								<span class="name bold-text">
+									Romantique
+								</span>
+							</label>
+						</li>
+					</ul>
+					<ul class=filter-list>
+						<li class="filter-item">
+							<input type="checkbox" id="pets-allowed"/>
+							<label for="pets-allowed" class="filter-name">
+								<div class="cropper">
+									<img src="assets/images/icon/dog-solid.svg" class="filter-icon dog"/>
+								</div>
+								<span class="name bold-text">
+									Animaux autorisés
+								</span>
+							</label>
+						</li>
+					</ul>
 				</div>
-				<p class="generic-text DEBUG">
-					<img src="assets/images/icon/info-circle-solid.svg"  alt=""/>
-					Plus de 500 logements sont disponibles dans cette ville
-				</p>	
+				<!--															-->
+				<div class="container-info"> 
+					<ul class="flex-row flex-between align-center">
+						<li>
+							<div class="border">
+								<img src="assets/images/icon/info-solid.svg" class="icon-info" alt=""/>
+							</div>	
+						</li>
+						<li class="text-information typo-grey">
+							Plus de 500 logements sont disponibles dans cette ville
+						</li>
+					</ul>
+				</div>
+			<!--															-->
+			</div>
 
-			<style type="text/css">
-				.map-maker {
+			<style type="text/css" name="main">
+			main > div.main-top { 
+						height: 15rem;
+						width: 60rem;
+								}
+			img.map-maker {
+					height: 20px;
+					width: 20px;
+					margin-top: 10px;
+					margin-left: 12px
+				}
+			div.container-maker {
 					background-color: rgb(184, 174, 174);
 					border-radius: 10px 0px 0px 10px;	
 					width: 2.5rem;	
 				}
-				.search {
+			div.search {
 					height: 2.5rem;
-					margin-bottom: 2rem 
 				}
-				.bttn-search {
-					color: white;
+			button.button-search {
 					background-color: #0065FC;
+					color: white;
 					border-radius: 0px 10px 10px 0px;		
+					border: blue;
 				}
-				.title-filter {
-					margin-right: 2rem;
+
+			button.button-text {
+					margin: 0.5rem;
 				}
-				button {
+			p.title-filter {
+					display: flex;
+					margin-right: 20px;
+					margin-bottom: 40px;
+					align-items: center;
+				}
+				
+			div.filter {
+						padding: 10px 5px;
+						width: 42rem;
+						height: 1.5rem;
+				}
+			ul.filter-list > li.filter-item {
+					width: max-content;
+				}
+			ul.filter-list > li.filter-item > input {
+					display: none;
+				}
+			ul.filter-list > li.filter-item > label.filter-name {
+					display: flex;
 					background-color: white;
-					height: 2.5rem;
-					border-top: 0.1rem solid rgb(199, 196, 196);
-					border-bottom: 0.1rem solid rgb(199, 196, 196);
-					border-right: 0.1rem solid rgb(199, 196, 196);
+					border-radius: 20px;
+					height: 30px;
+					border-top: 0.5px solid rgb(199, 196, 196);
+					border-bottom: 0.5px solid rgb(199, 196, 196);
+					border-right: 0.5px solid rgb(199, 196, 196);
 					border-left: none;
-					border-radius: 20px;
-					background-color: rgb(245, 245, 245);
-					padding-left: 0rem;
-					margin-right: 2rem;
 				}
-				.icon-bttn {
-					background-color: rgb(219, 228, 248);
-					width: 2.4rem;
-					height: 2.4rem;
-					border-radius: 20px;
-					margin: 0 auto;
+
+			ul.filter-list > li.filter-item > label.filter-name > div.cropper {
+					background-color: #DEEBFF ;
+					border-radius: 50%;
+					height: 31px;
+					width: 31px;
+					display: flex;
+					overflow: hidden;
+					margin-bottom: 5%;
+
+					justify-content: center;
+					align-items: center;
 				}
-				.buttn-text {
-					margin: 0.5rem
+				
+			ul.filter-list > li.filter-item > label.filter-name > div.cropper > img.filter-icon {
+					height: 15px;
+					width: 15px;
 				}
+				
+			ul.filter-list > li.filter-item > label.filter-name > span.name {
+					padding: 0 10px 0 5px;
+					line-height: 34px;
+				}
+
+			div > ul > li > div > img.icon-info {
+					height: 15px;
+					width: 15px;
+					margin: 3.5px 0px 0px 9px;
+				}
+			div.container-info {
+				width: 28rem;
+			}
+			div.container-info > ul > li > div.border {
+					border: 1.5px solid #9E9E9E;
+					border-radius: 20px ;
+					height: 22px;
+					width: 22px;
+				}
+			/* typo style */
+			p.typo-grey {
+				font-size: 11pt;
+			}
+			li.typo-grey {
+				font-size: 12pt;
+			}
 			</style>	
-			</div>
-	
-
-			<div class="flex-row flex-between">
-
-				<div class="accommodation-box flex-row flex-between">
-					<p class="title-1 generic-text title-size-1">
+			<div class="flex-row flex-between 
+						margin-left margin-bottom">
+			<!--							-->
+				<div class="accommodation-box flex-row flex-between" id="Hébergements">
+					<h3 class="title-size-1">
 						Hébergements à Marseille
-					</p>
-					<div class="image-box shadow-box">
+					</h3>
+					<div class="flex-column image-box shadow-box">
 						<a href="">
-							<img class="img-size-top" alt="" src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/>
+							<figure class="flex-column">
+								<img class="img-size-top" src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+									 alt=" "/>
+								<figcaption>
+									<ul>
+										<li class="place-name bold-text">
+											Auberge de la Cannebiére
+										</li>
+										<li class="place-name grey-size grey-text">
+											Nuit à partir de
+											<span class="bold-text">
+												25€
+											</span>
+										</li>
+									</ul>					
+								</figcaption>
+							</figure>
 						</a>
-						<p>
-							lorem ipsum
-							lorem ipsum<br>
-							lorem ipsum
-							lorem ipsum
-						</p>
-						<p class="star-box flex-row">
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/grey-star-solid.svg"/>
-						</p>
+						<div class="star flex-row">
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
+							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
+						</div>
 					</div>
 					<div class="image-box shadow-box">
 						<a href="">
-							<img class="img-size-top" alt="" src="assets/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"/>
+							<figure>
+								<img class="img-size-top" src="assets/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+									 alt=" "/>
+								<figcaption>
+									<ul>
+										<li class="place-name bold-text">
+											Hôtel du port
+										</li>
+										<li class="place-name grey-size grey-text">
+											Nuit à partir de 52<span class="bold-text">€</span>
+										 </li>
+									</ul>				
+								</figcaption>
+							</figure>
 						</a>
-						<p>
-							lorem ipsum
-							lorem ipsum<br>
-							lorem ipsum
-							lorem ipsum
-						</p>
-						<p class="star-box flex-row">
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-						</p>
+						<div class="star flex-row">
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+						</div>
 					</div>
 					<div class="image-box shadow-box">
 						<a href="">
-							<img class="img-size-top" alt="" src="assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"/>
+							<figure>
+								<img class="img-size-top" src="assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+									 alt=" "/>
+								<figcaption>
+									<ul>
+										<li class="place-name bold-text">
+											Hôtel Les mouettes
+										</li> 
+										<li class="place-name grey-size grey-text">
+											Nuit à partir de 76<span class="bold-text">€</span>
+										</li>
+									</ul>				
+								</figcaption>
+							</figure>
 						</a>
-						<p>
-							lorem ipsum
-							lorem ipsum<br>
-							lorem ipsum
-							lorem ipsum
-						</p>
-						<p class="star-box flex-row">
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/grey-star-solid.svg"/>
-						</p>
+						<div class="star flex-row">
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
+							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
+						</div>
 					</div>
 					<div class="image-box shadow-box">
 						<a href="">
-							<img class="img-size-top" alt="" src="assets/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"/>
+							<figure>
+								<img class="img-size-top" src="assets/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"/>
+								<figcaption>
+									<ul>
+										<li class="place-name bold-text">
+											Hôtel de la mer
+										</li>
+										<li class="place-name grey-size grey-text">
+											Nuit à partir de 46<span class="bold-text">€</span>
+										</li>
+									</ul>			
+								</figcaption>
+							</figure>
 						</a>
-						<p>
-							lorem ipsum
-							lorem ipsum<br>
-							lorem ipsum
-							lorem ipsum
-						</p>
-						<p class="star-box flex-row">
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/grey-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/grey-star-solid.svg"/>
-						</p>
+						<div class="star flex-row">
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
+							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
+							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
+						</div>
 					</div>
 					<div class="image-box shadow-box">
 						<a href="">
-							<img class="img-size-top" alt="" src="assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"/>
+							<figure>
+								<img class="img-size-top" src="assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+									 alt=" "/>
+								<figcaption>
+									<ul>
+										<li class="place-name bold-text">
+											Auberge Le Panier
+										</li>
+										<li class="place-name grey-size grey-text">
+											Nuit à partir de<span class="bold-text">23€</span>
+										</li>
+									</ul>				
+								</figcaption>
+							</figure>
 						</a>
-						<p>
-							lorem ipsum
-							lorem ipsum<br>
-							lorem ipsum
-							lorem ipsum
-						</p>
-						<p class="star-box flex-row">
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/grey-star-solid.svg"/>
-						</p>
+						<div class="star flex-row">
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
+							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
+						</div>
 					</div>
 					<div class="image-box shadow-box">
 						<a href="">
-							<img class="img-size-top" alt="" src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"/>
+							<figure>
+								<img class="img-size-top" src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+									 alt=" "/>
+								<figcaption>
+									<ul>
+										<li class="place-name bold-text">
+											Hôtel chez Amina
+										</li>
+										<li class="place-name grey-size grey-text">
+											Nuit à partir de 96<span class="bold-text">€</span>
+										</li>
+									</ul>				
+								</figcaption>
+							</figure>
 						</a>
-						<p>
-							lorem ipsum
-							lorem ipsum<br>
-							lorem ipsum
-							lorem ipsum
-						</p>
-						<p class="star-box flex-row">
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-							<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-						</p>
+						<div class="star flex-row">
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
+						</div>
 					</div>
-					<p class="generic-text title-size-1">
+					<p class="title-size-1 bold-text">
 						Afficher plus
 					</p>
 				</div>
+				<style type="text/css" name="accomodation">
+					div.accommodation-box {
+						flex-wrap: wrap;
+						width: 58rem;
+						height: 37rem;
+						border-radius: 20px 20px 20px 20px;
+						padding: 1.5rem;
+						background-color: rgb(242, 242, 242);}
+					div.image-box {
+						background-color: white;
+						width: 16rem;
+						border-radius: 20px 20px 20px 20px;
+						padding: 3px;
+						box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
+						}
+					img.img-size-top {
+						background-position: top;
+						border-radius: 20px 20px 0px 0px;
+						width: 16rem;
+						height: 8rem;
+						margin-bottom: 5px;
+														}
+						
+						li.place-name {
+						margin-left: 10px;
 
-				<div name="popularity">
-					<div class="popular-box flex-column flex-between">
-						<p class="title-1 generic-text title-size-2 flex-row flex-between">
+					}
+					div.star {
+						margin-bottom: 5px;
+						margin-left: 10px;
+					}
+					img.blue-star {
+						margin: 0.1%;
+						height: 15px;
+						width: 15px;}
+				</style>
+				<div class="popular-box flex-column flex-between 
+							margin-right margin-bottom">
+					<div class="flex-row flex-between title-size-2">
+						<h3 class="title-popular">
 							Les plus populaires
-							<img class="icon" alt="" src="assets/images/icon/chart-line-solid.svg"/>
-						</p>		
-
-
-						<div class="image-box-2 flex-row shadow-box"> 
-							<a href="">
-								<img class="img-size-top-2" alt="" src="assets/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/>
-							</a>
-
-							<div class="flex-column flex-between">
-								<p>
-									lorem ipsum<br/>
-									<span>
-										lorem ipsum
-									</span>
-								</p>
-								<div class="star-box flex-row">
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="image-box-2 flex-row shadow-box">
-							<a href="">
-								<img class="img-size-top-2" alt="" src="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"/>
-							</a>
-
-							<div class="flex-column flex-between">
-								<p>
-									lorem ipsum<br/>
-									<span>
-										lorem ipsum
-									</span>
-								</p>
-								<div class="star-box flex-row">
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="image-box-2 flex-row shadow-box">
-							<a href="">
-								<img class="img-size-top-2" alt="" src="assets/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"/>
-							</a>
-							<div class="flex-column flex-betwn">
-								<p>
-									lorem ipsum<br/>
-										<span>
-										lorem ipsum
-									</span>
-								</p>
-								<div class="star-box flex-row">
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-									<img class="blue-star" alt="" src="assets/images/icon/blue-star-solid.svg"/>
-								</div>
-							</div>
+						</h3>
+						<img class="icon" src="assets/images/icon/chart-line-solid.svg"
+						alt=" "/>
+					</div>
+					<div class="flex-column image-box-2 shadow-box"> 
+						<figure class="flex-row">
+								<a href="">
+									<img class="img-size-top-2" src="assets/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+									 alt=" "/>
+								</a>
+							<figcaption>
+									<ul>
+										<li class="place-name bold-text">
+											Hôtel Le soleil du
+										</li> 
+										<li class="place-name bold-text">
+											matin
+										</li> 
+										<li class="place-name grey-size grey-text">
+											Nuit à partir de 128<span class="bold-text">€</span>
+										</li>
+									</ul>			
+							</figcaption>
+						</figure>
+						<div class="star-box flex-row">
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
 						</div>
 					</div>
-				</div>
-
-			</div>			
-			
-			<style type="text/css" name="accomodation">
-				.accommodation-box {
-					flex-wrap: wrap;
-					width: 55rem;
-					height: 35rem;
-					border-radius: 20px 20px 20px 20px;
-					padding: 1.5rem;
-					background-color: rgb(242, 242, 242);}
-				.title-size-1 {
-					width: 60rem;
-				}
-				.image-box {
-					/*background-color: white;*/
-						background-color: crimson;
-					width: 15rem;
-					border-radius: 20px 20px 20px 20px;
-					padding: 0.3rem;
-					}
-				.img-size-top {
-					background-position: top;
-					border-radius: 20px 20px 0px 0px;
-					width: 15rem;
-					height: 8em;
-					}
-				.blue-star {
-					margin: 0.1%;
-					width: 1.2rem;
-					height: 1.2rem;}
-			</style>
-			<style type="text/css" name="popularity">
-				.popular-box {
-					width: 20rem;
-					height: 35rem;
-					border-radius: 20px 20px 20px 20px;
-					padding: 1.5rem;
-					background-color: rgb(242, 242, 242);}
-				.image-box-2 {
-					background-color: white;
-					border-radius: 20px 20px 20px 20px;
-					height: 7rem;
-					width: 20rem;
-					padding: 0.3rem;
-					}
-				.img-size-top-2 {
-					background-position: left;
-					border-radius: 20px 0px 0px 20px;
-					height: 7rem;
-					width: 8rem;
-					}
-			</style>
-		<div class="activities-box flex-column flex-between DEBUG">
-			<p class="title-1 generic-text DEBUG">
-				Activités à Marseille
-			</p>				
-			<div class="inside-box flex-row flex-between">
-				<div class="image-box-3-1 shadow-box-2 generic-text">
-					<a href="">
-						<img class="img-size-3-1 shadow-box-2" alt="Reservia : Vieux port de Marseille" src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
-						<p>
-							Vieux port de Marseille
-						</p>
-					</a>
-				</div>
-				<div class="flex-column flex-around">
-					<div class="image-box-3 shadow-box-2">
+					<div class="flex-column image-box-2 flex-row shadow-box">
 						<a href="">
-							<img class="img-size-3 shadow-box-2" alt="Reservia : Fort de Pomégues" src="assets/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>
-							<p>
-								Fort de Pomégues
-							</p>
+							<figure class="flex-row">
+								<img class="img-size-top-2" src="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
+									 alt=" "/>
+								<figcaption>
+									<ul>
+										<li class="place-name bold-text">
+											Au coeur de l'eau
+										</li>
+										<li class="place-name bold-text">
+											Chambres d'hôtes
+										</li>
+										<li class="place-name grey-size grey-text">
+											Nuit à partir de 71<span class="bold-text">€</span>
+										</li>
+									</ul>		
+								</figcaption>
+							</figure>
 						</a>
+						<div class="star-box flex-row">
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+						</div>
 					</div>
-					<div class="image-box-3 shadow-box-2">
+					<div class="flex-column image-box-2 flex-row shadow-box">
 						<a href="">
-							<img class="img-size-3 shadow-box-2" alt="Reservia : Îles du Frioul" src="assets/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/>
-							<p>
-								Îles du Frioul
-							</p>
+							<figure class="flex-row">
+								<img class="img-size-top-2" src="assets/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+									 alt=" "/>
+								<figcaption>
+									<ul>
+										<li class="place-name bold-text">
+											Hôtel Tout Bleu et
+										</li>
+										<li class="place-name bold-text">
+											Blanc
+										</li>
+										<li class="place-name grey-size grey-text">
+											Nuit à partir de 68<span class="bold-text">€</span>
+										</li>
+									</ul>		
+								</figcaption>
+							</figure>
 						</a>
-					</div>
-				</div>
-				<div class="image-box-3-1 shadow-box-2">
-					<a href="">
-						<img class="img-size-3-1 shadow-box-2" alt="Reservia : Parc National des Calanques" src="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/>
-						<p>
-							Parc National des Calanques
-						</p>
-					</a>
-				</div>
-				<div class="flex-column flex-around">
-					<div class="image-box-3 shadow-box-2">
-						<a href="">
-							<img class="img-size-3 shadow-box-2" alt="Reservia : Notre-Dame-de-la-Garde" src="assets/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"/>
-							<p>
-								Notre-Dame-de-la-Garde
-							</p>
-						</a>
-					</div>
-					<div class="image-box-3 shadow-box-2">
-						<a href="">
-							<img class="img-size-3 shadow-box-2" alt="Reservia : Parc Longchamp" src="assets/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/>
-							<p>
-								Parc Longchamp
-							</p>
-						</a>
+						<div class="star-box flex-row">
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+			<style type="text/css" name="popular">
+				h3.title-popular {
+					margin-bottom: 17px;
+				}
+				div.popular-box {
+					width: 22rem;
+					height: 37rem;
+					border-radius: 20px 20px 20px 20px;
+					padding: 1.5rem;
+					background-color: rgb(242, 242, 242);
+					}
+				div.image-box-2 {
+					background-color: white;
+					border-radius: 20px 20px 20px 20px;
+					height: 8rem;
+					width: 20rem;
+					padding: 3px;
+					margin: auto;
+					box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
+					}
+				img.img-size-top-2 {
+					background-position: left;
+					border-radius: 20px 0px 0px 20px;
+					height: 8rem;
+					width: 8rem;
+					}
+				li.grey-size {
+					font-size: 10pt;
+				}
+
+				div.star-box {
+							margin-top: -1.5rem;
+							margin-left: 9rem;
+						}
+				div.img.star-size {
+					height: 10px;
+					width: 10px;
+				}
+			</style>
+			<div class="activities-box flex-column
+						margin-right margin-bottom margin-left">
+				<h3 class="margin-bottom">
+					Activités à Marseille
+				</h3>				
+				<div class="inside-box flex-row flex-between">
+					<div class="image-box-large shadow-box-2 ">
+						<a href="">
+							<figure>
+								<img class="img-size-large shadow-box-2" alt="Reservia : Vieux port de Marseille" src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+									alt=" "/>
+								<figcaption>
+									<p class="bold-text">
+										Vieux port 
+									</p>			
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="flex-column flex-between">
+						<div class="fort-pomegues-box image-box-small shadow-box-2">
+							<a href="">
+								<figure>
+									<img class="fort-pomegues-img img-size-small shadow-box-2" alt="Reservia : Fort de Pomégues" src="assets/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+										alt=" "/>
+									<figcaption>
+										<p class="bold-text">
+											Fort de Pomégues
+										</p>		
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="frioul-box image-box-small shadow-box-2">
+							<a href="">
+								<figure>
+									<img class="frioul-img img-size-small shadow-box-2" alt="Reservia : Îles du Frioul" src="assets/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+										alt=" "/>
+									<figcaption>
+										<p class="bold-text">
+											Îles du Frioul
+										</p>		
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+					</div>
+					<div class="image-box-large shadow-box-2">
+						<a href="">
+							<figure>
+								<img class="img-size-large shadow-box-2" src="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+									alt="Reservia : Parc National des Calanques"/>
+								<figcaption>						
+									<p class="bold-text">
+										Parc National des Calanques
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="flex-column flex-between">
+						<div class="notre-dame-box image-box-small shadow-box-2">
+							<a href="">
+								<figure>
+									<img class="notre-dame-img img-size-small shadow-box-2" src="assets/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+										alt="Reservia : Notre-Dame-de-la-Garde"/>
+									<figcaption>
+										<p class="bold-text">
+											Notre-Dame-de-la-Garde
+										</p>		
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="longchamps-box image-box-small shadow-box-2">
+							<a href="">
+								<figure>
+									<img class="longchamps-img img-size-small shadow-box-2" src="assets/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+										alt="Reservia : Parc Longchamp"/>
+									<figcaption>
+										<p class="bold-text">
+											Parc Longchamp
+										</p>		
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 				<style type="text/css">
 						.activities-box {
 							margin: 2% 0% 0% 0%;
 							padding: 0%;
 							height: auto;
 							}
-						.image-box-3 {
+						div.image-box-large {
 							border-radius: 20px 20px 20px 20px;
-							padding: 0.2rem;
-							width: 20rem;
-							height: 13.5rem;						
-							background-color: white;}
-						.image-box-3-1 {
-							border-radius: 20px 20px 20px 20px;
-							padding: 0.3rem;
 							width: 20rem;
 							height: 30rem;						
-							padding: 0%;
-							background-color: white;}
-						.img-size-3 {
+							box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+							background-color: white;
+							}
+						figure > img.img-size-large {
+							height: 27rem;		
+							width: 20rem;
+							border-radius: 20px 20px 0px 0px;
+							}
+						div.image-box-small {
+							border-radius: 20px 20px 20px 20px;
+							width: 20rem;
+							box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+							background-color: white;
+							}
+						figure > img.img-size-small {
+							width: 20rem;
+							border-radius: 20px 20px 0px 0px;
+							}
+
+						figure > img.fort-pomegues-box {
+									height: 17rem;		
+								}
+						figure > img.fort-pomegues-img {
+							height: 14rem;		
+						}
+
+						div.frioul-box {
+									height: 11rem;		
+								}
+						figure > img.frioul-img {
+							height: 8rem;		
+						}
+
+						div.notre-dame-box {
+									height: 13rem;		
+								}
+						figure > img.notre-dame-img {
 							height: 10rem;		
-							width: 20rem;
-							border-radius: 20px 20px 0px 0px;
-							}
-						.img-size-3-1 {
-							height: 25rem;		
-							width: 20rem;
-							padding: 0.1rem;
-							border-radius: 20px 20px 0px 0px;
-							}
-						.inside-box {
-							height: auto;
+						}
+
+						div.longchamps-box {
+									height: 15rem;		
+								}
+						figure > img.longchamps-img {
+							height: 12rem;		
 						}
 				</style>
 		</main>
-		<footer>
-			<div class="footer flex-row flex-around">
+
+
+
+
+		<footer class="margin-top">
+		<!--															-->
+			<div class="flex-row flex-around">
+			<!--															-->
 				<div>
-					<p class="title-1 generic-text">
-						À propos
-					</p>
-					<a>
-						<p>
+					<ul>
+						<li>
+							<h4 class="margin-text bold-text">
+								À propos
+							</h4>
+						</li>
+						<li class="margin-text">
 							Fonctionnement du site
-						</p>
-					</a>
-					<a>
-						<p>
+						</li>
+						<li class="margin-text">
 							Conditions générales de vente
-						</p>
-					</a>
-					<a>
-						<p>
+						</li>
+						<li class="margin-text">
 							Donnèes et confidentialité
-						</p>
-					</a>
+						</li>
+					</ul>
 				</div>
 				<div>
-					<p class="title-1 generic-text">
-						Nos hébergements
-					</p>
-					<a>
-						<p>
+					<ul>
+						<li>
+							<h4 class="margin-text bold-text">
+								Nos hébergements
+							</h4>
+						</li>
+						<li class="margin-text">
 							Charte et qualité
-						</p>
-					</a>
-					<a>
-						<p>
+						</li>
+						<li class="margin-text">
 							Soumettre votre hôtel
-						</p>
-					</a>
+						</li>
+					</ul>
 				</div>
 				<div>
-					<p class="title-1 generic-text">
-						Assistance
-					</p>
-					<a>
-						<p>
+					<ul>
+						<li>
+							<h4 class="margin-text bold-text">
+								Assistance
+							</h4>
+						</li>
+
+						<li class="margin-text">
 							Centre d'aide
-						</p>
-					</a>
-					<a>
-						<p>
+						</li>
+						<li class="margin-text">
 							Nous contacter
-						</p>
-					</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<style type="text/css">
-				.footer {
-					background-color: rgb(242, 242, 242);}				
+				footer {
+					height: auto;
+					background-color: rgb(242, 242, 242);}		
+				li.margin-text {
+						margin-bottom: 7%;}
 			</style>
 		</footer>
-		<!-- General css setting -->
-		<style type="text/css"> .DEBUG { background-color: crimson; }</style>
-		<style type="text/css">
-			/* FLEXBOX */
-			.flex-row {display: flex;
-						flex-direction: row;}
-			.flex-column {display: flex;
-					flex-direction: column;}
-			.flex-between {
-					align-content: space-between;
-					justify-content: space-between;
-					}
-			.flex-around {
-					align-content: space-around;
-					justify-content: space-around;}
-			.flex-ctr {
-				align-items: center;
-			}
-			/*MARGIN -PADDING*/
-			.margin-element1 {
-				margin: 1rem 1rem 1rem 1rem;
-			}
-			.margin-element2 {
-				margin: 2rem 2rem 2rem 2rem;
-			}
-			/* TEXT */
-			@font-face {
-					font-family: "Raleway";
-					src: url('assets/font/Raleway-VariableFont_wght.ttf') format('ttf'),
-						url('assets/font/Raleway-VariableFont_wght.ttf') format('ttf'),
-						url('assets/font/static/Raleway-Bold.ttf') format('ttf');
-					font-weight: normal;
-					font-style: normal;}	
 
-			a {text-decoration: none;
-					color: black;}
-			.generic-text {font-family: "Raleway", Helvetica, sans-serif;	}
-			.bold-text {
-					font-family: "Raleway";
-					font-weight: bold;}
-			/* shadow */
-			.shadow-box {box-shadow: 4px rgb(202, 200, 200);}
-			.shadow-box-2 {box-shadow: 4px rgb(253, 233, 247);}
-		</style>
+				<!-- General css setting -->
+				<style type="text/css">
+					/* FLEXBOX */
+					.flex-row {
+						display: flex;
+								flex-direction: row;}
+					.flex-column {
+							display: flex;
+							flex-direction: column;}
+
+					.flex-between {
+							align-content: space-between;
+							justify-content: space-between;
+							}
+					.flex-around {
+							align-content: space-around;
+							justify-content: space-around;}
+					.align-center {
+						align-items: center;
+					}		
+					/*MARGIN - PADDING*/
+					.margin-top {
+								margin-top: 2%;
+											}
+					.margin-right {
+								margin-right: 2%;}
+					.margin-bottom {
+								margin-bottom: 2%;
+					} 
+					.margin-left {
+								margin-left: 2%;
+					}
+
+					figure, figcaption, ul, li
+					h1, h2, h3, h4, h5, h6 {
+										margin: 0%;
+										padding: 0%;
+					}
+					/* TEXT */
+					@font-face {
+							font-family: Raleway;
+							src: url('assets/font/Raleway-VariableFont_wght.ttf') format('truetype'),
+								url('assets/font/Raleway-VariableFont_wght.ttf') format('truetype'),
+								url('assets/font/static/Raleway-Bold.ttf') format('truetype');
+							font-weight: normal;
+							font-style: normal;}	
+					a, li, p, i, span {
+								font-family: Raleway, Helvetica, sans-serif;	
+						}
+					.grey-text {
+						color: #303030
+					}
+					.title-size-1 {
+							width: 60rem;
+						}
+					.bold-text {
+							font-weight: bold;
+							}
+					a {text-decoration: none;
+						color: black;}
+					ul {list-style: none;}		
+					/* shadow */
+					.shadow-box {box-shadow: 4px rgb(202, 200, 200);}
+					.shadow-box-2 {box-shadow: 4px rgb(253, 233, 247);}
+				</style>	
+		
 	</body>
-</html>
