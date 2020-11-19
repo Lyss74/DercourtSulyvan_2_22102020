@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
-				<link href="assets/images/logo/R-Reservia.png" rel="shortcut icon"/>
+		<link href="assets/images/logo/R-Reservia.png" rel="shortcut icon"/>
 		<title>				
 			Reservia : La meilleure expérience réservation
 		</title>
@@ -21,7 +21,7 @@
 					order: https://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html 
 				-->
 	</head>
-	<body class="flex-column">
+	<body class="resp-flex-column ">
 		<style type="text/css">
 			body 
 			{
@@ -29,98 +29,103 @@
 			}
 		</style>
 
-		<header class="margin-right margin-bottom margin-left">  
+		<header class="margin-right margin-bottom margin-left
+						">  
 		<!--		HEADER PART · html > head > body > header			-->
-			<nav class="flex-row flex-between resp-flex-wrap">
+			<nav class="flex-row flex-between resp-nav-top resp-flex-wrap 
+						 ">
 			<!--				HEADER PART · header.nav				-->
-				<div class="resp-min-width">
+				<div class="">
 					<img class="img-reservia" src="assets/images/icon/Reservia.svg"
 					alt=" "/>
 				</div>
-				<ul class="header flex-row flex-between align-center resp-flex-wrap" >
-					<li class="activ">
-						<a href="#Hébergements" class="blue-text activ">
+				<ul class="header flex-row flex-between align-center" >
+					<li class="barr resp-hebergement">
+						<a href="#Hébergements" class="blue-text">
 							Hébergements
 						</a>
 					</li>
-					<li class="activ">
-						<a href="#Activités" class="white-text activ">
+					<li class="barr resp-activities">
+						<a href="#Activités" class="white-text">
 							Activités
 						</a>
 					</li>
-					<li class="bold-text">
-						<a href="" class="blue-text activ">
+					<li class="barr resp-inscrire bold-text">
+						<a href="" class="blue-text">
 							S'inscrire
 						</a>
 					</li>
 				</ul>
 			</nav>
 
-				<style type="text/css" name="HEADER PART · html > head > body > header.nav">
-				img.img-reservia 
-				{
-					right: 0.1em;
-					width: 4.5em;
-					max-width: 100%;
-					margin: auto 0;
-					border-radius: 3.75rem 3.75rem 3.75rem 3.75rem;
-				}
-
-				ul.header 
-				{
-					width: 25rem;
-					display: flex;
-				}
-
-				a.blue-text 
-				{
-					height: 5rem;
-					color: blue;
-					font-size: 1rem;
-				}
-
-				a.white-text 
-				{
-					color: black;
-					font-size: 1rem;
-				}
-
-				.activ:activ 
-				{
-					padding-top: 5px;
-					border-top: blue 0.2rem solid;
-					width: 5px;
-				}
-
-				/* resp = responsive */
-				@media (max-width: 800px)
-				{ 
-					.resp-min-width 
-					{
-						width: 5rem;
-						background-color: lightgreen;
-					}
-					
-					ul.header 
-					{
-						background-color: lightsteelblue;
-						width: 50rem;
-					}
-				}
-
-				</style>
+													<style type="text/css" name="HEADER PART · html > head > body > header.nav">
+														img.img-reservia 
+														{
+															right: 0.4rem;
+															width: 5rem;
+															max-width: 100%;
+															margin: auto 0;
+														}
+														ul.header 
+														{
+															width: 25rem;
+															display: flex;
+														}
+														a.blue-text 
+														{
+															height: 5rem;
+															color: blue;
+															font-size: 1rem;
+														}
+														a.white-text 
+														{
+															color: black;
+															font-size: 1rem;
+														}
+														.barr:hover 
+														{
+															border-top: blue 0.2rem solid;
+															width: 150px;
+															height: 50px;
+														}
+														/* resp = responsive */
+														@media (max-width: 800px)
+														{ 
+															.resp-hebergement
+															{
+																margin-left: 15px;
+															}
+															.resp-activities
+															{
+																margin-right: 20px;
+															}
+															.resp-inscrire
+															{
+																position: absolute;
+																left: 335px;
+																top: 15px;
+															}
+															.barr:hover 
+															{
+																border-bottom: blue 0.2rem solid;
+																width: 100px;
+																height: 50px;
+															}
+														}
+													</style>
 		</header>
 
 
 		<main>
 		<!--			MAIN PART · html > head > body > header > main.top			-->
-			<div class="main-top flex-column flex-between 
+			<div class="main-top flex-column flex-around 
 						margin-right margin-bottom margin-left">
 			<!--		MAIN PART · html > head > body > header > main.top.title		-->
-				<div>
+				<div class="">
 					<div class="flex-column resp-flex-column">
-						<h3>
-							Trouvez votre hébergement pour des vacances de rêve
+						<h3 class="title-top h3resp-text-size">
+							Trouvez votre hébergement
+							pour des vacances de rêve
 						</h3>
 						<p class="typo-grey">
 							En plein centre ville ou en pleine nature
@@ -141,12 +146,13 @@
 						</button>
 					</div>
 				</div>
-				<div class="filter flex-row flex-between resp-flex-column">
+				<div class="filter flex-row flex-between resp-flex-column
+							">
 				<!--		MAIN PART · html > head > body > header > main.top.filter		-->
-				<p class="title-filter bold-text">
+					<p class="title-filter bold-text align-center ">
 						Filtres
-					</p>
-					<ul class=filter-list>
+					</p>			
+					<ul class="filter-list flex-row flex-between align-center ">
 						<li class="filter-item">
 							<input type="checkbox" id="economy"/>
 							<label for="economy" class="filter-name">
@@ -158,8 +164,6 @@
 								</span>
 							</label>
 						</li>
-					</ul>
-					<ul class=filter-list>
 						<li class="filter-item">
 							<input type="checkbox" id="familial"/>
 							<label for="familial" class="filter-name">
@@ -171,8 +175,6 @@
 								</span>
 							</label>
 						</li>
-					</ul>
-					<ul class=filter-list>
 						<li class="filter-item">
 							<input type="checkbox" id="romantique"/>
 							<label for="romantique" class="filter-name">
@@ -184,8 +186,6 @@
 								</span>
 							</label>
 						</li>
-					</ul>
-					<ul class=filter-list>
 						<li class="filter-item">
 							<input type="checkbox" id="pets-allowed"/>
 							<label for="pets-allowed" class="filter-name">
@@ -201,193 +201,200 @@
 				</div>
 				<!--		MAIN PART · html > head > body > header > main.top.info		-->
 				<div class="container-info"> 
-					<ul class="flex-row flex-between align-center">
+					<ul class="part-information flex-row flex-between align-center">
 						<li>
 							<div class="border">
-								<img src="assets/images/icon/info-solid.svg" class="icon-info" alt=""/>
+								<img src="assets/images/icon/info-solid.svg" class="icon-info" 
+								alt=""/>
 							</div>	
 						</li>
-						<li class="text-information typo-grey">
-							Plus de 500 logements sont disponibles dans cette ville
+						<li class="typo-grey">
+							Plus de 500 logements sont disponibles
+							dans cette ville
 						</li>
 					</ul>
 				</div>
 			</div>
 
-			<style type="text/css" name=""> 
+												<style type="text/css" name=""> 
+													/*	MAIN PART · html > head > body > header > main.top { box }	*/
+													main > div.main-top 
+													{ 
+														height: 15rem;
+														width: 60rem;
+													}
+													h3.title-top 
+													{
+														margin-bottom: 8px;
+													}			
+													/*	MAIN PART · html > head > body > header > main.top.search	*/
+													img.map-maker 
+													{
+														height: 20px;
+														width: 20px;
+														margin-top: 10px;
+														margin-left: 12px;
+														max-width: 100%;
+													}
+													div.container-maker 
+													{
+														background-color: rgb(184, 174, 174);
+														border-radius: 10px 0px 0px 10px;	
+														width: 2.5rem;	
+													}
+													div.search 
+													{
+														height: 2.5rem;
+													}
+													input.placeholder
+													{
+														font-weight: bold;
 
-			/*	MAIN PART · html > head > body > header > main.top { box }	*/
-			main > div.main-top 
-			{ 
-				height: 15rem;
-				width: 60rem;
-			}
+													}
+													button.button-search 
+													{
+														background-color: #0065FC;
+														color: white;
+														border-radius: 0px 10px 10px 0px;		
+														border: blue;
+													}
+													button.button-text 
+													{
+														margin: 0.5rem;
+													}
+													/*	MAIN PART · html > head > body > header > main.top.filter	*/
+													p.title-filter 
+													{
+														display: flex;
+														width: 80px;
+														margin: auto 0;
+													}
+													div.filter 
+													{
+														padding: 10px 5px;
+														width: 42rem;
+														height: 1.5rem;
+													}
+													ul.filter-list
+													{
+														width: 620px;
+													}
+																ul.filter-list > li.filter-item 
+													{
+														width: max-content;
+													}
+													ul.filter-list > li.filter-item > input 
+													{
+														display: none;
+													}
+													ul.filter-list > li.filter-item > label.filter-name 
+													{
+														display: flex;
+														background-color: white;
+														border-radius: 20px;
+														height: 30px;
+														border-top: 0.5px solid rgb(199, 196, 196);
+														border-bottom: 0.5px solid rgb(199, 196, 196);
+														border-right: 0.5px solid rgb(199, 196, 196);
+														border-left: none;
+													}
+													ul.filter-list > li.filter-item > label.filter-name > div.cropper 
+													{
+														background-color: #DEEBFF ;
+														border-radius: 50%;
+														height: 31px;
+														width: 31px;
+														display: flex;
+														overflow: hidden;
+														margin-bottom: 5%;
+														justify-content: center;
+														align-items: center;
+													}
+													ul.filter-list > li.filter-item > label.filter-name > div.cropper > img.filter-icon 
+													{
+														height: 15px;
+														width: 15px;
+														max-width: 100%;
+														margin: auto 0;
+													}
+													ul.filter-list > li.filter-item > label.filter-name > span.name 
+													{
+														padding: 0 10px 0 5px;
+														line-height: 34px;
+													}
+													/*	MAIN PART · html > head > body > header > main.top.info	*/
+													div > ul > li > div > img.icon-info 
+													{
+														height: 15px;
+														width: 15px;
+														margin: 3.5px 0px 0px 9px;
+													}
+													div.container-info 
+													{
+														width: 28rem;
+													}
+													div.container-info > ul > li > div.border 
+													{
+														border: 1.5px solid #9E9E9E;
+														border-radius: 20px ;
+														height: 22px;
+														width: 22px;
+													}
+													/* typo style */
+													p.typo-grey 
+													{
+														font-size: 11pt;
+													}
+													ul.part-information
+													{
+														margin-bottom: -10px;
+													}
+													li.typo-grey 
+													{
+														font-size: 12pt;
+													}
+													/* resp = responsive */
+													@media (max-width: 800px)
+													{ 
+														body > main 
+														{
+															height: 400px;
+														}
+														div.main-top
+														{
+															height: 400px;
+														}
+														h3.resp-text-size
+														{
+															width: 400px;
+															font-size: 17pt;
+														}
+														div.filter
+														{
+															width: 400px;
+															height: 400px;
+															background-color: darkviolet;
+														}
+														p.title-filter
+														{
+															position: absolute;
+															left: 17px;
+															top: 250px;
+														}
 
-			/*	MAIN PART · html > head > body > header > main.top.search	*/
-			img.map-maker 
-			{
-				height: 20px;
-				width: 20px;
-				margin-top: 10px;
-				margin-left: 12px;
-				max-width: 100%;
-			}
-
-			div.container-maker 
-			{
-				background-color: rgb(184, 174, 174);
-				border-radius: 10px 0px 0px 10px;	
-				width: 2.5rem;	
-			}
-
-			div.search 
-			{
-				height: 2.5rem;
-			}
-
-			button.button-search 
-			{
-				background-color: #0065FC;
-				color: white;
-				border-radius: 0px 10px 10px 0px;		
-				border: blue;
-			}
-
-			button.button-text 
-			{
-				margin: 0.5rem;
-			}
-
-			/*	MAIN PART · html > head > body > header > main.top.filter	*/
-			p.title-filter 
-			{
-				display: flex;
-				margin-right: 0px 20px 40px 0px;
-				align-items: center;
-			}
-				
-			div.filter 
-			{
-				padding: 10px 5px;
-				width: 42rem;
-				height: 1.5rem;
-			}
-
-			ul.filter-list > li.filter-item 
-			{
-				width: max-content;
-			}
-
-			ul.filter-list > li.filter-item > input 
-			{
-				display: none;
-			}
-
-			ul.filter-list > li.filter-item > label.filter-name 
-			{
-				display: flex;
-				background-color: white;
-				border-radius: 20px;
-				height: 30px;
-				border-top: 0.5px solid rgb(199, 196, 196);
-				border-bottom: 0.5px solid rgb(199, 196, 196);
-				border-right: 0.5px solid rgb(199, 196, 196);
-				border-left: none;
-			}
-
-			ul.filter-list > li.filter-item > label.filter-name > div.cropper 
-			{
-				background-color: #DEEBFF ;
-				border-radius: 50%;
-				height: 31px;
-				width: 31px;
-				display: flex;
-				overflow: hidden;
-				margin-bottom: 5%;
-				justify-content: center;
-				align-items: center;
-			}
-				
-			ul.filter-list > li.filter-item > label.filter-name > div.cropper > img.filter-icon 
-			{
-				height: 15px;
-				width: 15px;
-				max-width: 100%;
-				margin: auto 0;
-			}
-				
-			ul.filter-list > li.filter-item > label.filter-name > span.name 
-			{
-				padding: 0 10px 0 5px;
-				line-height: 34px;
-			}
-			
-			/*	MAIN PART · html > head > body > header > main.top.info	*/
-			div > ul > li > div > img.icon-info 
-			{
-				height: 15px;
-				width: 15px;
-				margin: 3.5px 0px 0px 9px;
-			}
-
-			div.container-info 
-			{
-				width: 28rem;
-			}
-
-			div.container-info > ul > li > div.border 
-			{
-				border: 1.5px solid #9E9E9E;
-				border-radius: 20px ;
-				height: 22px;
-				width: 22px;
-			}
-
-			/* typo style */
-			p.typo-grey 
-			{
-				font-size: 11pt;
-			}
-
-			li.typo-grey 
-			{
-				font-size: 12pt;
-			}
-
-			/* resp = responsive */
-			@media (max-width: 800px)
-				{ 
-					.resp-min-width 
-					{
-						width: 5rem;
-						background-color: lightgreen;
-					}
-					
-					.resp-flex-wrap 
-					{ 
-						flex-wrap: wrap;						
-					}
-
-					ul.header 
-					{
-						background-color: lightsteelblue;
-						width: 50rem;
-					}
-				}
-
-
-			</style>	
-			<div class="flex-row flex-between resp-flex-column
+													}
+													</style>
+				<div class="flex-row flex-between resp-flex-column-reverse
 						margin-left margin-bottom">
-			<!--		MAIN PART · html > head > body > header > main.middle		-->
-				<div class="accommodation-box flex-row flex-between resp-flex-column" id="Hébergements">
-				<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box		-->
-				<h3 class="title-size-1">
-						Hébergements à Marseille
-					</h3>
-					<div class="flex-column image-box shadow-box">
-					<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-1		-->
-					<a href="">
+				<!--		MAIN PART · html > head > body > header > main.top		-->
+					<div class="accommodation-box flex-row flex-between" id="Hébergements">
+					<!--		MAIN PART · html > head > body > header > main.top.div.accommodation-box		-->
+						<h3 class="title-size-1">
+							Hébergements à Marseille
+						</h3>
+						<div class="flex-column image-box shadow-box">
+						<!--		MAIN PART · html > head > body > header > main.top.div.accommodation-box-img-1		-->
+						<a href="">
 							<figure class="flex-column">
 								<img class="img-size-top" src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
 									 alt=" "/>
@@ -577,69 +584,85 @@
 						Afficher plus
 					</p>
 				</div>
-				<style type="text/css" name="accomodation">
-				/*	MAIN PART · html > head > body > header > main.middle.accomodation	*/
-					div.accommodation-box 
-					{
-						flex-wrap: wrap;
-						width: 58rem;
-						height: 37rem;
-						border-radius: 20px 20px 20px 20px;
-						padding: 1.5rem;
-						background-color: rgb(242, 242, 242);
-					}
-
-					/*	MAIN PART · html > head > body > header > main.middle.image-box	*/
-					div.image-box 
-					{
-						background-color: white;
-						width: 16rem;
-						border-radius: 20px 20px 20px 20px;
-						padding: 3px;
-						box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
-					}
-
-					/*	MAIN PART · html > head > body > header > main.middle.image	*/
-					img.img-size-top 
-					{
-						background-position: top;
-						border-radius: 20px 20px 0px 0px;
-						width: 16rem;
-						height: 8rem;
-						margin-bottom: 5px;
-						max-width: 100%;
-						margin: auto;
-					}
-
-					/*	MAIN PART · html > head > body > header > main.middle.image-name	*/
-					li.place-name 
-					{
-						margin-left: 10px;
-					}
-
-					/*	MAIN PART · html > head > body > header > main.middle.star-image {margin}	*/
-					div.star 
-					{
-						margin-bottom: 5px;
-						margin-left: 10px;
-					}
-
-					/*	MAIN PART · html > head > body > header > main.middle.star-image {size}	*/
-					img.blue-star 
-					{
-						margin: 0.1%;
-						height: 15px;
-						width: 15px;
-						max-width: 100%;
-						margin: auto 0;
-					}
-
-					@media (max-width: 800px)
-					{
-
-					}
-
-				</style>
+												<style type="text/css" name="accomodation">
+													/*	MAIN PART · html > head > body > header > main.middle.accomodation	*/
+													div.accommodation-box 
+													{
+														flex-wrap: wrap;
+														width: 58rem;
+														height: 37rem;
+														border-radius: 20px 20px 20px 20px;
+														padding: 1.5rem;
+														background-color: rgb(242, 242, 242);
+													}
+													.title-size-1 
+													{
+														width: 60rem;
+													}
+													/*	MAIN PART · html > head > body > header > main.middle.image-box	*/
+													div.image-box 
+													{
+														background-color: white;
+														width: 16rem;
+														border-radius: 20px 20px 20px 20px;
+														padding: 3px;
+														box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
+													}
+													/*	MAIN PART · html > head > body > header > main.middle.image	*/
+													img.img-size-top 
+													{
+														background-position: top;
+														border-radius: 20px 20px 0px 0px;
+														width: 16rem;
+														height: 8rem;
+														margin-bottom: 5px;
+														max-width: 100%;
+														margin: auto;
+													}
+													/*	MAIN PART · html > head > body > header > main.middle.image-name	*/
+													li.place-name 
+													{
+														margin-left: 10px;
+													}
+													/*	MAIN PART · html > head > body > header > main.middle.star-image {margin}	*/
+													div.star 
+													{
+														margin-bottom: 5px;
+														margin-left: 10px;
+													}
+													/*	MAIN PART · html > head > body > header > main.middle.star-image {size}	*/
+													img.blue-star 
+													{
+														margin: 0.1%;
+														height: 15px;
+														width: 15px;
+														max-width: 100%;
+														margin: auto 0;
+													}
+												/* resp = responsive */
+												@media (max-width: 800px)
+													{
+														div.accommodation-box 
+														{
+															height: 90rem;
+															width: 415px;
+														}
+														div.image-box
+														{
+															height: 200px;
+															width: 340px;
+														}
+														img.img-size-top
+														{
+															margin-bottom: 2%;
+															width: 370px;
+														}
+														li.place-name
+														{
+															margin-bottom: 1%;
+														}
+													}
+												</style>
 				<div class="popular-box flex-column flex-between resp-flex-column
 							margin-right margin-bottom">
 				<!--		MAIN PART · html > head > body > header > main.middle.div.popular-box		-->
@@ -754,518 +777,531 @@
 					</div>
 				</div>
 			</div>
-			<style type="text/css" name="popular">
-				
-			/*MAIN PART · html > head > body > header > main.middle.popular-box*/
-				h3.title-popular 
-				{
-					margin-bottom: 17px;
-				}
+														<style type="text/css" name="popular">
+															/*MAIN PART · html > head > body > header > main.middle.popular-box*/
+															h3.title-popular 
+															{
+																margin-bottom: 17px;
+															}
+															div.popular-box 
+															{
+																width: 22rem;
+																height: 37rem;
+																border-radius: 20px 20px 20px 20px;
+																padding: 1.5rem;
+																background-color: rgb(242, 242, 242);
+															}
+															/*MAIN PART · html > head > body > header > main.middle.popular.image-box*/
+															div.image-box-2 
+															{
+																background-color: white;
+																border-radius: 20px 20px 20px 20px;
+																height: 8rem;
+																width: 20rem;
+																padding: 3px;
+																margin: auto;
+																box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
+															}
+															/*MAIN PART · html > head > body > header > main.middle.popular.image-size*/
+															img.img-size-top-2 
+															{
+																background-position: left;
+																border-radius: 20px 0px 0px 20px;
+																height: 8rem;
+																width: 8rem;
+																max-width: 100%;
+																margin: auto 0;
+															}
+															/*MAIN PART · html > head > body > header > main.middle.popular.title-char*/
+															li.grey-size 
+															{
+																font-size: 10pt;
+															}
+															/*MAIN PART · html > head > body > header > main.middle.popular.star-box*/
+															div.star-box 
+															{
+																margin-top: -1.5rem;
+																margin-left: 9rem;
+															}
+															/*MAIN PART · html > head > body > header > main.middle.popular.star-size*/
+															div.img.star-size 
+															{
+																height: 10px;
+																width: 10px;
+																max-width: 100%;
+																margin: auto 0;
+															}
+															/* resp = responsive */
+															@media (max-width: 800px)
+															{
+																div.popular-box 
+																{
+																	width: 415px;
+																}
+															}
 
-				div.popular-box 
-				{
-					width: 22rem;
-					height: 37rem;
-					border-radius: 20px 20px 20px 20px;
-					padding: 1.5rem;
-					background-color: rgb(242, 242, 242);
-				}
+														</style>
 
-				/*MAIN PART · html > head > body > header > main.middle.popular.image-box*/
-				div.image-box-2 
-				{
-					background-color: white;
-					border-radius: 20px 20px 20px 20px;
-					height: 8rem;
-					width: 20rem;
-					padding: 3px;
-					margin: auto;
-					box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
-				}
-
-				/*MAIN PART · html > head > body > header > main.middle.popular.image-size*/
-				img.img-size-top-2 
-				{
-					background-position: left;
-					border-radius: 20px 0px 0px 20px;
-					height: 8rem;
-					width: 8rem;
-					max-width: 100%;
-					margin: auto 0;
-				}
-
-				/*MAIN PART · html > head > body > header > main.middle.popular.title-char*/
-				li.grey-size 
-				{
-					font-size: 10pt;
-				}
-
-				/*MAIN PART · html > head > body > header > main.middle.popular.star-box*/
-				div.star-box 
-				{
-					margin-top: -1.5rem;
-					margin-left: 9rem;
-				}
-
-				/*MAIN PART · html > head > body > header > main.middle.popular.star-size*/
-				div.img.star-size 
-				{
-					height: 10px;
-					width: 10px;
-					max-width: 100%;
-					margin: auto 0;
-				}
-
-				@media (max-width: 800px)
-				{
-
-				}
-
-			</style>
-			<div class="activities-box flex-column 
-						margin-right margin-bottom margin-left resp-flex-column" id="Activités">
-			<!--		MAIN PART · html > head > body > header > main.bottom.div.activities-box		-->
-				<h3 class="margin-bottom">
-					Activités à Marseille
-				</h3>				
-				<div class="flex-row flex-between">
-					<div class="image-box-large shadow-box-2 ">
-					<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-1		-->
-						<a href="">
-							<figure>
-								<img class="vieux-port-img img-size-large shadow-box-2" alt="Reservia : Vieux port de Marseille" src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-									alt=" "/>
-								<figcaption>
-									<p class="bold-text">
-										Vieux port 
-									</p>			
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="flex-column flex-between">
-						<div class="fort-pomegues-box image-box-small shadow-box-2">
-						<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-2 + 3		-->
+				<div class="activities-box flex-column
+				margin-right margin-bottom margin-left" 
+				id="Activités">
+				<!--		MAIN PART · html > head > body > header > main.bottom.div.activities-box		-->
+					<h3 class="margin-bottom">
+						Activités à Marseille
+					</h3>				
+					<div class="flex-row flex-between resp-flex-column">
+						<div class="image-box-large shadow-box-2 ">
+						<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-1		-->
 							<a href="">
 								<figure>
-									<img class="fort-pomegues-img img-size-small shadow-box-2" alt="Reservia : Fort de Pomégues" src="assets/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-										alt=" "/>
+									<img class="vieux-port-img image-size-large " 
+										src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+										alt="Reservia : Vieux port de Marseille" />
 									<figcaption>
-										<p class="bold-text">
-											Fort de Pomégues
-										</p>		
+										<p class="bold-text margin-text-activities">
+											Vieux port 
+										</p>			
 									</figcaption>
 								</figure>
 							</a>
 						</div>
-						<div class="frioul-box image-box-small shadow-box-2">
-							<a href="">
-								<figure>
-									<img class="frioul-img img-size-small shadow-box-2" alt="Reservia : Îles du Frioul" src="assets/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-										alt=" "/>
-									<figcaption>
-										<p class="bold-text">
-											Îles du Frioul
-										</p>		
-									</figcaption>
-								</figure>
-							</a>
+						<div class="flex-column flex-between">
+							<div class="fort-pomegues-box image-box-small shadow-box-2">
+							<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-2 + 3		-->
+								<a href="">
+									<figure>
+										<img class="fort-pomegues-img image-size-small" 
+											src="assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+											alt="Reservia : Fort de Pomégues"/>
+										<figcaption>
+											<p class="bold-text margin-text-activities">
+												Fort de Pomégues
+											</p>		
+										</figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="frioul-box image-box-small shadow-box-2">
+								<a href="">
+									<figure>
+										<img class="frioul-img image-size-small" 
+											src="assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+											alt="Reservia : Îles du Frioul" 
+											/>
+										<figcaption>
+											<p class="bold-text margin-text-activities">
+												Îles du Frioul
+											</p>		
+										</figcaption>
+									</figure>
+								</a>
+							</div>
 						</div>
-					</div>
-					<div class="image-box-large shadow-box-2">
-						<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-4		-->
-						<a href="">
-							<figure>
-								<img class="calanques-img img-size-large shadow-box-2" src="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-									alt="Reservia : Parc National des Calanques"/>
-								<figcaption>						
-									<p class="bold-text">
-										Parc National des Calanques
-									</p>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="flex-column flex-between">
-					<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-5 + 6		-->
-						<div class="notre-dame-box image-box-small shadow-box-2">
+						<div class="image-box-large shadow-box-2">
+							<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-4		-->
 							<a href="">
 								<figure>
-									<img class="notre-dame-img img-size-small shadow-box-2" src="assets/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-										alt="Reservia : Notre-Dame-de-la-Garde"/>
-									<figcaption>
-										<p class="bold-text">
-											Notre-Dame-de-la-Garde
-										</p>		
+									<img class="calanques-img image-size-large " 
+										src="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+										alt="Reservia : Parc National des Calanques"/>
+									<figcaption>						
+										<p class="bold-text margin-text-activities">
+											Parc National des Calanques
+										</p>
 									</figcaption>
 								</figure>
 							</a>
-						</div>
-						<div class="longchamps-box image-box-small shadow-box-2">
-							<a href="">
-								<figure>
-									<img class="longchamps-img img-size-small shadow-box-2" src="assets/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-										alt="Reservia : Parc Longchamp"/>
-									<figcaption>
-										<p class="bold-text">
-											Parc Longchamp
-										</p>		
-									</figcaption>
-								</figure>
-							</a>
+						</div> 
+						<div class="flex-column flex-between">
+						<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-5 + 6		-->
+							<div class="notre-dame-box image-box-small shadow-box-2">
+								<a href="">
+									<figure>
+										<img class="notre-dame-img image-size-small" 
+											src="assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+											alt="Reservia : Notre-Dame-de-la-Garde"/>
+										<figcaption>
+											<p class="bold-text margin-text-activities">
+												Notre-Dame-de-la-Garde
+											</p>		
+										</figcaption>
+									</figure>
+								</a>
+							</div>
+							<div class="longchamps-box image-box-small shadow-box-2">
+								<a href="">
+									<figure>
+										<img class="longchamps-img image-size-small" 
+											src="assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+											alt="Reservia : Parc Longchamp"/>
+										<figcaption>
+											<p class="bold-text margin-text-activities">
+												Parc Longchamp
+											</p>		
+										</figcaption>
+									</figure>
+								</a>
+							</div> 
 						</div>
 					</div>
 				</div>
-			</div>
-				<style type="text/css">
-				/*MAIN PART · html > head > body > header > main.bottom.activities-box*/
-					.activities-box 
-						{
-							margin: 2% 0% 0% 0%;
-							padding: 0%;
-							height: auto;
-						}
+											<style type="text/css">
+												/*MAIN PART · html > head > body > header > main.bottom.activities-box*/
+												div.activities-box 
+													{
+														margin: 2% 0% 0% 0%;
+														padding: 1%;
+														height: 35rem;
+														width: 91rem;
+													}
+												/*MAIN PART · html > head > body > header > main.bottom.p.margin-text-activities*/
+												figure > figcaption > p.margin-text-activities
+													{
+														margin-top: 4%;
+														margin-left: 9%;
+													}
+												/*MAIN PART · html > head > body > header > main.bottom.activities-image-box-large*/
+												div.image-box-large 
+													{
+														border-radius: 20px 20px 20px 20px;
+														width: 21rem;
+														height: 30rem;						
+														box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+														background-color: white;
+													}
+												/*MAIN PART · html > head > body > header > main.bottom.activities-image-size-large*/
+												figure > img.image-size-large  
+													{
+														border-radius: 20px 20px 0px 0px;
+														height: 425px;		
+														width: 21rem;
+														max-height: 85%;
+													}
+												/*MAIN PART · html > head > body > header > main.bottom.activities-image-box-small*/
+												div.image-box-small 
+													{
+														background-color: white;
+														border-radius: 20px 20px 20px 20px;
+														box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+														width: 21rem;
+													}
+												/*MAIN PART · html > head > body > header > main.bottom.activities-image-box-small*/
+												figure > img.image-size-small
+													{
+														border-radius: 20px 20px 0px 0px;
+														width: 21rem;
+														height: 415px;
+														max-height: 85%;
+													}
+												/*MAIN PART · html > head > body > header > main.bottom.activities-image-pomegues-size*/
+												div.fort-pomegues-box 
+													{
+														height: 16rem;
+													}
+												figure > img.fort-pomegues-img 
+													{
+														height: 200px;
+													}
+												/*MAIN PART · html > head > body > header > main.bottom.activities-image-pomegues-size*/
+												div.frioul-box 
+													{
+														height: 12rem;
+													}
+												figure > img.frioul-img 
+													{
+														height: 140px;
+													}
+												/*MAIN PART · html > head > body > header > main.bottom.activities-image-pomegues-size*/
+												div.notre-dame-box 
+													{
+														height: 13rem;		
+													}
+												figure > img.notre-dame-img 
+													{
+														height: 155px;		
+													}
+												/*MAIN PART · html > head > body > header > main.bottom.activities-image-pomegues-size*/
+												div.longchamps-box 
+													{
+														height: 15rem;		
+													}
+												figure > img.longchamps-img 
+													{
+														height: 190px		
+													}
+												/* resp = responsive */
+												@media (max-width: 800px)
+													{
+														div.activities-box 
+														{
+															flex-direction: column;
+															height: 110rem;
+															width: 415px;
+														}
+														div.image-box-large,
+														div.image-box-small
+														{
+															height: 240px;	
+															width: 23rem;	
 
-					/*MAIN PART · html > head > body > header > main.bottom.activities-image-box-large*/
-					div.image-box-large 
-						{
-							border-radius: 20px 20px 20px 20px;
-							width: 20rem;
-							height: 30rem;						
-							box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
-							background-color: white;
-						}
-
-					/*MAIN PART · html > head > body > header > main.bottom.activities-image-size-large*/
-					figure > img.img-size-large 
-						{
-							height: 27rem;		
-							width: 20rem;
-							max-width: 100%;
-							margin: auto;
-							border-radius: 20px 20px 0px 0px;
-						}
-
-					/*MAIN PART · html > head > body > header > main.bottom.activities-image-box-small*/
-					div.image-box-small 
-						{
-							border-radius: 20px 20px 20px 20px;
-							width: 20rem;
-							max-width: 100%;
-							margin: auto;
-							box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
-							background-color: white;
-						}
-
-					/*MAIN PART · html > head > body > header > main.bottom.activities-image-box-small*/
-					figure > img.img-size-small 
-						{
-							width: 20rem;
-							border-radius: 20px 20px 0px 0px;
-							max-width: 100%;
-							margin: auto;
-						}
-
-					/*MAIN PART · html > head > body > header > main.bottom.activities-image-each-image-size*/
-					img.fort-pomegues-box 
-						{
-							height: 17rem;		
-						}
-
-					img.fort-pomegues-img 
-						{
-							height: 14rem;		
-						}
-
-					div.frioul-box 
-						{
-							height: 11rem;		
-						}
-
-					img.frioul-img 
-						{
-							height: 8rem;		
-						}
-
-					div.notre-dame-box 
-						{
-							height: 13rem;		
-						}
-
-					img.notre-dame-img 
-						{
-							height: 10rem;		
-						}
-
-					div.longchamps-box 
-						{
-							height: 15rem;		
-						}
-
-					img.longchamps-img 
-						{
-							height: 12rem;		
-						}
-
-						@media (max-width: 800px)
-						{
-							.activities-box 
-							{
-								flex-direction: column;
-								background-color: chartreuse;
-							}
-
-							.image-box-large,
-							.image-box-small
-							{
-								height: 11rem;	
-								width: 15rem;	
-							}
-
-							.img-size-large,
-							.image-box-small 
-							{
-								height: 11rem;		
-								width: 15rem;
-							}
-
-							.vieux-port-img,
-							.fort-pomegues-img,
-							.frioul-img,	
-							.calanques-img,
-							.notre-dame-img,
-							.longchamps-img
-							{
-								height: 13rem;		
-								width: 15rem;
-							}
-						}
-
-				</style>
+														}
+														figure > img.image-size-large ,
+														figure > img.image-size-small 
+														{
+															height: 11rem;		
+															width: 23rem;
+														}
+													}
+												</style>
 		</main>
 
 
-
-
 		<footer class="margin-top">
-		<!--		MAIN PART · html > head > body > header > footer		-->
-			<div class="flex-row flex-around resp-flex-column">
-				<div>
-					<ul>
-						<li>
-							<h4 class="margin-text bold-text">
-								À propos
-							</h4>
-						</li>
-						<li class="margin-text">
-							Fonctionnement du site
-						</li>
-						<li class="margin-text">
-							Conditions générales de vente
-						</li>
-						<li class="margin-text">
-							Donnèes et confidentialité
-						</li>
-					</ul>
+			<!--		MAIN PART · html > head > body > header > footer		-->
+				<div class="footer-box flex-row flex-between resp-flex-column
+							margin-top margin-left"> 
+					<div>
+						<ul class="">
+							<li class="margin-title">
+								<h4>
+									À propos
+								</h4>
+							</li>
+							<li class="margin-text">
+								Fonctionnement du site
+							</li>
+							<li class="margin-text">
+								Conditions générales de vente
+							</li>
+							<li class="margin-text">
+								Donnèes et confidentialité
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="margin-title">
+								<h4>
+									Nos hébergements
+								</h4>
+							</li>
+							<li class="margin-text">
+								Charte et qualité
+							</li>
+							<li class="margin-text">
+								Soumettre votre hôtel
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="margin-title">
+								<h4 class="margin-text bold-text">
+									Assistance
+								</h4>
+							</li>
+	
+							<li class="margin-text">
+								Centre d'aide
+							</li>
+							<li class="margin-text">
+								Nous contacter
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div>
-					<ul>
-						<li>
-							<h4 class="margin-text bold-text">
-								Nos hébergements
-							</h4>
-						</li>
-						<li class="margin-text">
-							Charte et qualité
-						</li>
-						<li class="margin-text">
-							Soumettre votre hôtel
-						</li>
-					</ul>
-				</div>
-				<div>
-					<ul>
-						<li>
-							<h4 class="margin-text bold-text">
-								Assistance
-							</h4>
-						</li>
-
-						<li class="margin-text">
-							Centre d'aide
-						</li>
-						<li class="margin-text">
-							Nous contacter
-						</li>
-					</ul>
-				</div>
-			</div>
-			<style type="text/css">
-				/*MAIN PART · html > head > body > header > footer*/
-				footer 
-				{
-					height: auto;
-					background-color: rgb(242, 242, 242);
-				}		
-
-				li.margin-text 
-				{
-						margin-bottom: 7%;
-				}
-
-			</style>
+													<style type="text/css">
+										
+														/*MAIN PART · html > head > body > header > footer*/
+														div.footer-box
+														{
+															height: 10rem;
+															width: 70rem;
+														} 
+														body > footer 
+														{
+															background-color: rgb(242, 242, 242); 
+															height: auto; 		
+															padding-top: 3px;
+														}		
+										
+														ul > li.margin-title
+														{
+															margin-bottom: 10%
+														}
+														li.margin-text 
+														{
+																margin-bottom: 7%;
+														}
+														/* resp = responsive */
+														@media (max-width: 800px)
+														{
+															div.footer-box
+															{
+																display: none;
+																height: 30rem;
+																width: 415px;
+															}
+															ul > li.margin-title
+															{
+																margin-bottom: 5%;
+															}
+														}
+													</style>
 		</footer>
+	
+													<!-- General css setting -->
+													<style type="text/css">
+														.PROD {background-color: rgb(218, 120, 120);}
+														.PRODII {background-color: rgb(211, 218, 120);}
+														.PRODII {background-color: rgb(120, 218, 120);}
+														/* FLEXBOX */
+														.flex-row
+														{
+															display: flex;
+															flex-direction: row;
+														}
+														.flex-column 
+														{
+															display: flex;
+															flex-direction: column;
+														}
+														.flex-between 
+														{
+															align-content: space-between;
+															justify-content: space-between;
+														}
+														.flex-around 
+														{
+															align-content: space-around;
+															justify-content: space-around;
+														}
+														.align-center 
+														{
+															align-items: center;
+														}	
+														/*MARGIN - PADDING*/
+														.margin-top 
+														{
+															margin-top: 2%;
+														}
+														.margin-right 
+														{
+															margin-right: 2%;
+														}
+														.margin-bottom 
+														{
+															margin-bottom: 2%;
+														} 
+														.margin-left 
+														{
+															margin-left: 2%;
+														}
+														figure, figcaption, p, ul, li
+														button, h1, h2, h3, h4, h5, h6 
+														{
+															margin: 0%;
+															padding: 0%;
+														}
+														/* TEXT */
+														@font-face 
+														{
+															font-family: "Raleway";
+															src: url('assets/font/Raleway-VariableFont_wght.ttf') format('truetype'),
+																url('assets/font/Raleway-VariableFont_wght.ttf') format('truetype'),
+																url('assets/font/static/Raleway-Bold.ttf') format('truetype');
+															font-weight: normal;
+															font-style: normal;
+														}	
+														a, li, p, i, span,
+														h1, h2, h3, h4, h5, h6 
+														{
+															font-family: "Raleway", Helvetica, sans-serif;	
+														}
+														.grey-text 
+														{
+															color: #303030
+														}
+														.bold-text 
+														{
+															font-weight: bold;
+														}
+														a 
+														{
+															text-decoration: none;
+															color: black;
+														}
+														ul 
+														{
+															list-style: none;
+														}		
+														/* shadow */
+														.shadow-box 
+														{
+															box-shadow: 1px rgb(221, 219, 219);
+														}
+														.shadow-box-2 
+														{
+															box-shadow: 0.5px rgb(250, 245, 249);
+														}
+													/* resp = responsive */
+													@media (max-width: 800px)
+													{ 
+														/* RESPONSIVE SIZE */
+														.resp-width-box-size
+														{
+															width: 415px;
+														}
+														/* RESPONSIVE FLEX */
+														.resp-flex-row
+														{
+															display: flex;
+															flex-direction: row;
+														}
+														.resp-flex-wrap 
+														{ 
+															flex-wrap: wrap;						
+														}
+														.resp-flex-row-reverse 
+														{
+															display: flex;
+															flex-direction: row-reverse;
+														}
+														.resp-flex-column 
+														{
+															display: flex;
+															flex-direction: column;
+														}
+														.resp-flex-column-reverse 
+														{
+															display: flex;
+															flex-direction: column-reverse;
+														}
+														/* RESPONSIVE TEXT*/
 
-				<!-- General css setting -->
-				<style type="text/css">
-					/* FLEXBOX */
-					.flex-row 
-					{
-						display: flex;
-						flex-direction: row;
-					}
-
-					.flex-column 
-					{
-						display: flex;
-						flex-direction: column;
-					}
-
-					.flex-between 
-					{
-						align-content: space-between;
-						justify-content: space-between;
-					}
-
-					.flex-around 
-					{
-						align-content: space-around;
-						justify-content: space-around;
-					}
-
-					.align-center 
-					{
-						align-items: center;
-					}	
-
-					/*MARGIN - PADDING*/
-					.margin-top 
-					{
-						margin-top: 2%;
-					}
-
-					.margin-right 
-					{
-						margin-right: 2%;
-					}
-
-					.margin-bottom 
-					{
-						margin-bottom: 2%;
-					} 
-
-					.margin-left 
-					{
-						margin-left: 2%;
-					}
-
-					figure, figcaption, ul, li
-					h1, h2, h3, h4, h5, h6 
-					{
-						margin: 0%;
-						padding: 0%;
-					}
-
-					/* TEXT */
-					@font-face 
-					{
-						font-family: "Raleway";
-						src: url('assets/font/Raleway-VariableFont_wght.ttf') format('truetype'),
-							url('assets/font/Raleway-VariableFont_wght.ttf') format('truetype'),
-							url('assets/font/static/Raleway-Bold.ttf') format('truetype');
-						font-weight: normal;
-						font-style: normal;
-					}	
-
-					a, li, p, i, span 
-					{
-						font-family: "Raleway", Helvetica, sans-serif;	
-					}
-
-					.grey-text 
-					{
-						color: #303030
-					}
-
-					.title-size-1 
-					{
-						width: 60rem;
-					}
-
-					.bold-text 
-					{
-						font-weight: bold;
-					}
-
-					a 
-					{
-						text-decoration: none;
-						color: black;
-					}
-
-					ul 
-					{
-						list-style: none;
-					}		
-
-					/* shadow */
-					.shadow-box 
-					{
-						box-shadow: 4px rgb(202, 200, 200);
-					}
-
-					.shadow-box-2 
-					{
-						box-shadow: 4px rgb(253, 233, 247);
-					}
-					
-				/* resp = responsive */
-				@media (max-width: 800px)
-				{ 
-					.resp-flex-wrap 
-					{ 
-						flex-wrap: wrap;						
-					}
-
-					.resp-flex-column 
-					{
-						flex-direction: column;
-					}
-				
-					.body 
-					{
-						display: grid;
-						grid-template-columns: auto minmax(800px, 600px);
-						grid-template-areas: "header header"
-											 "main main"
-											 "footer footer";
-					}
-
-					header 
-					{
-						grid-area: header;
-					}
-
-					main 
-					{
-						grid-area: main;
-					}
-
-					footer 
-					{
-						grid-area: footer;
-					}
-				}
-				</style>	
+														/* RESPONSIVE GRID */
+														.body 
+														{
+															display: grid;
+															grid-template-columns: auto minmax(800px, 600px);
+															grid-template-areas: "header header"
+																				"main main"
+																				"footer footer";
+														}
+														header 
+														{
+															grid-area: header;
+														}
+														main 
+														{
+															grid-area: main;
+														}
+														footer 
+														{
+															grid-area: footer;
+														}
+													}
+													</style>	
+								
 	</body>
 </html>
