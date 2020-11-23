@@ -1,38 +1,670 @@
-/*******************************CSS_CONFIGURATION_START*******************************/
+body {
+    height: auto;
+}
 
 
-/********************STRUCTURE_START***********************/
-/*****STRUCTURE_Head*****/
+img.img-reservia {
+    right: 0.4rem;
+    width: 5rem;
+    max-width: 100%;
+    margin: auto 0;
+}
+ul.header {
+    width: 25rem;
+    display: flex;
+}
+a.blue-text {
+    height: 5rem;
+    color: blue;
+    font-size: 1rem;
+    padding-top: 16px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+a.white-text {
+    color: black;
+    font-size: 1rem;
+    padding-top: 16px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.barr:hover {
+    border-top: blue 0.2rem solid;
+    width: 150px;
+    height: 50px;
+    padding-bottom: 100px;
+}
+/* resp = responsive */
+@media (max-width: 800px)
+{ 
+    header {
+        width: 25rem;
+    }
+    nav.nav-top {
+        width: 100%;
+    }
+    .resp-hebergement {
+        margin-top: 10%;
+        margin-bottom: 10%;						
+    }
+    .resp-activities {
+        margin-right: 60px;
+    }
+    .resp-inscrire {
+        position: absolute;
+        left: 255px;
+        top: 15px;
+    }
+    .barr:hover {
+        border-bottom: blue 0.2rem solid;
+        width: 150px;
+    }
+}
 
-/*******STRUCTURE_Generic_pictures********/
-/*****STRUCTURE_Generic_pictures_size*****/
 
-/*****STRUCTURE_Body*****/
+.input-size {
+    width: 240px;
+}
+input::placeholder {
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+    padding-left: 15px;
+}
+/*	MAIN PART · html > head > body > header > main.top { box }	*/
+main > div.main-top { 
+    width: 50rem;
+}
+h3.title-top {
+    color: black;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-bottom: 0.3%;
+}		
+br.resp-jump-line {
+    display: none;
+}	
+/*	MAIN PART · html > head > body > header > main.top.search	*/
+img.map-maker {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 14px;
+    max-width: 100%;
+}
+div.container-maker { 
+    background-color: rgb(184, 174, 174);
+    border-radius: 10px 0px 0px 10px;	
+    width: 2.5rem;	
+}
+div.search {
+    height: 2.5rem;
+    margin-bottom: 6%;
+}
+button.button-search {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 10px 10px 0px;		
+    border: blue;
+}
+img.resp-search-glass {
+    display: none;
+}
+button.button-text {
+    margin: 0.5rem;
+}
+/*	MAIN PART · html > head > body > header > main.top.filter	*/
+div.filter {
+    width: 700px;
+    height: auto;
+    margin-bottom: 3%;
+    padding: 10px 5px;
+}
+p.title-filter {
+    display: flex;
+    margin-right: 10px;
+    margin-top: 1%;
+}
+ul.filter-list {
+    width: 38rem;
+}
+ul.filter-list > li.filter-item {
+    width: max-content;
+}
+ul.filter-list > li.filter-item > input {
+    display: none;
+}
+ul.filter-list > li.filter-item > label.filter-name {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    border-top: 0.5px solid rgb(199, 196, 196);
+    border-bottom: 0.5px solid rgb(199, 196, 196);
+    border-right: 0.5px solid rgb(199, 196, 196);
+    border-left: none;
+}
+ul.filter-list > li.filter-item > label.filter-name > div.cropper {
+    background-color: #DEEBFF ;
+    border-radius: 50%;
+    height: 31px;
+    width: 31px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+ul.filter-list > li.filter-item > label.filter-name > div.cropper > img.filter-icon {
+    height: 15px;
+    width: 15px;
+    max-width: 100%;
+    margin: auto 0;
+}
+ul.filter-list > li.filter-item > label.filter-name > span.name {
+    padding: 0 10px 0 5px;
+    line-height: 34px;
+}
+/*	MAIN PART · html > head > body > header > main.top.info	*/
+div > ul > li > div > img.icon-info {
+    height: 15px;
+    width: 15px;
+    margin: 3.5px 0px 0px 9px;
+}
+div.container-info {
+    width: 28rem;
+}
+div.container-info > ul > li > div.border {
+    border: 1.5px solid #9E9E9E;
+    border-radius: 20px ;
+    height: 22px;
+    width: 22px;
+}
+ul.filter-list > li.filter-item > label.filter-name:hover {
+    background: #f0f0f0;
+}
+/* typo style */
+ul.part-information {
+    height: 25px;
+    margin-bottom: 3%;
+}
+li.typo-grey, p.typo-grey {
+    font-size: 12pt;
+    margin-top: 1%;
+}
+/* resp = responsive */
+@media (max-width: 770px)
+{ 
+    main > div.main-top {
+        width: 100%;
+    }
+    h3.title-top {
+        margin-bottom: 3%;
+    }
+    h3.resp-text-size{
+        font-size: 17pt;
+    }
+    p.title-filter {
+        margin-bottom: 4%;
+    }
+    br.resp-jump-line {
+        display: initial;
+    }	
+    div.filter {
+        height: auto;
+        width: 250px;
+    }
+    ul.filter-list {
+        height: 7.5rem;
+        width: 250px;
+    }
+    span.desktop-text {
+        display: none;
+    }
+    button.button-search {
+        background-color: #0065FC;
+        border-radius: 10px 10px 10px 10px;		
+        border: blue;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: -10px;
+    }
+    img.resp-search-glass {  							
+        display: initial;
+        height: 20px;
+        width: 20px;
+        max-width: 100%;
+        margin-top: 5px;
+    }
+    div.container-info {
+        margin-bottom: 10%;
+    }
+    div.border {
+        margin-top: 15%;
+    }
+    p.typo-grey {
+        margin-bottom: 8%;
+    }
+    li.typo-grey {
+        font-size: 12pt;
+    }
+}
 
-/*****STRUCTURE_Footer***/
 
-/*******KEYFRAME ANIMATION CSS********/
-/****KEYFRAME ANIMATION CSS-END*******/
+/*	MAIN PART · html > head > body > header > main.middle.accomodation	*/
+div.main-middle {
+    width: 93rem;
+}
+div.accommodation-box {
+    flex-wrap: wrap;
+    width: 55rem;
+    height: 38rem;
+    border-radius: 20px 20px 20px 20px;
+    padding: 1.7rem;
+    background-color: rgb(242, 242, 242);
 
-/****MEDIA-QUERY-STRUCTURE-SETTING*****/
-/****MEDIA-QUERY-SETTING-END***********/
+}
+.title-size-1 {
+    width: 60rem;
+}
+/*	MAIN PART · html > head > body > header > main.middle.image-box	*/
+div.image-box {
+    background-color: white;
+    width: 16rem;
+    border-radius: 20px 20px 20px 20px;
+    padding: 3px;
+    box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
+}
+/*	MAIN PART · html > head > body > header > main.middle.image	*/
+img.img-size-top {
+    background-position: top;
+    border-radius: 20px 20px 0px 0px;
+    width: 16rem;
+    height: 8rem;
+    margin-bottom: 5px;
+    max-width: 100%;
+    margin: auto;
+}
+/*	MAIN PART · html > head > body > header > main.middle.image-name	*/
+li.place-name {
+    margin-left: 10px;
+}
+/*	MAIN PART · html > head > body > header > main.middle.star-image {margin}	*/
+div.star {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+/*	MAIN PART · html > head > body > header > main.middle.star-image {size}	*/
+img.blue-star {
+    margin: 0.1%;
+    height: 15px;
+    width: 15px;
+    max-width: 100%;
+    margin: auto 0;
+}
+/* resp = responsive */
+@media (max-width: 800px)
+{
+    div.main-middle {
+        width: 22rem;
+        margin-bottom: 10%;
+    }
+    div.accommodation-box {
+        height: 87rem;
+        width: 22rem;
+        background-color: white;
+        padding: 0%;
+        margin: 0% 0% 10% 0%;
 
-/********************STRUCTURE-END**********************/
-
-/**********HEADER_PART************/
-/********HEADER_PART-END**********/
-
-/************BODY_PART************/
-/**********BODY_PART-END**********/
-
-/***********FOOTER_PART***********/
-/*********FOOTER_PART-END*********/
-
-/*******MEDIA-QUERY_SETTING********/
-/*****MEDIA-QUERY-SETTING-END******/
-
-/*******KEYFRAME ANIMATION CSS********/
-/****KEYFRAME ANIMATION CSS-END*******/
+        }
+    div.image-box {
+        height: 12.5rem;
+        width: 95%;
+    }
+    img.img-size-top {
+        width: 370px;
+        height: 8rem;
+        margin-bottom: 3%;
+    }
+    li.place-name {
+        margin-bottom: 1%;
+    }
+}
 
 
-/*******************************CSS_CONFIGURATION_END*******************************/
+/*MAIN PART · html > head > body > header > main.middle.popular-box*/
+h3.title-popular {
+    margin-bottom: 38px;
+}
+div.popular-box {
+    width: 20rem;
+    height: 38rem;
+    border-radius: 20px 20px 20px 20px;
+    padding: 1.7rem;
+    background-color: rgb(242, 242, 242);
+}
+/*MAIN PART · html > head > body > header > main.middle.popular.image-box*/
+div.image-box-2 {
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    height: 8rem;
+    width: 18rem;
+    padding: 3px;
+    margin: auto;
+    box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
+}
+/*MAIN PART · html > head > body > header > main.middle.popular.image-size*/
+img.img-size-top-2 {
+    background-position: left;
+    border-radius: 20px 0px 0px 20px;
+    height: 8rem;
+    width: 8rem;
+    max-width: 100%;
+    margin: auto 0;
+}
+/*MAIN PART · html > head > body > header > main.middle.popular.title-char*/
+li.grey-size {
+    font-size: 10pt;
+}
+/*MAIN PART · html > head > body > header > main.middle.popular.star-box*/
+div.star-box {
+    margin-top: -1.5rem;
+    margin-left: 9rem;
+}
+/*MAIN PART · html > head > body > header > main.middle.popular.star-size*/
+div.img.star-size {
+    height: 10px;
+    width: 10px;
+    max-width: 100%;
+    margin: auto 0;
+}
+/* resp = responsive */
+@media (max-width: 800px)
+{
+    div.popular-box {
+        border-radius: 0px 0px 0px 0px;
+        height: 30rem;
+        width: 20rem;
+        margin-bottom: 10%;
+
+    }
+    div.title-box {
+        height: 15px;
+        margin-bottom: 5%;
+    }
+    div.image-box-2 {
+        width: 95%;
+    }
+    ul.name-margin, li.name-margin {
+        margin-top: 5%;
+    }
+}
+
+
+/*MAIN PART · html > head > body > header > main.bottom.activities-box*/
+div.activities-box {
+    margin: 2% 0% 0% 0%;
+    padding: 1%;
+    height: 35rem;
+    width: 91rem;
+}
+/*MAIN PART · html > head > body > header > main.bottom.p.margin-text-activities*/
+figure > figcaption > p.margin-text-activities {
+    margin-top: 4%;
+    margin-left: 9%;
+}
+/*MAIN PART · html > head > body > header > main.bottom.activities-image-box-large*/
+div.image-box-large {
+    border-radius: 20px 20px 20px 20px;
+    width: 21rem;
+    height: 30rem;						
+    box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+    background-color: white;
+}
+/*MAIN PART · html > head > body > header > main.bottom.activities-image-size-large*/
+figure > img.image-size-large  {
+    border-radius: 20px 20px 0px 0px;
+    height: 425px;		
+    width: 21rem;
+    max-height: 85%;}
+/*MAIN PART · html > head > body > header > main.bottom.activities-image-box-small*/
+div.image-box-small {
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+    width: 21rem;
+}
+/*MAIN PART · html > head > body > header > main.bottom.activities-image-box-small*/
+figure > img.image-size-small {
+    border-radius: 20px 20px 0px 0px;
+    width: 21rem;
+    height: 415px;
+    max-height: 85%;
+}
+/*MAIN PART · html > head > body > header > main.bottom.activities-image-pomegues-size*/
+div.fort-pomegues-box {
+    height: 16rem;
+}
+figure > img.fort-pomegues-img {
+    height: 200px;
+}
+/*MAIN PART · html > head > body > header > main.bottom.activities-image-pomegues-size*/
+div.frioul-box {
+    height: 12rem;
+}
+figure > img.frioul-img {
+    height: 140px;
+}
+/*MAIN PART · html > head > body > header > main.bottom.activities-image-pomegues-size*/
+div.notre-dame-box {
+    height: 13rem;		
+}
+figure > img.notre-dame-img {
+    height: 155px;		
+}
+/*MAIN PART · html > head > body > header > main.bottom.activities-image-pomegues-size*/
+div.longchamps-box {
+    height: 15rem;		
+}
+figure > img.longchamps-img {
+    height: 190px		
+}
+/* resp = responsive */
+@media (max-width: 800px)
+{
+    div.activities-box, 
+    div.container-activities {
+        height: 69rem;
+        width: 22rem;
+    }
+    h3.title-box-activities {
+        margin-bottom: 10%;
+    }
+    div.duo-box {
+        height: 21rem;
+    }
+    div.image-box-large,
+    div.image-box-small {
+        width: 98%;
+        height: 10rem;
+    }
+    figure > img.image-size-large,
+    figure > img.image-size-small {
+        width: 100%;
+        height: 7rem;
+    }
+}
+
+											
+/*MAIN PART · html > head > body > header > footer*/
+div.footer-box {
+    height: 10rem;
+    width: 70rem;
+} 
+body > footer {
+    background-color: rgb(242, 242, 242); 
+    padding-top: 3px;
+}		
+ul > li.margin-title {
+    margin-bottom: 10%
+}
+li.margin-text {
+    margin-bottom: 7%;
+}
+/* resp = responsive */
+ @media (max-width: 800px)
+{
+    footer {
+        background-color: rgb(242, 242, 242);
+        height: 31rem;
+        width: 25rem;
+        padding-top: 30px;
+    }		
+    div.footer-box {
+        height: 29rem;
+        width: 20rem;
+    } 
+    ul > li.margin-title, .margin-text {
+        margin-bottom: 6%;
+    }
+    ul > li.margin-text {
+        margin-bottom: 3%;
+    }
+}
+
+    
+/* General css setting */
+/* FLEXBOX */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-between {
+    align-content: space-between;
+    justify-content: space-between;
+}
+.flex-around {
+    align-content: space-around;
+    justify-content: space-around;
+}
+.align-center {
+    align-items: center;
+}	
+/*MARGIN - PADDING*/
+.margin-top {
+    margin-top: 2%;
+}
+.margin-right {
+    margin-right: 2%;
+}
+.margin-bottom {
+    margin-bottom: 2%;
+} 
+.margin-left {
+    margin-left: 2%;
+}
+figure, figcaption, p, ul, li
+button, h1, h2, h3, h4, h5, h6 {
+    margin: 0%;
+    padding: 0%;
+}
+/* TEXT */
+@font-face 
+{
+    font-family: "Raleway";
+    src: url('assets/font/Raleway-VariableFont_wght.ttf') format('truetype'),
+        url('assets/font/Raleway-VariableFont_wght.ttf') format('truetype'),
+        url('assets/font/static/Raleway-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}	
+a, li, p, i, span, input,
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", Helvetica, sans-serif;	
+}
+.grey-text {
+    color: #303030
+}
+.bold-text {
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+}		
+/* shadow */
+.shadow-box {
+    box-shadow: 1px rgb(221, 219, 219);
+}
+.shadow-box-2 {
+    box-shadow: 0.5px rgb(250, 245, 249);
+}
+/* resp = responsive */
+@media (max-width: 800px)
+{ 
+    /* RESPONSIVE FLEX */
+    .resp-flex-row {
+        flex-direction: row;
+    }
+    .resp-flex-wrap { 
+        flex-direction: row;
+        flex-wrap: wrap;						
+    }
+    .resp-flex-row-reverse {
+        flex-direction: row-reverse;
+    }
+    .resp-flex-column {
+        flex-direction: column;
+    }
+    .resp-flex-column-reverse {
+        flex-direction: column-reverse;
+    }
+    .resp-flex-between {
+        align-content: space-between;
+        justify-content: space-between;
+    }
+    .resp-flex-around {
+        align-content: space-around;
+        justify-content: space-around;
+    }
+    .resp-align-center {
+        align-items: center;
+    }	
+    /*RESPONSIVE MARGIN - PADDING*/
+    .resp-margin-top {
+        margin-top: 2%;
+    }
+    .resp-margin-right {
+        margin-right: 2%;
+    }
+    .resp-margin-bottom {
+        margin-bottom: 2%;
+    } 
+    .resp-margin-left {
+        margin-left: 2%;
+    }
+    /* RESPONSIVE GRID */
+    body {
+        display: grid;
+        grid-template-columns: auto minmax(375px, 667px);
+        grid-template-areas: "header header"
+                            "main main"
+                            "footer footer";
+    }
+    header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
