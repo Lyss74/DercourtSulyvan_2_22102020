@@ -8,505 +8,605 @@
 		<title>				
 			Reservia : La meilleure expérience réservation
 		</title>
-				<!-- 
-					initial-scale: Définit le zoom initial de la page, que nous définissons à 1.
-					height: Definit une hauteur spécifique pour la fenêtre.
-					height: 700px;
-					width: 500px;
-					minimum-scale: Définit le niveau minimal de zoom
-					maximum-scale: Définit le niveau maximal de zoom.
-					user-scalable: Empêche le zoom si défini à no.			
-					@media screen and (min-width: 800px) { 
-					.container { 
-						margin: 1em 2em;} }
-					order: https://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html 
-					ALL WIDHT RESQPONSIVE == 100%
-					display: none = deactivate
-					display: initial
-				-->
 	</head>
+
+
+
+
 	<body>
-		<header class="margin-right margin-bottom margin-left">  
+		<header>  
 		<!--		HEADER PART · html > head > body > header			-->
-			<nav class="nav-top flex-row flex-between 
-				  	    resp-flex-wrap">
+			<nav class="nav-top flex row between 
+						resp-380-nav-top resp-380-row">
 			<!--				HEADER PART · header.nav				-->
-				<div class="">
-					<img class="img-reservia" src="assets/images/icon/Reservia.svg"
+				<div>
+					<img class="img-reservia resp-380-img-reservia resp-675-img-reservia" src="assets/images/icon/Reservia.svg"
 					alt=" "/>
 				</div>
-				<ul class="header flex-row flex-between align-center" >
-					<li class="resp-hebergement">
-						<a href="#Hébergements" class="blue-text barr">
+				<ul class="header row between align-center">
+					<li class="resp-380-hebergement">
+						<a href="#Hébergements" 
+						class="blue-text barr
+							resp-380-barr">
 							Hébergements
 						</a>
 					</li>
-					<li class="resp-activities">
-						<a href="#Activités" class="white-text barr">
+					<li class="resp-380-activities">
+						<a href="#Activités" 
+						class="white-text barr
+							   resp-380-barr">
 							Activités
 						</a>
 					</li>
-					<li class="resp-inscrire bold-text">
-						<a href="" class="blue-text barr">
+					<li class="resp-380-register bold-text">
+						<a href="" 
+						class="blue-text barr
+							   resp-380-barr">
 							S'inscrire
 						</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
+
+
+
+
 		<main>
+
 		<!--			MAIN PART · html > head > body > header > main.top			-->
-			<div class="main-top flex-column 
+			<div class="main-top flex column border 
 						margin-right margin-bottom margin-left
-						resp-flex-between">
-			<!--		MAIN PART · html > head > body > header > main.top.title		-->
-				<div>
-					<div class="flex-column">
-					<h3 class="title-top"> 
-						Trouvez votre hébergement<br class="resp-jump-line"/>
+						resp-380-main-top resp-380-between resp-675-main-top">
+				<!--		MAIN PART · html > head > body > header > main.top.title		-->
+				<div class="flex column">
+					<h3 class="title-top
+							resp-380-title-top resp-675-title-top resp-675-text-size"> 
+						Trouvez votre hébergement<br class="resp-380-jump-line"/>
 						pour des vacances de rêve
 					</h3>
-					<p class="typo-grey margin-bottom"> 
+					<p class="typo-grey margin-bottom
+							resp-380-typo-grey"> 
 						En plein centre ville ou en pleine nature
 					</p>	
 				</div>
-			</div>
-			<div>
-			<!--		MAIN PART · html > head > body > header > main.top.search		-->
-				<div class="search flex-row margin-bottom">
+
+				<!--		MAIN PART · html > head > body > header > main.top.search		-->
+				<div class="search flex row margin-bottom 
+							resp-675-margin-bottom">
 					<div class="container-maker">
 						<img src="assets/images/icon/map-marker-alt-solid.svg" class="map-maker" 
-							 alt=""/>
+							alt=""/>
 					</div>
 					<input class="input-size bold-text" type="search" placeholder="Marseille, France" name="search">
-					<button class="button-search" type="button">
-						<span class="desktop-text"> 
+					<button class="button-search resp-380-button-search resp-675-button-search" type="button">
+						<span class="desktop-text
+									resp-380-desktop-text"> 
 							Rechercher
 						</span> 
 						<div class="resp-search-icon">
-							<img src="assets/images/icon/search-glass.svg" class="resp-search-glass" 
-								 alt=""/>
+							<img src="assets/images/icon/search-glass.svg" class="resp-380-search-glass" 
+								alt=""/>
 						</div>
 					</button> 
 				</div>
-			</div>
-			<div class="filter flex-row resp-flex-column resp-flex-between 
-						">
-			<!--		MAIN PART · html > head > body > header > main.top.filter		-->
-				<p class="title-filter bold-text ">
-					Filtres
-				</p>			
-				<ul class="filter-list flex-row flex-between align-center 
-						   resp-flex-wrap resp-margin-top">
-					<li class="filter-item">
-						<input type="checkbox" id="economy"/>
-						<label for="economy" class="filter-name">
-							<div class="cropper">
-								<img src="assets/images/icon/money-bill-wave-solid.svg" class="filter-icon"
-								     alt=""/>
+
+				<div class="filter flex row 
+							resp-380-filter resp-380-flex resp-380-column resp-380-between">
+				<!--		MAIN PART · html > head > body > header > main.top.filter		-->
+					<p class="title-filter bold-text 
+							  resp-380-title-filter">
+						Filtres
+					</p>			
+					<ul class="filter-list flex row between align-center 
+							resp-380-filter-list resp-380-row resp-380-wrap resp-380-margin-bottom
+							resp-675-filter-list resp-675-column resp-675-wrap">
+						<li class="filter-item">
+							<input type="checkbox" id="economy"/>
+							<label for="economy" class="filter-name">
+								<div class="cropper">
+									<img src="assets/images/icon/money-bill-wave-solid.svg" class="filter-icon"
+										alt=""/>
+								</div>
+								<span class="name bold-text">
+									Économique
+								</span>
+							</label>
+						</li>
+
+						<li class="filter-item resp-675-family">
+							<input type="checkbox" id="familial"/>
+							<label for="familial" class="filter-name">
+								<div class="cropper">
+									<img src="assets/images/icon/child-solid.svg" class="filter-icon"
+										alt=""/>
+								</div>
+								<span class="name bold-text">
+									Familial
+								</span>
+							</label>
+						</li>
+	
+						<li class="filter-item">
+							<input type="checkbox" id="romantique"/>
+							<label for="romantique" class="filter-name">
+								<div class="cropper">
+									<img src="assets/images/icon/heart-solid.svg" class="filter-icon"
+										alt=""/>
+								</div>
+								<span class="name bold-text">
+									Romantique
+								</span>
+							</label>
+						</li>
+	
+						<li class="filter-item">
+							<input type="checkbox" id="pets-allowed"/>
+							<label for="pets-allowed" class="filter-name">
+								<div class="cropper">
+									<img src="assets/images/icon/dog-solid.svg" class="filter-icon"
+										alt=""/>
+								</div>
+								<span class="name bold-text">
+									Animaux autorisés
+								</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+	
+				<!--		MAIN PART · html > head > body > header > main.top.info		-->
+				<div class="container-info
+							resp-380-container-info resp-380-container-info"> 
+					<ul class="part-information flex row">
+						<li>
+							<div class="border
+										resp-380-border">
+								<img src="assets/images/icon/info-solid.svg" class="icon-info resp-icon-info" 
+								alt=""/>
+							</div>	
+						</li>
+						<li class="typo-grey margin-left
+									resp-380-margin-left resp-380-margin-bottom">
+							Plus de 500 logements sont disponibles<br class="resp-380-jump-line"/>
+							dans cette ville
+						</li>
+					</ul>
+				</div>
+
+
+
+					<div class="main-middle flex row between 
+								margin-left margin-bottom 
+								resp-380-main-middle resp-380-column-reverse">
+					<!--		MAIN PART · html > head > body > header > main.top		-->
+						<div class="accommodation-box flex row between
+									resp-380-accommodation-box resp-380-flex resp-380-column
+									resp-675-accommodation-box resp-675-wrap " 
+							id="Hébergements">
+						<!--		MAIN PART · html > head > body > header > main.top.div.accommodation-box		-->
+							<h3 class="title-size-1 resp-380-title-margin resp-675-title-margin">
+								Hébergements à Marseille
+							</h3>
+
+							<div class="flex column image-box shadow-box
+										resp-380-image-box resp-675-image-box">
+							<!--		MAIN PART · html > head > body > header > main.top.div.accommodation-box-img-1		-->
+								<a href="">
+									<figure class="flex-column">
+										<img class="img-size-top resp-380-margin-bottom
+													resp-380-img-size-top" 
+											src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+											alt=" "/>
+										<figcaption>
+											<ul>
+												<li class="place-name bold-text
+														resp-380-place-name
+														resp-675-place-name-1">
+													Auberge de la Cannebiére
+												</li>
+												<li class="place-name grey-size grey-text
+														resp-380-place-name
+														resp-675-place-name-1">
+													Nuit à partir de
+													<span class="bold-text">
+														25€
+													</span>
+												</li>
+											</ul>					
+										</figcaption>
+									</figure>
+								</a>
+								<div class="star flex row">
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
+									<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
+								</div>
 							</div>
-							<span class="name bold-text">
-								Économique
-							</span>
-						</label>
-					</li>
-					<li class="filter-item">
-						<input type="checkbox" id="familial"/>
-						<label for="familial" class="filter-name">
-							<div class="cropper">
-								<img src="assets/images/icon/child-solid.svg" class="filter-icon"
-								     alt=""/>
+
+							<div class="image-box shadow-box 
+										resp-380-image-box resp-380-flex-column resp-675-image-box">
+							<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-2		-->
+								<a href="">
+									<figure>
+										<img class="img-size-top resp-380-margin-bottom
+													resp-380-img-size-top" 
+											src="assets/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+											alt=" "/>
+										<figcaption>
+											<ul>
+												<li class="place-name bold-text
+														resp-380-place-name
+														resp-675-place-name">
+													Hôtel du port
+												</li>
+												<li class="place-name grey-size grey-text
+														resp-380-place-name
+														resp-675-place-name">
+													Nuit à partir de 52<span class="bold-text">€</span>
+												</li>
+											</ul>				
+										</figcaption>
+									</figure>
+								</a>
+								<div class="star flex row">
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+								</div>
 							</div>
-							<span class="name bold-text">
-								Familial
-							</span>
-						</label>
-					</li>
-					<li class="filter-item">
-						<input type="checkbox" id="romantique"/>
-						<label for="romantique" class="filter-name">
-							<div class="cropper">
-								<img src="assets/images/icon/heart-solid.svg" class="filter-icon"
-			        				 alt=""/>
+
+							<div class="image-box shadow-box
+										resp-380-image-box resp-675-image-box">
+							<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-3		-->
+								<a href="">
+									<figure>
+										<img class="img-size-top resp-380-margin-bottom
+													resp-380-img-size-top" 
+											src="assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+											alt=" "/>
+										<figcaption>
+											<ul>
+												<li class="place-name bold-text
+														resp-380-place-name
+														resp-675-place-name">
+													Hôtel Les mouettes
+												</li> 
+												<li class="place-name grey-size grey-text
+														resp-380-place-name
+														resp-675-place-name">
+													Nuit à partir de 76<span class="bold-text">€</span>
+												</li>
+											</ul>				
+										</figcaption>
+									</figure>
+								</a>
+								<div class="star flex row">
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
+									<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
+								</div>
 							</div>
-							<span class="name bold-text">
-								Romantique
-							</span>
-						</label>
-					</li>
-					<li class="filter-item">
-						<input type="checkbox" id="pets-allowed"/>
-						<label for="pets-allowed" class="filter-name">
-							<div class="cropper">
-								<img src="assets/images/icon/dog-solid.svg" class="filter-icon"
-								     alt=""/>
+
+							<div class="image-box shadow-box
+										resp-380-image-box resp-675-image-box">
+							<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-4		-->
+								<a href="">
+									<figure>
+										<img class="img-size-top resp-380-margin-bottom
+													resp-380-img-size-top" 
+											src="assets/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+											alt=""/>
+										<figcaption>
+											<ul>
+												<li class="place-name bold-text
+														resp-380-place-name
+														resp-675-place-name">
+													Hôtel de la mer
+												</li>
+												<li class="place-name grey-size grey-text
+														resp-380-place-name
+														resp-675-place-name">
+													Nuit à partir de 46<span class="bold-text">€</span>
+												</li>
+											</ul>			
+										</figcaption>
+									</figure>
+								</a>
+								<div class="star flex row">
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
+									<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+											alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
+									<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+											alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
+								</div>
 							</div>
-							<span class="name bold-text">
-								Animaux autorisés
-							</span>
-						</label>
-					</li>
-				</ul>
-			</div>
-			<!--		MAIN PART · html > head > body > header > main.top.info		-->
-			<div class="container-info"> 
-				<ul class="part-information flex-row">
-					<li>
-						<div class="border">
-							<img src="assets/images/icon/info-solid.svg" class="icon-info resp-icon-info" 
-							alt=""/>
-						</div>	
-					</li>
-					<li class="typo-grey margin-left
-						       resp-margin-left resp-margin-bottom">
-						Plus de 500 logements sont disponibles<br class="resp-jump-line"/>
-						dans cette ville
-					</li>
-				</ul>
-			</div>
-			<div class="main-middle flex-column flex-between 
-						resp-flex-column">
-				<div class="flex-row flex-between 
-							margin-left margin-bottom 
-							resp-flex-column-reverse ">
-				<!--		MAIN PART · html > head > body > header > main.top		-->
-					<div class="accommodation-box flex-row flex-between 
-								resp-flex-column" id="Hébergements">
-					<!--		MAIN PART · html > head > body > header > main.top.div.accommodation-box		-->
-						<h3 class="title-size-1">
-							Hébergements à Marseille
-						</h3>
-						<div class="flex-column image-box shadow-box">
-						<!--		MAIN PART · html > head > body > header > main.top.div.accommodation-box-img-1		-->
-							<a href="">
-								<figure class="flex-column">
-									<img class="img-size-top resp-margin-bottom" 
-										 src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-										 alt=" "/>
+
+							<div class="image-box shadow-box
+										resp-380-image-box resp-675-image-box">
+							<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-5		-->
+								<a href="">
+									<figure>
+										<img class="img-size-top resp-380-margin-bottom
+													resp-380-img-size-top" 
+											src="assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+											alt=" "/>
+										<figcaption>
+											<ul>
+												<li class="place-name bold-text
+														resp-380-place-name
+														resp-675-place-name">
+													Auberge Le Panier
+												</li>
+												<li class="place-name grey-size grey-text
+														resp-380-place-name
+														resp-675-place-name">
+													Nuit à partir de<span class="bold-text">23€</span>
+												</li>
+											</ul>				
+										</figcaption>
+									</figure>
+								</a>
+								<div class="star flex row">
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
+									<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+											alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
+								</div>
+							</div>
+
+							<div class="image-box shadow-box
+										resp-380-image-box resp-675-image-box">
+							<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-6		-->
+								<a href="">
+									<figure>
+										<img class="img-size-top resp-380-margin-bottom
+													resp-380-img-size-top"  
+											src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+											alt=" "/>
+										<figcaption>
+											<ul>
+												<li class="place-name bold-text
+														resp-380-place-name
+														resp-675-place-name">
+													Hôtel chez Amina
+												</li>
+												<li class="place-name grey-size grey-text
+														resp-380-place-name
+														resp-675-place-name">
+													Nuit à partir de 96<span class="bold-text">€</span>
+												</li>
+											</ul>				
+										</figcaption>
+									</figure>
+								</a>
+								<div class="star flex row">
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+											alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
+								</div>
+							</div>
+							<p class="title-size-1 bold-text resp-380-image-margin-left">
+								Afficher plus
+							</p>
+						</div>
+
+
+
+
+						<div class="popular-box flex column between 
+									margin-right margin-bottom 
+									resp-380-popular-box ">
+						<!--		MAIN PART · html > head > body > header > main.middle.div.popular-box		-->
+							<div class="title-box flex row between
+										resp-380-row resp-380-between">
+								<h3 class="title-popular">
+									Les plus populaires
+								</h3>
+								<img class="icon 
+											resp-380-icon" 
+									src="assets/images/icon/chart-line-solid.svg"
+									alt=" "/>
+							</div>
+
+							<div class="flex-column image-box-2 shadow-box
+										resp-380-image-box-2 resp-380-column resp-380-between "> 
+							<!--		MAIN PART · html > head > body > header > main.middle.popular-img-1		-->
+								<figure class="flex row 
+											">
+									<a href="">
+										<img class="img-size-top-2
+													" 
+											src="assets/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+										alt=" "/>
+									</a>
 									<figcaption>
-										<ul>
-											<li class="place-name bold-text">
-												Auberge de la Cannebiére
-											</li>
-											<li class="place-name grey-size grey-text">
-												Nuit à partir de
-												<span class="bold-text">
-													25€
-												</span>
-											</li>
-										</ul>					
+											<ul class="name-margin
+													resp-380-name-margin
+													">
+												<li class="place-name bold-text">
+													Hôtel Le soleil du
+												</li> 
+												<li class="place-name bold-text">
+													matin
+												</li> 
+												<li class="place-name name-margin grey-size grey-text
+														resp-380-name-margin
+														">
+													Nuit à partir de 128<span class="bold-text">€</span>
+												</li>
+											</ul>			
 									</figcaption>
 								</figure>
-							</a>
-							<div class="star flex-row">
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-										alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-										alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-										alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-										alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
-								<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
-										alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
+								<div class="star-box flex row
+											">
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+								</div>
 							</div>
-						</div>
-					<div class="image-box shadow-box resp-flex-column">
-					<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-2		-->
-						<a href="">
-							<figure>
-								<img class="img-size-top resp-margin-bottom" 
-									 src="assets/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-									 alt=" "/>
-								<figcaption>
-									<ul>
-										<li class="place-name bold-text">
-											Hôtel du port
-										</li>
-										<li class="place-name grey-size grey-text">
-											Nuit à partir de 52<span class="bold-text">€</span>
-										</li>
-									</ul>				
-								</figcaption>
-							</figure>
-						</a>
-						<div class="star flex-row">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
-						</div>
-					</div>
-					<div class="image-box shadow-box">
-					<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-3		-->
-						<a href="">
-							<figure>
-								<img class="img-size-top resp-margin-bottom" 
-								 	 src="assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-									 alt=" "/>
-								<figcaption>
-									<ul>
-										<li class="place-name bold-text">
-											Hôtel Les mouettes
-										</li> 
-										<li class="place-name grey-size grey-text">
-											Nuit à partir de 76<span class="bold-text">€</span>
-										</li>
-									</ul>				
-								</figcaption>
-							</figure>
-						</a>
-						<div class="star flex-row">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
-							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
-						</div>
-					</div>
-					<div class="image-box shadow-box">
-					<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-4		-->
-						<a href="">
-							<figure>
-								<img class="img-size-top resp-margin-bottom" 
-									 src="assets/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-									 alt=""/>
-								<figcaption>
-									<ul>
-										<li class="place-name bold-text">
-											Hôtel de la mer
-										</li>
-										<li class="place-name grey-size grey-text">
-											Nuit à partir de 46<span class="bold-text">€</span>
-										</li>
-									</ul>			
-								</figcaption>
-							</figure>
-						</a>
-						<div class="star flex-row">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
-							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
-									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
-							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
-									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
-						</div>
-					</div>
-					<div class="image-box shadow-box">
-					<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-5		-->
-						<a href="">
-							<figure>
-								<img class="img-size-top resp-margin-bottom" 
-									 src="assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-									 alt=" "/>
-								<figcaption>
-									<ul>
-										<li class="place-name bold-text">
-											Auberge Le Panier
-										</li>
-										<li class="place-name grey-size grey-text">
-											Nuit à partir de<span class="bold-text">23€</span>
-										</li>
-									</ul>				
-								</figcaption>
-							</figure>
-						</a>
-						<div class="star flex-row">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
-							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
-						</div>
-					</div>
-					<div class="image-box shadow-box">
-					<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-6		-->
-						<a href="">
-							<figure>
-								<img class="img-size-top resp-margin-bottom"  
-								 	 src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-									 alt=" "/>
-								<figcaption>
-									<ul>
-										<li class="place-name bold-text">
-											Hôtel chez Amina
-										</li>
-										<li class="place-name grey-size grey-text">
-											Nuit à partir de 96<span class="bold-text">€</span>
-										</li>
-									</ul>				
-								</figcaption>
-							</figure>
-						</a>
-						<div class="star flex-row">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
-						</div>
-					</div>
-					<p class="title-size-1 bold-text PRODI">
-						Afficher plus
-					</p>
-				</div>
-				<div class="popular-box flex-column flex-between 
-							margin-right margin-bottom">
-				<!--		MAIN PART · html > head > body > header > main.middle.div.popular-box		-->
-					<div class="title-box flex-row flex-between title-size-2">
-						<h3 class="title-popular">
-							Les plus populaires
-						</h3>
-						<img class="icon" src="assets/images/icon/chart-line-solid.svg"
-						alt=" "/>
-					</div>
-					<div class="flex-column image-box-2 shadow-box"> 
-					<!--		MAIN PART · html > head > body > header > main.middle.popular-img-1		-->
-						<figure class="flex-row">
+
+							<div class="flex-column image-box-2 shadow-box
+										resp-380-image-box-2 resp-380-column resp-380-between "> 
+							<!--		MAIN PART · html > head > body > header > main.middle.popular-img-2		-->
 								<a href="">
-									<img class="img-size-top-2" 
-										 src="assets/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-									 alt=" "/>
+									<figure class="flex row 
+												">
+										<img class="img-size-top-2
+													" 
+										src="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
+											alt=" "/>
+										<figcaption>
+											<ul class="name-margin
+													resp-380-name-margin
+													">
+												<li class="place-name bold-text
+															resp-380-place-name">
+													Au coeur de l'eau
+												</li>
+												<li class="place-name bold-text
+															resp-380-place-name">
+													Chambres d'hôtes
+												</li>
+												<li class="place-name name-margin grey-size grey-text
+															resp-380-place-name
+															">
+													Nuit à partir de 71<span class="bold-text">€</span>
+												</li>
+											</ul>		
+										</figcaption>
+									</figure>
 								</a>
-							<figcaption>
-									<ul class="name-margin">
-										<li class="place-name bold-text">
-											Hôtel Le soleil du
-										</li> 
-										<li class="place-name bold-text">
-											matin
-										</li> 
-										<li class="place-name name-margin grey-size grey-text">
-											Nuit à partir de 128<span class="bold-text">€</span>
-										</li>
-									</ul>			
-							</figcaption>
-						</figure>
-						<div class="star-box flex-row">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+								<div class="star-box flex row
+											">
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+								</div>
+							</div>
+
+							<div class="flex-column image-box-2 shadow-box
+										resp-380-image-box-2 resp-380-column resp-380-between "> 
+							<!--		MAIN PART · html > head > body > header > main.middle.popular-img-3		-->
+								<a href="">
+									<figure class="flex row 
+												">
+										<img class="img-size-top-2
+													"  
+											src="assets/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+											alt=" "/>
+										<figcaption>
+											<ul class="name-margin
+													resp-380-name-margin
+													">
+												<li class="place-name bold-text
+															resp-380-place-name">
+													Hôtel Tout Bleu et
+												</li>
+												<li class="place-name bold-text
+															resp-380-place-name">
+													Blanc
+												</li>
+												<li class="place-name name-margin grey-size grey-text
+														resp-380-name-margin
+														">
+														Nuit à partir de 68<span class="bold-text">€</span>
+												</li>
+											</ul>		
+										</figcaption>
+									</figure>
+								</a>
+								<div class="star-box flex row
+											">
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+									<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+								</div>
+							</div>
+
 						</div>
 					</div>
-					<div class="flex-column image-box-2 flex-row shadow-box">
-					<!--		MAIN PART · html > head > body > header > main.middle.popular-img-2		-->
-						<a href="">
-							<figure class="flex-row">
-								<img class="img-size-top-2" 
-									 src="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
-									 alt=" "/>
-								<figcaption>
-									<ul class="name-margin">
-										<li class="place-name bold-text">
-											Au coeur de l'eau
-										</li>
-										<li class="place-name bold-text">
-											Chambres d'hôtes
-										</li>
-										<li class="place-name name-margin grey-size grey-text">
-											Nuit à partir de 71<span class="bold-text">€</span>
-										</li>
-									</ul>		
-								</figcaption>
-							</figure>
-						</a>
-						<div class="star-box flex-row">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-						</div>
-					</div>
-					<div class="flex-column image-box-2 flex-row shadow-box">
-					<!--		MAIN PART · html > head > body > header > main.middle.popular-img-3		-->
-						<a href="">
-							<figure class="flex-row">
-								<img class="img-size-top-2" 
-									 src="assets/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-									 alt=" "/>
-								<figcaption>
-									<ul class="name-margin">
-										<li class="place-name bold-text">
-											Hôtel Tout Bleu et
-										</li>
-										<li class="place-name bold-text">
-											Blanc
-										</li>
-										<li class="place-name name-margin grey-size grey-text">
-											Nuit à partir de 68<span class="bold-text">€</span>
-										</li>
-									</ul>		
-								</figcaption>
-							</figure>
-						</a>
-						<div class="star-box flex-row">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-								alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="activities-box flex-column 
-						margin-right margin-bottom margin-left" id="Activités">
-			<!--		MAIN PART · html > head > body > header > main.bottom.div.activities-box		-->
-				<h3 class="title-box-activities margin-bottom">
+
+
+				<div class="activities-box flex column 
+							margin-right margin-bottom margin-left
+							resp-380-activities-box" id="Activités">
+				<!--		MAIN PART · html > head > body > header > main.bottom.div.activities-box		-->
+				<h3 class="title-box-activities margin-bottom resp-380-image-margin-left
+						resp-380-title-box-activities resp-380-title-box">
 					Activités à Marseille
 				</h3>				
-				<div class="container-activities flex-row flex-between resp-flex-between 
-								 resp-flex-column ">
-					<div class="image-box-large shadow-box-2 ">
+				<div class="container-activities flex row between resp-380-image-margin-left 
+							resp-380-container-activities resp-380-between resp-380-column">
+					<div class="image-box-large shadow-box-2 
+								resp-380-image-box-large">
 					<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-1		-->
 						<a href="">
 							<figure>
-								<img class="vieux-port-img image-size-large" 
-									 src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-									 alt="Reservia : Vieux port de Marseille" />
+								<img class="vieux-port-img image-size-large 
+											resp-380-image-size-large" 
+									src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+									alt="Reservia : Vieux port de Marseille" />
 								<figcaption>
 									<p class="bold-text margin-text-activities">
 										Vieux port 
@@ -515,14 +615,18 @@
 							</figure>
 						</a>
 					</div>
-					<div class="duo-box flex-column flex-between resp-flex-between">
-						<div class="fort-pomegues-box image-box-small shadow-box-2">
+
+					<div class="duo-box flex column between 
+								resp-380-duo-box resp-380-flex resp-380-between">
+						<div class="fort-pomegues-box image-box-small shadow-box-2
+									resp-380-image-box-small">
 						<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-2 + 3		-->
 							<a href="">
 								<figure>
-									<img class="fort-pomegues-img image-size-small" 
-										 src="assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-										 alt="Reservia : Fort de Pomégues"/>
+									<img class="fort-pomegues-img image-size-small
+												resp-380-image-size-small" 
+										src="assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+										alt="Reservia : Fort de Pomégues"/>
 									<figcaption>
 										<p class="bold-text margin-text-activities">
 												Fort de Pomégues
@@ -531,12 +635,15 @@
 								</figure>
 							</a>
 						</div>
-						<div class="frioul-box image-box-small shadow-box-2">
+
+						<div class="frioul-box image-box-small shadow-box-2
+									resp-380-image-box-small">
 							<a href="">
 								<figure>
-									<img class="frioul-img image-size-small" 
-										 src="assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-										 alt="Reservia : Îles du Frioul" 
+									<img class="frioul-img image-size-small
+												resp-380-image-size-small" 
+										src="assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+										alt="Reservia : Îles du Frioul" 
 											/>
 									<figcaption>
 										<p class="bold-text margin-text-activities">
@@ -547,13 +654,16 @@
 							</a>
 						</div>
 					</div>
-					<div class="image-box-large shadow-box-2">
-						<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-4		-->
+
+					<div class="image-box-large shadow-box-2
+								resp-380-image-box-large">
+					<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-4		-->
 						<a href="">
 							<figure>
-								<img class="calanques-img image-size-large" 
-									 src="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-									 alt="Reservia : Parc National des Calanques"/>
+								<img class="calanques-img image-size-large
+											resp-380-image-size-large" 
+									src="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+									alt="Reservia : Parc National des Calanques"/>
 								<figcaption>						
 									<p class="bold-text margin-text-activities">
 										Parc National des Calanques
@@ -562,96 +672,119 @@
 							</figure>
 						</a>
 					</div> 
-					<div class="duo-box flex-column flex-between resp-flex-between">
+
+					<div class="duo-box flex column between 
+								resp-380-duo-box resp-380-flex resp-380-between">
 					<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-5 + 6		-->
-					<div class="notre-dame-box image-box-small shadow-box-2">
-						<a href="">
-							<figure>
-								<img class="notre-dame-img image-size-small" 
-									 src="assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-									 alt="Reservia : Notre-Dame-de-la-Garde"/>
-								<figcaption>
-									<p class="bold-text margin-text-activities">
-											Notre-Dame-de-la-Garde
-									</p>		
-								</figcaption>
-							</figure>
-						</a>
+						<div class="notre-dame-box image-box-small shadow-box-2
+									resp-380-image-box-small">
+							<a href="">
+								<figure>
+									<img class="notre-dame-img image-size-small
+												resp-380-image-size-small" 
+										src="assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+										alt="Reservia : Notre-Dame-de-la-Garde"/>
+									<figcaption>
+										<p class="bold-text margin-text-activities">
+												Notre-Dame-de-la-Garde
+										</p>		
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="longchamps-box image-box-small shadow-box-2
+									resp-380-image-box-small">
+							<a href="">
+								<figure>
+									<img class="longchamps-img image-size-small 
+												resp-380-image-size-small" 
+										src="assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+										alt="Reservia : Parc Longchamp"/>
+									<figcaption>
+										<p class="bold-text margin-text-activities">
+											Parc Longchamp
+										</p>		
+									</figcaption>
+								</figure>
+							</a>
+						</div> 
 					</div>
-					<div class="longchamps-box image-box-small shadow-box-2">
-						<a href="">
-							<figure>
-								<img class="longchamps-img image-size-small" 
-									 src="assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-									 alt="Reservia : Parc Longchamp"/>
-								<figcaption>
-									<p class="bold-text margin-text-activities">
-										Parc Longchamp
-									</p>		
-								</figcaption>
-							</figure>
-						</a>
-					</div> 
+
 				</div>
 			</div>
-		</div>
 		</main>
 
+		
 
 		<footer> 
 		<!--		FOOTER PART · html > head > body > header > footer		-->
-			<div class="footer-box flex-row flex-between 
-						margin-top margin-left
-						resp-flex-column"> 
+			<div class="footer-box flex row between 
+						margin-top margin-left 
+						resp-380-footer-box resp-380-column 
+						 "> 
 				<div>
 					<ul class="">
-						<li class="margin-title">
+						<li class="margin-title
+								   resp-380-margin-title">
 							<h4>
 								À propos
 							</h4>
 						</li>
-						<li class="margin-text">
+						<li class="margin-text
+								   resp-380-margin-title">
 							Fonctionnement du site
 						</li>
-						<li class="margin-text">
+						<li class="margin-text
+								  resp-380-margin-text">
 							Conditions générales de vente
 						</li>
-						<li class="margin-text">
+						<li class="margin-text
+								   resp-380-margin-text">
 							Donnèes et confidentialité
 						</li>
 					</ul>
 				</div>
+	
 				<div>
-					<ul>
-						<li class="margin-title">
+					<ul class="">
+						<li class="margin-title
+								   resp-380-margin-title">
 							<h4>
 								Nos hébergements
 							</h4>
 						</li>
-						<li class="margin-text">
+						<li class="margin-text
+								   resp-380-margin-text">
 							Charte et qualité
 						</li>
-						<li class="margin-text">
+						<li class="margin-text
+								   resp-380-margin-text">
 							Soumettre votre hôtel
 						</li>
 					</ul>
 				</div>
+	
 				<div>
-					<ul>
-						<li class="margin-title">
+					<ul class="">
+						<li class="margin-title
+								   resp-380-margin-title">
 							<h4 class="margin-text bold-text">
 								Assistance
 							</h4>
 						</li>
-						<li class="margin-text">
+						<li class="margin-text
+								   resp-380-margin-text">
 							Centre d'aide
 						</li>
-						<li class="margin-text">
+						<li class="margin-text
+							       resp-380-margin-text">
 							Nous contacter
 						</li>
 					</ul>
 				</div>
+	
 			</div>
+				
 		</footer> 
 	</body>
 </html>
