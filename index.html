@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style-1050px.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style-1300px.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style-670px.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style-380px.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
 		<link href="assets/images/logo/R-Reservia.png" rel="shortcut icon"/>
 		<title>				
@@ -14,22 +18,26 @@
 	<body>
 		<header>
 		<!--		HEADER PART · html > head > body > header			-->
-			<nav class="nav-top flex row between margin-right margin-left margin-bottom
+			<nav class="nav-top flex row between margin-right margin-left margin-bottom 
+						resp-1050px-nav-top
 						resp-380px-nav-top resp-380px-row
 						resp-670px-nav-top resp-670px-row
 						resp-670px-margin-right-left">
 			<!--				HEADER PART · header.nav				-->
 				<div>
 					<img class="img-reservia 
+								resp-1050px-img-reservia
 								resp-380px-img-reservia 
 								resp-670px-img-reservia" 
 						 src="assets/images/icon/Reservia.svg"
-						 alt=" "/>
+						 alt=""/>
 				</div>
-				<ul class="header row between align-center PROD">
+				<ul class="header row between align-center 
+						   resp-1050px-header">
 					<li class="resp-380px-hebergement">
 						<a href="#Hébergements" 
 						class="blue-text barr
+							   resp-1050px-blue-text
 							   resp-380px-barr">
 							Hébergements
 						</a>
@@ -37,6 +45,7 @@
 					<li class="resp-380px-activities">
 						<a href="#Activités" 
 						class="white-text barr
+							   resp-1050px-white-text
 							   resp-380px-barr">
 							Activités
 						</a>
@@ -45,6 +54,7 @@
 							   resp-380px-register">
 						<a href="" 
 						class="blue-text barr
+							   resp-1050px-blue-text
 							   resp-380px-barr">
 							S'inscrire
 						</a>
@@ -60,32 +70,40 @@
 		<main>
 		<!--			MAIN TOP · html > head > body > header > main top	resp-670px-colummn r	-->
 			<div class="main-top flex column border margin-right margin-left 
+						resp-1050px-main-top
 						resp-380px-main-top resp-380px-between 
 							resp-670px-margin-right-left">
 			<!--		MAIN TOP · html > head > body > header > main.top.title	resp-670px-title-top resp-670px-text-size	-->
 				<div class="flex column
 							resp-380px-margin-bottom">
 					<h3 class="title-top
+						   	   resp-1050px-title-top
 							   resp-380px-title-top"> 
 							Trouvez votre hébergement<br class="resp-380px-jump-line"/>
 							pour des vacances de rêve
 					</h3>
-					<p class="typo-grey margin-bottom resp-380px-margin-top
-							  resp-380px-typo-grey
-							  resp-670px-margin-top-bottom"> 
+					<p class="typo-grey margin-bottom
+							  resp-1050px-typo-grey
+							  resp-670px-margin-top-bottom
+							  resp-380px-typo-grey resp-380px-margin-top
+							  "> 
 							En plein centre ville ou en pleine nature
 					</p>	
 				</div>
 
 				<!--		MAIN TOP · html > head > body > header > main.top.search	resp-670px-button-search	-->
-				<div class="search flex row margin-bottom
+				<div class="search flex row margin-bottom resp-1050px-search
 							resp-380px-search">
-					<div class="container-maker">
-						<img src="assets/images/icon/map-marker-alt-solid.svg" class="map-maker" 
+					<div class="container-maker
+								resp-1050px-container-maker">
+						<img src="assets/images/icon/map-marker-alt-solid.svg" class="map-maker
+																					  resp-1050px-map-maker" 
 							 alt=""/>
 					</div>
-					<input class="input-size bold-text" type="search" placeholder="Marseille, France" name="search">
+					<input class="input-size bold-text
+								  resp-1050px-input-size" type="search" placeholder="Marseille, France" name="search">
 					<button class="button-search 
+								   resp-1050px-button-search
 								   resp-380px-button-search" 
 								   type="button">
 						<span class="desktop-text
@@ -101,18 +119,20 @@
 				</div>
 
 				<div class="filter flex row 
-							resp-380px-filter resp-380px-column resp-380px-between resp-380px-row resp-380px-wrap">
+							resp-380px-filter ">
 				<!--		MAIN TOP · html > head > body > header > main.top.filter		-->
 					<p class="title-filter bold-text align-center 
 							  resp-380px-title-filter resp-380px-margin-bottom">
 						Filtres
 					</p>	
 
-					<ul class="filter-list flex row between align-center 
+					<ul class="filter-list align-center flex row between 
+							   resp-1050px-filter-list
 							   resp-380px-filter-list resp-380px-row resp-380px-wrap resp-380px-margin-bottom
-							   resp-670-filter-list resp-670px-row resp-670px-wrap
+							   resp-670px-filter-list resp-670px-row resp-670px-wrap
 							   ">
-						<li class="filter-item">
+						<li class="filter-item
+								  ">
 							<input type="checkbox" id="economy"/>
 							<label for="economy" class="filter-name
 														resp-380px-filter-name">
@@ -178,14 +198,16 @@
 							   resp-380px-part-information">
 						<li>
 							<div class="border
+										resp-1050px-border 	
 										resp-380px-border">
-								<img src="assets/images/icon/info-solid.svg" class="icon-info resp-icon-info" 
+								<img src="assets/images/icon/info-solid.svg" class="icon-info 
+																					resp-1050px-icon-info" 
 									alt=""/>
 							</div>	
 						</li>
 						<li class="typo-grey 
-								   resp-380px-typo-grey
-								   resp-670px-typo-grey">
+								   resp-1050px-typo-grey 
+								   resp-380px-typo-grey resp-670px-typo-grey">
 							Plus de 500 logements sont disponibles<br class="resp-380px-jump-line"/>
 							dans cette ville
 						</li> 
@@ -194,16 +216,12 @@
 			</div>
 
 			<div class="main-middle flex row between margin-right margin-left margin-bottom 
-						resp-670px-main-middle 
-
-						resp-380px-main-middle  
-						">
+						resp-1050px-main-middle
+						resp-670px-main-middle resp-380px-main-middle">
 			<!--		MAIN-MIDDLE · html > head > body > header > main middle > name="Hébergements à Marseille"		-->
 				<section class="accommodation-box  
-								resp-670px-accommodation-box 
-
-								resp-380px-accommodation-box  
-								" 
+								resp-1050px-accommodation-box 
+								resp-670px-accommodation-box resp-380px-accommodation-box" 
 								id="Hébergements">
 					<h3 class="title-size-1 
 							   resp-670px-margin-left">
@@ -403,7 +421,7 @@
 								<img class="img-size-top margin-bottom
 											resp-670-img-size-top 
 											resp-380px-img-size-top"
-						src="assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+									src="assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
 									alt=" "/>
 								<figcaption>
 									<ul>
@@ -415,7 +433,7 @@
 										<li class="place-name grey-size grey-text margin-bottom
 												   resp-670px-place-name
 												   resp-380px-place-name">
-											Nuit à partir de<span class="bold-text">23€</span>
+											Nuit à partir de <span class="bold-text">23€</span>
 										</li>
 									</ul>				
 								</figcaption>
@@ -490,26 +508,29 @@
 				</section>
 
 				<section class="popular-box 
-								resp-670px-popular-box
+							    resp-1050px-popular-box 
+								resp-670px-popular-box 
 								resp-380px-popular-box 
 								">
 				<!--		MAIN PART · html > head > body > header > main.middle.div.popular-box		-->
 
 					<div class="title-box flex row between 
 								resp-670px-title-box 
-								resp-380px-title-box 
-								">
-						<h3 class="title-popular">
+								resp-380px-title-box">
+						<h3 class="title-popular 
+								   resp-670px-title-popular">
 							Les plus populaires
 						</h3>
 						<img class="icon " 
 							src="assets/images/icon/chart-line-solid.svg"> 
 					</div>
-					<div class="thumbnail-box flex column 
+					<div class="thumbnail-box flex column around
+								resp-1050px-thumbnail-box
 								resp-670px-thumbnail-box
 								resp-380px-thumbnail-box 
 								">
-						<div class="flex column image-box-2 shadow-box
+						<div class="image-box-2 flex column  shadow-box 
+									resp-1050px-image-box-2 
 									resp-670px-image-box-2 
 									resp-380px-image-box-2 
 									"> 
@@ -526,8 +547,8 @@
 										alt=" "/>
 								<figcaption>
 									<ul class="name-margin
-												resp-670px-name-margin
-												resp-380px-name-margin
+											   resp-670px-name-margin
+											   resp-380px-name-margin
 												">
 										<li class="place-name bold-text">
 												Hôtel Le soleil du
@@ -562,7 +583,7 @@
 							</div>
 						</div>
 
-						<div class="flex column image-box-2 shadow-box
+						<div class="flex column image-box-2 shadow-box 
 									resp-670px-image-box-2 
 									resp-380px-image-box-2 
 									"> 
@@ -734,7 +755,7 @@
 						<div class="frioul-box image-box-small shadow-box-2
 									resp-380px-image-box-small
 									resp-670px-image-box-small">
-							<a href="">
+							<a href=""> 
 								<figure>
 									<img class="frioul-img image-size-small
 												resp-380px-image-size-small
@@ -824,7 +845,7 @@
 							resp-670px-background 
 							resp-380px-background
 							"> 
-				<div class="ul-box flex row between  
+				<div class="ul-box flex row between 
 						    resp-670px-footer-box 
 						    resp-380px-footer-box">
 					<ul class="resp-380px-ul-box">
