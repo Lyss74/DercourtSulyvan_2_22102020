@@ -1,6 +1,10 @@
 /* resp = responsive */ 
 @media screen and (max-width: 1050px) { 
 
+    header, main, footer {
+        margin: 1.5%;
+    }
+
     img.resp-1050px-img-reservia { 
         height: 4rem;
         width: 7rem;
@@ -8,34 +12,25 @@
         left: 22px;
         top: 1px;
     }
-    ul.resp-1050px-header {
+    ul.resp-1050px-header { 
         height: 40px;
         width: 50%; 
     }
-    nav.resp-1050px-nav-top {  
+    nav.resp-1050px-nav-top { 
         width: 100%;
     }
-    a.resp-1050px-blue-text {
-        height: 5rem;
-        color: #0065FC;
-        font-size: 17pt;
-        padding-top: 16px;
-        padding-right: 25px;
-        padding-left: 25px;
+    li.resp-1050px-hebergement {  
+        width: 300px;
     }
-    a.resp-1050px-white-text {
-        color: black;
-        font-size: 17pt;
-        padding-top: 16px;
-        padding-right: 25px;
-        padding-left: 25px;
+    li.resp-1050px-activities {  
+        width: 300px;
     }
-    .barr:hover {
-        display:none;
-    }
+
+    
 
 
     div.resp-1050px-main-top { 
+                    width: 100%;
         height: 20rem;
     }
     h3.resp-1050px-title-top {
@@ -45,12 +40,13 @@
         font-size: 15pt;
     }
     /*	MAIN PART · html > head > body > header > main.top.search	*/
-    div.resp-1050px-container-maker { 
+    /*div.resp-1050px-container-maker { 
         background-color: rgb(184, 174, 174);
         border-radius: 10px 0px 0px 10px;	
         height: 3.5rem;
         width: 3.5rem;	
     }
+    
     img.resp-1050px-map-maker {
         height: 25px;
         width: 25px;
@@ -64,7 +60,7 @@
     input.resp-1050px-input-size {  
         height: 3.5rem;
         width: 330px;
-    }
+    }  
     button.resp-1050px-button-search { 
         background-color: #0065FC;
         color: white;
@@ -73,7 +69,7 @@
         height: 3.5rem;
         width: 5rem;
     }
-    input::placeholder {
+  input::placeholder {
         font-size: 18pt;
         font-weight: bold;
         color: black;
@@ -82,16 +78,26 @@
     
     button.resp-1050px-button-text {
         margin: 0.5rem;
-    }
-    ul.resp-1050px-filter-list {  background-color: green;
-        height: 4.5rem;
-        width: 350px;
+    }*/
+    p.resp-1050px-title-filter {
+        margin-bottom: 10px;
 
+    }
+    ul.resp-1050px-filter-list {   
+
+        height: 4rem;
+        width: 600px;
+    } 
+    div.resp-1050px-filter {   
+        align-content: space-between;
+        align-items: center;
+        height: 1rem;
+        width: 850px;
     } 
     li.resp-1050px-typo-grey { 
         font-size: 16pt;
     } 
-    div.border {
+    div.resp-1050px-border {
         border: 1.5px solid #9E9E9E;
         border-radius: 20px ;
         height: 22px;
@@ -104,28 +110,40 @@
     }
 
 
-    div.resp-1050px-main-middle {  background-color: red;
+    div.resp-1050px-main-middle {  
         flex-direction: column-reverse;
         align-content: space-between;
         justify-content: space-between;
+        height: 90rem;
         width: 100%;
-    
     }
 
 
 
-    main > div > section.resp-1050px-accommodation-box { background-color: green;
+    main > div > section.resp-1050px-accommodation-box {
+        justify-content: space-between;
+    
         /*background-color: white;*/
+        height: 50rem;
         width: 100%;
-        margin: 0% 0% 3% 0%;
+        margin-right: 5%;
     }
     h3.resp-1050px-title-margin {
         margin-top: 5%;
         margin-left: 1%;
     }
-    div.resp-1050px-image-box {
-        height: 13rem;
-        width: 28%;
+    div.resp-1050px-image-box { 
+        border-radius: 20px 20px 20px 20px;
+        height: 18rem;
+        width: 24%;
+    }
+    img.resp-1050px-img-size-top {
+        background-position: top;
+        border-radius: 20px 20px 0px 0px;
+        height: 12rem;
+        width: 100%;
+        max-width: 100%;
+
     }
     div.resp-1050px-margin-star {
         margin-top: 10%;
@@ -134,49 +152,43 @@
 
 
 
-    section.resp-1050px-popular-box {   background-color: yellow;
+    section.resp-1050px-popular-box { 
         border-radius: 0px 0px 0px 0px;
-        width: 98%;
-        flex-direction: row  ;
-        flex-wrap: wrap;
-        }
+        height: 30rem;
+        width: 50rem;
+    }
     div.resp-1050px-title-box {  
         height: 15px;
     }
     div.resp-1050px-thumbnail-box { 
-            flex-direction: row;        align-content: space-between;
-            justify-content: space-between;
-            height: 35rem;
-            width: 80%;	
-        margin: auto;	
-
+        flex-direction: row;
+        align-content: space-between; 
+        justify-content: space-between;
+        height: 20rem;
     }
     div.resp-1050px-image-box-2 { 
         border-radius: 20px 20px 20px 20px;
-        height: 10rem;
-        width: 30%;		
+        height: 18rem;
+        width: 25%;
     }
-
-    figure.resp-1050px-figure-size { 
+    figure.resp-1050px-figure-size {  
                 flex-direction: column;  
     }
     img.resp-1050px-img-size-top-2 {  
         background-position: top;
-        border-radius: 20px 0px 0px 20px;
-        height: 9rem;
-        width: 60%;
+        border-radius: 20px 20px 0px 0px;
+        height: 12rem;
+        width: 100%;
         max-width: 100%;
     }
-    ul.resp-1050px-name-margin { 
-        margin-top: 5%;
-    }
+    ul.resp-1050px-name-margin,
     li.resp-1050px-name-margin { 
-        margin-top: 15%;
+        margin-top: 2%;
+        margin-left: 5%;
     }
     div.resp-1050px-star-box-2 {         
-        margin-left: 62%;
-        height: 20px;
-        width: 75px;
+        margin-top: 3%;
+        margin-left: 8%;
     }
 
 
@@ -184,51 +196,53 @@
 
     section.resp-1050px-activities-box { 
         justify-content: space-between;
-        height: auto;
+        height: 47rem;
         width: 100%;
     } 
-    div.resp-1050px-container-activities { 
-            height: 31rem;
-            width: 96%;		
-            padding-left: 4%;
+    div.resp-1050px-container-activities {
+                flex-direction: row; 
+                flex-wrap: wrap;
+        height: 39.5rem;
+        width: 84.5%;		
+        margin: auto
     }
-    div.resp-1050px-duo-box {
+    div.resp-1050px-duo-box { 
+        flex-direction: row;
         height: 15rem;
-        width: 25.2rem;
-            flex-direction: row;
+        width: 34rem;
     }
     div.resp-1050px-image-box-small { 
-        height: 14rem;
-        width: 11.5rem;
+        height: 18rem;
+        width: 15rem;
     }
     figure > img.resp-1050px-image-size-small {
-        height: 11rem;
+        height: 14rem;
         width: 100%;
     }
-    div.resp-1050px-image-box-large { 
-        height: 14rem;
-        width: 11.5rem;
+    div.resp-1050px-image-box-large {  
+        height: 18rem;
+        width: 15rem;
     } 
     figure > img.resp-1050px-image-size-large {
-        height: 11rem;
+        height: 14rem;
         width: 100%;
     } 
     
 
 
 
-    section.resp-1050px-background {  
+    section.resp-1050px-background {   
         height: 100%;
         width: 100%;		
     }
-    div.resp-1050px-footer-box {
+    div.resp-1050px-footer-box {   
         flex-direction: row;
         height: 8.5rem;
-        width: 100%;	
-        margin-left: 0%;																
+        width: 80%;	
+        margin-left: 5%;																
     } 
     ul > li.resp-1050px-margin-title, 
-    ul > li.resp-1050px-margin-text { 
+    ul > li.resp-1050px-margin-text {  
          margin-bottom: 3%;
     }
 

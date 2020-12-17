@@ -1,62 +1,95 @@
 /* resp = responsive */ 
 @media screen and (max-width: 380px)
 { 
-    main {
-        margin:  0%;
-        padding: 0%;
+    header, main, footer {
+        margin: 0%;
     }
+        
     img.resp-380px-img-reservia { 
-        height: 3rem;
+        height: 2.5rem;
         width: 5rem;
         position: absolute;
-        left: 22px;
+        left: 30px;
         top: 1px;
     }
     nav.resp-380px-nav-top {  
-        width: 370px;
-    }
-    .resp-380px-register { 
-        position: absolute;
-        left: 245px;
-        top: 20px;
-        font-size: 5pt;
-    }
-    .resp-380px-hebergement { 
-        border-bottom: rgb(184, 174, 174) 0.1rem solid;
-
         width: 100%;
-
+        margin-left: 0%;
+    }
+    ul.resp-380px-header {
+        height: 100px;
+        width: 100%;
+    }
+    li.resp-380px-hebergement {
+        border-bottom: rgb(184, 174, 174) 0.1rem solid;
+        width: 350px;
         margin-top: 20%;
-        padding-left: 40px;
-        margin-bottom: 10%;
+    
         padding-bottom: 15px;	
     }
-    .resp-380px-activities { 
+    li.resp-380px-activities {  
         border-bottom: rgb(184, 174, 174) 0.1rem solid;
-
-        width: 100%;
-
+        width: 350px;
         margin-top: 20%;
-        padding-right: 40px;
-        margin-bottom: 10%;
+    
         padding-bottom: 15px;
     }
-    .barr:hover {
+    a.barr:hover {
         display:none;
     }
-    .resp-380px-hebergement:hover,
-    .resp-380px-activities:hover { 
+    li.resp-380px-register { 
+        position: absolute;
+        left: 230px;
+        top: 12px;
+    }
+    a.resp-380px-blue-text {
+        height: 2rem;
+        color: #0065FC;
+        font-size: 12pt;
+        margin-left: 25px;
+        padding-top: 16px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    a.resp-380px-blue-text-2 {
+        height: 2rem;
+        color: #0065FC;
+        font-size: 12pt;
+        padding-top: 16px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    a.resp-380px-black-text { 
+        color: black;
+        font-size: 12pt;
+        margin-left: 25px;
+        padding-top: 16px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    a.resp-380px-barr:hover {
+        border-bottom: #0065FC 0.2rem solid;
+        width: 150px;
+    }    
+    li.resp-380px-hebergement:hover,
+    li.resp-380px-activities:hover { 
         border-bottom: #0065FC 0.2rem solid;
     }
-    .resp-380px-barr:hover {
+    a.resp-380px-barr:hover {
         border-bottom: #0065FC 0.2rem solid;
         width: 150px;
     }
 
 
 
+    div > h3.resp-380px-title-top {
+        font-size: 15pt;
+    }
+    p.resp-380px-typo-grey {
+        font-size: 15pt;
+    }
 
-    p.title-filter {
+    p.resp-380px-title-filter {
         height: 15px;
     }
     div.resp-380px-main-top { 
@@ -69,15 +102,17 @@
     br.resp-380px-jump-line {
         display: initial;
     }	
-    div.resp-380px-filter { background-color: yellow;
+    div.resp-380px-filter {  
+        flex-direction: column;
+        align-items: flex-start;
         height: auto;
-        width: 85%;																	
+        width: 100%;																	
     }
-    ul.resp-380px-filter-list {  background-color: red;
-            flex-direction: row;
-            flex-wrap: wrap;
-        height: 9rem;
-        width: 200px;
+    ul.resp-380px-filter-list { 
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 6.5rem;
+        width: 250px;
     }
     span.resp-380px-desktop-text {
         display: none;
@@ -109,98 +144,109 @@
         font-size: 12pt;
         margin-left: 5%;
     }
-
-
-
-
-    main > div.resp-380px-main-middle {         padding: 0%;
-
-        flex-direction: column-reverse;
-        height: 125rem;
-        width: 100%;
+    p.resp-380px-typo-grey {
+        font-size: 12pt;
     }
-    main > div > section.resp-380px-accommodation-box { 
-        height: 89rem;
+
+
+    main > div.resp-380px-main-middle {         
+        flex-direction: column-reverse;
+        height: 130rem;
+        width: 100%;
+        margin-top: 10%;
+        padding: 0%; 
+    }
+    main > div > section.resp-380px-accommodation-box {  
+        height: 95rem;
         width: 100%;																	
         background-color: white;
+        margin: 0%;
     }
     div.resp-380px-image-box {
         height: 13rem;
-        width: 100%;																	
+        width: 95%;																	
         max-width: 100%;																	
     }
-    figure  >img.resp-380px-img-size-top {
+    figure > img.resp-380px-img-size-top {
         height: 7rem;
         width: 100%;																
     }
-    div.resp-380px-margin-star {
+
+    div.resp-380px-star-box {
         margin-top: 3%;
+        margin-left: 1.6rem ;
+
     }
 
 
 
 
-    section.resp-380px-popular-box {  
-            flex-direction: column;
+    section.resp-380px-popular-box { 
         border-radius: 0px 0px 0px 0px;
-        height: auto;
+        height: 35rem;
         width: 100%;		
-        margin-top: 5%;
+        margin-top: 20%;
     }
     div.resp-380px-title-box { 
-
         height: 15px;
     }
     div.resp-380px-thumbnail-box { 
-            flex-direction: column;
+        flex-direction: column;
         height: 31rem;
         width: 100%;		
     }
     figure.resp-380px-figure-size { 
-            flex-direction: row;  
+        flex-direction: row;  
         height: auto;
     }
     div.resp-380px-image-box-2 { 
         border-radius: 20px 20px 20px 20px;
         height: 9rem;
-        width: 90%;		
+        width: 95%;	
         padding: 1%;
     }
     img.resp-380px-img-size-top-2 {  
         background-position: left;
         border-radius: 20px 0px 0px 20px;
         height: 9rem;
-        width: 40%;
+        width: 36%;
         max-width: 100%;
     }
-    ul.resp-380px-name-margin, li.resp-380px-name-margin { 
+    div.resp-380px-star-box-2 {
+        margin-top: -10%;
+        margin-left: 8rem ;
+    }
+    ul.resp-380px-name-margin, 
+    li.resp-380px-name-margin { 
+        width: 12rem;
         margin-top: 5%;
+        margin-bottom: 5%;
     }
 
 
 
 
     section.resp-380px-activities-box {         
-
         height: 70rem;
         width: 100%;
     } 
-    div.resp-380px-container-activities {           padding: 0%;
-
+    div.resp-380px-container-activities {           
         height: 69rem;
         width: 100%;	
+        padding: 0%;
     }
     h3.resp-380px-title-box-activities {  
         margin-bottom: 10%;
     }
     div.resp-380px-duo-box {
+        flex-direction: column;
         height: 21.3rem;
         width: 100%;
     }
     div.resp-380px-image-box-large,
     div.resp-380px-image-box-small {  
         height: 10rem;
-        width: 100%;
+        width: 95%;
     }
     figure > img.resp-380px-image-size-large,
     figure > img.resp-380px-image-size-small { 
@@ -210,17 +256,14 @@
 
 
 
-
-    section.resp-380px-background {            
+    section.resp-380px-background {           
         flex-direction: column;
-        height: 100%;
         width: 100%;		
-        margin-top: 3rem;
         padding-top: 50px;
     }
-    section > div.resp-380px-footer-box { 
-            flex-direction: column;
-        height: 26rem;
+    section > div.resp-380px-footer-box {
+        flex-direction: column;
+        height: 25rem;
         width: 100%;		
     } 
     div > ul.resp-380px-ul-box {
@@ -230,58 +273,4 @@
     ul > li.resp-380px-margin-text {
         margin-bottom: 4%;
     }
-
-
-
-    
-    .resp-380px-row { 
-        flex-direction: row;
-    }
-    .resp-380px-wrap { 
-        flex-wrap: wrap;						
-    }
-    .resp-380px-row-reverse { 
-        flex-direction: row-reverse;
-    }
-    .resp-380px-column { 
-        flex-direction: column;
-    }
-    .resp-380px-column-reverse { 
-        flex-direction: column-reverse;
-    }
-    .resp-380px-between {
-        align-content: space-between;
-        justify-content: space-between;
-    }
-    .resp-380px-around {
-        align-content: space-around;
-        justify-content: space-around;
-    }
-    .resp-380px-align-center {
-        align-items: center;
-    }	
-    /*RESPONSIVE MARGIN - PADDING*/ 
-    .resp-380px-margin-right-left { 
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .resp-380px-margin-top-bottom {
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-    .resp-380px-margin-top {
-        margin-top: 2%;
-    }
-    .resp-380px-margin-right {
-        margin-right: 2%;
-    }
-    .resp-380px-margin-bottom {
-        margin-bottom: 2%;
-    } 
-    .resp-380px-margin-left {
-        margin-left: 2%;
-    }
-
-
-
 }

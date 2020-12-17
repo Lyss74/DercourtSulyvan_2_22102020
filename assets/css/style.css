@@ -1,7 +1,10 @@
 
-/* BODY CONFIGURATION  object-fit: cover;*/
+/* BODY CONFIGURATION */
 body {
     height: auto;
+}
+header, main, footer {
+    margin: 1.5%;
 }
 /* HEADER NAVIGATION CONFIGURATION */
 img.img-reservia { 
@@ -23,7 +26,7 @@ a.blue-text {
     padding-right: 25px;
     padding-left: 25px;
 }
-a.white-text {
+a.black-text {
     color: black;
     font-size: 1rem;
     padding-top: 16px;
@@ -37,7 +40,7 @@ a.white-text {
     padding-bottom: 100px;
 }
 /* MAIN-TOP FILTER CONFIGURATION */
-.input-size { 
+.input-size {
     width: 240px;
 }
 input::placeholder {
@@ -47,8 +50,8 @@ input::placeholder {
     padding-left: 15px;
 }
 /*	MAIN PART · html > head > body > header > main.top { box }	*/
-main > div.main-top {
-    width: 95%;
+main > div.main-top { 
+    width: 100%;
 }
 h3.title-top {
     color: black;
@@ -60,17 +63,17 @@ br.resp-380px-jump-line {
     display: none;
 }	
 /*	MAIN PART · html > head > body > header > main.top.search	*/
-div.container-maker { 
-    background-color: rgb(184, 174, 174);
-    border-radius: 10px 0px 0px 10px;	
-    width: 2.5rem;	
-}
 img.map-maker {
     height: 20px;
     width: 20px;
     margin-top: 10px;
     margin-left: 14px;
     max-width: 100%;
+}
+div.container-maker { 
+    background-color: rgb(184, 174, 174);
+    border-radius: 10px 0px 0px 10px;	
+    width: 2.5rem;	
 }
 div.search {
     height: 2.5rem;
@@ -89,17 +92,17 @@ button.button-text {
 }
 /*	MAIN PART · html > head > body > header > main.top.filter	*/
 div.filter  { 
-    width: 42rem;
+    width: 700px;
     height: auto;
     margin-bottom: 3%;
     padding: 10px 5px;
 }
 p.title-filter {
-    margin-top: 0.9%;
+    margin-top: 1%;
     margin-right: 10px;
 }
 ul.filter-list { 
-    width: 100%;
+    width: 38rem;
 }
 ul.filter-list > li.filter-item {
     width: max-content;
@@ -139,7 +142,7 @@ ul.filter-list > li.filter-item > label.filter-name > span.name {
     line-height: 34px;
 }
 /*	MAIN PART · html > head > body > header > main.top.info	*/
-img.icon-info {
+div > ul > li > div > img.icon-info {
     height: 15px;
     width: 15px;
     margin: 3.5px 0px 0px 9px;
@@ -160,18 +163,9 @@ ul.part-information {
 }
 li.typo-grey, p.typo-grey {
     font-size: 12pt;
-    margin-left: 0.3%;
-}
-/*	MAIN PART · html > head > body > header > main.middle.accomodation	*/
-main > div > section.accommodation-box { 
-    background-color: rgb(242, 242, 242);
-height: 35rem auto;
-width: 50rem auto;
-border-radius: 20px 20px 20px 20px;
-}
-/*	MAIN-MIDDLE · html > head > body > header > main.middle.accomodation	*/
+}/*	MAIN-MIDDLE · html > head > body > header > main.middle.accomodation	*/
 div.main-middle { 
-    width: 96.5%;																	
+    width: 100%;																	
 }
 main > div > section.accommodation-box { 
         display: flex;
@@ -227,7 +221,7 @@ div.title-box {
     margin-top: 10%;
     margin-bottom: 4%;
 }
-section.popular-box {
+section.popular-box { 
     width: 20rem;
     height: 40rem;
     padding: 1%;
@@ -235,7 +229,7 @@ section.popular-box {
     background-color: rgb(242, 242, 242);
 }
 /*MAIN-MIDDLE · html > head > body > header > main.middle.popular.image-box*/
-div.thumbnail-box { 
+div.thumbnail-box {
     height: 90%;
 }
 div.image-box-2 {
@@ -273,6 +267,9 @@ div.img.star-size {
     max-width: 100%;
     margin: auto 0;
 }
+
+
+
 /*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box*/
 div.activities-box {
     margin: 2% 0% 0% 0%;
@@ -437,8 +434,9 @@ ul {
 .PRODI {background-color: blue;}
 .PRODII {background-color: tomato;}
 .PRODIII {background-color: yellow;}
-div.main-top {display: none;} 
+/*div.main-top {display: none;} 
 main > div > section.accommodation-box {display: none;}
-/*main > div > section.popular-box {display: none;}*/
+main > div > section.popular-box {display: none;}
 main > section.activities-box {display: none;}
-footer > section.footer-box {display: none;}
+footer > section.footer-box {display: none;}*/
+

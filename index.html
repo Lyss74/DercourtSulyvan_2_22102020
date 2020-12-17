@@ -4,7 +4,7 @@
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/style-1050px.css">
-		<link rel="stylesheet" type="text/css" href="./assets/css/style-1300px.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style-1370px.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/style-670px.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/style-380px.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
@@ -18,11 +18,10 @@
 	<body>
 		<header>
 		<!--		HEADER PART · html > head > body > header			-->
-			<nav class="nav-top flex row between margin-right margin-left margin-bottom 
+			<nav class="nav-top flex row between margin-bottom 
 						resp-1050px-nav-top
-						resp-380px-nav-top resp-380px-row
-						resp-670px-nav-top resp-670px-row
-						resp-670px-margin-right-left">
+						resp-380px-nav-top  
+						resp-670px-nav-top">
 			<!--				HEADER PART · header.nav				-->
 				<div>
 					<img class="img-reservia 
@@ -33,29 +32,37 @@
 						 alt=""/>
 				</div>
 				<ul class="header row between align-center 
-						   resp-1050px-header">
-					<li class="resp-380px-hebergement">
+						   resp-1050px-header
+						   resp-670px-header
+						   resp-380px-header">
+					<li class="resp-670px-hebergement 
+							   resp-380px-hebergement">
 						<a href="#Hébergements" 
 						class="blue-text barr
 							   resp-1050px-blue-text
-							   resp-380px-barr">
+							   resp-670px-blue-text
+							   resp-380px-blue-text resp-380px-barr">
 							Hébergements
 						</a>
 					</li>
-					<li class="resp-380px-activities">
+					<li class="resp-670px-activities
+							   resp-380px-activities">
 						<a href="#Activités" 
 						class="white-text barr
-							   resp-1050px-white-text
-							   resp-380px-barr">
+							   resp-1050px-black-text
+							   resp-670px-black-text
+							   resp-380px-black-text resp-380px-barr">
 							Activités
 						</a>
 					</li>
 					<li class="bold-text 
+							   resp-670px-register
 							   resp-380px-register">
 						<a href="" 
 						class="blue-text barr
 							   resp-1050px-blue-text
-							   resp-380px-barr">
+							   resp-670px-blue-text
+							   resp-380px-blue-text-2 resp-380px-barr">
 							S'inscrire
 						</a>
 					</li>
@@ -69,30 +76,31 @@
 
 		<main>
 		<!--			MAIN TOP · html > head > body > header > main top	resp-670px-colummn r	-->
-			<div class="main-top flex column border margin-right margin-left 
+			<div class="main-top flex column border
 						resp-1050px-main-top
-						resp-380px-main-top resp-380px-between 
-							resp-670px-margin-right-left">
+						resp-380px-main-top  
+						resp-670px-margin-right-left">
 			<!--		MAIN TOP · html > head > body > header > main.top.title	resp-670px-title-top resp-670px-text-size	-->
 				<div class="flex column
 							resp-380px-margin-bottom">
 					<h3 class="title-top
-						   	   resp-1050px-title-top
+							   resp-1050px-title-top
+							   resp-670px-title-top
 							   resp-380px-title-top"> 
-							Trouvez votre hébergement<br class="resp-380px-jump-line"/>
-							pour des vacances de rêve
+						Trouvez votre hébergement<br class="resp-380px-jump-line"/>
+						pour des vacances de rêve
 					</h3>
 					<p class="typo-grey margin-bottom
 							  resp-1050px-typo-grey
 							  resp-670px-margin-top-bottom
-							  resp-380px-typo-grey resp-380px-margin-top
-							  "> 
+							  resp-380px-typo-grey resp-380px-margin-top"> 
 							En plein centre ville ou en pleine nature
 					</p>	
 				</div>
 
 				<!--		MAIN TOP · html > head > body > header > main.top.search	resp-670px-button-search	-->
-				<div class="search flex row margin-bottom resp-1050px-search
+				<div class="search flex row margin-bottom 
+							resp-1050px-search
 							resp-380px-search">
 					<div class="container-maker
 								resp-1050px-container-maker">
@@ -110,8 +118,7 @@
 									 resp-380px-desktop-text"> 
 								Rechercher
 						</span> 
-						<span class="resp-380px-search-icon
-									 resp-670px-margin-left">
+						<span class="resp-380px-search-icon">
 							<img src="assets/images/icon/search-glass.svg" class="resp-380px-search-glass" 
 									alt=""/>
 						</span>
@@ -119,20 +126,21 @@
 				</div>
 
 				<div class="filter flex row 
+							resp-1050px-filter 
+							resp-670px-filter
 							resp-380px-filter ">
 				<!--		MAIN TOP · html > head > body > header > main.top.filter		-->
 					<p class="title-filter bold-text align-center 
+							  resp-1050px-title-filter
 							  resp-380px-title-filter resp-380px-margin-bottom">
 						Filtres
 					</p>	
 
-					<ul class="filter-list align-center flex row between 
+					<ul class="filter-list flex row between align-center 
 							   resp-1050px-filter-list
-							   resp-380px-filter-list resp-380px-row resp-380px-wrap resp-380px-margin-bottom
-							   resp-670px-filter-list resp-670px-row resp-670px-wrap
-							   ">
-						<li class="filter-item
-								  ">
+							   resp-380px-filter-list resp-380px-margin-bottom
+							   resp-670px-filter-list">
+						<li class="filter-item">
 							<input type="checkbox" id="economy"/>
 							<label for="economy" class="filter-name
 														resp-380px-filter-name">
@@ -191,7 +199,7 @@
 					</ul>
 				</div>
 				<!--		MAIN TOP · html > head > body > header > main.top > results + info	-->
-				<div class="container-info
+				<div class="container-info 
 							resp-670px-container-info 
 							resp-380px-container-info"> 
 					<ul class="part-information flex row align-center   
@@ -207,7 +215,8 @@
 						</li>
 						<li class="typo-grey 
 								   resp-1050px-typo-grey 
-								   resp-380px-typo-grey resp-670px-typo-grey">
+								   resp-670px-typo-grey
+								   resp-380px-typo-grey">
 							Plus de 500 logements sont disponibles<br class="resp-380px-jump-line"/>
 							dans cette ville
 						</li> 
@@ -215,40 +224,45 @@
 				</div>				
 			</div>
 
-			<div class="main-middle flex row between margin-right margin-left margin-bottom 
+			<div class="main-middle flex row between margin-bottom 
 						resp-1050px-main-middle
-						resp-670px-main-middle resp-380px-main-middle">
+						resp-670px-main-middle 
+						resp-380px-main-middle">
 			<!--		MAIN-MIDDLE · html > head > body > header > main middle > name="Hébergements à Marseille"		-->
 				<section class="accommodation-box  
+								resp-1370px-accommodation-box 
 								resp-1050px-accommodation-box 
-								resp-670px-accommodation-box resp-380px-accommodation-box" 
+								resp-670px-accommodation-box 
+								resp-380px-accommodation-box" 
 								id="Hébergements">
-					<h3 class="title-size-1 
-							   resp-670px-margin-left">
+					<h3 class="title-size-1">
 							Hébergements à Marseille
 					</h3>
 					<div class="flex column image-box shadow-box 
+								resp-1370px-image-box 
+								resp-1050px-image-box
 								resp-670px-image-box 
 								resp-380px-image-box">
 					<!--		MAIN PART · html > head > body > header > main.top.div.accommodation-box-img-1		-->
 						<a href="">
 							<figure class="flex column">
 								<img class="img-size-top margin-bottom
-											resp-670px-img-size-top 
-											resp-380px-img-size-top 
-														" 
+											resp-1370px-img-size-top
+											resp-1050px-img-size-top 
+											resp-670px-img-size-top
+											resp-380px-img-size-top" 
 									src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
 									alt=" "/>
 								<figcaption>
-									<ul>
+									<ul class="resp-1050px-name-margin">
 										<li class="place-name bold-text margin-bottom
-													resp-670px-place-name
-													resp-380px-place-name">
+												   resp-670px-place-name
+												   resp-380px-place-name">
 											Auberge de la Cannebiére
 										</li>
 										<li class="place-name grey-size grey-text margin-bottom
-													resp-670px-place-name
-													resp-670px-place-name">
+												   resp-670px-place-name
+												   resp-670px-place-name">
 											Nuit à partir de
 											<span class="bold-text">
 													25€
@@ -259,9 +273,10 @@
 							</figure>
 						</a>
 						<div class="star flex row
+									resp-1370px-star-box
+									resp-1050px-star-box-2
 									resp-670px-star-box
-									resp-380px-star-box
-									">
+									resp-380px-star-box">
 							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
 							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
@@ -276,19 +291,22 @@
 					</div>
 
 					<div class="image-box shadow-box 
+								resp-1370px-image-box 
+								resp-1050px-image-box
 								resp-670px-image-box 
 								resp-380px-image-box">
 					<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-2		-->
 						<a href="">
 							<figure>
 								<img class="img-size-top margin-bottom
+											resp-1370px-img-size-top
+											resp-1050px-img-size-top 
 											resp-670px-img-size-top 
-											resp-380px-img-size-top 
-											" 
+											resp-380px-img-size-top " 
 										 src="assets/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
 										 alt=" "/>
 								<figcaption>
-									<ul>
+									<ul class="resp-1050px-name-margin">
 										<li class="place-name bold-text margin-bottom
 													resp-670px-place-name
 													resp-380pxplace-name">
@@ -304,10 +322,9 @@
 							</figure>
 						</a>
 						<div class="star flex row
+									resp-1050px-star-box-2
 									resp-670px-star-box  resp-670px-margin-star
-									
-									resp-380px-star-box resp-380px-margin-star
-									">
+									resp-380px-star-box resp-380px-margin-star">
 							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
 										alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
 							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
@@ -322,19 +339,22 @@
 					</div>
 
 					<div class="image-box shadow-box
+								resp-1370px-image-box 
+								resp-1050px-image-box
 								resp-670px-image-box 
 								resp-380px-image-box">
 					<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-3		-->
 						<a href="">
 							<figure>
 								<img class="img-size-top margin-bottom
+											resp-1370px-img-size-top
+											resp-1050px-img-size-top 
 											resp-670px-img-size-top 
-											resp-380px-img-size-top 
-											" 
+											resp-380px-img-size-top" 
 									src="assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
 									alt=" "/>
 								<figcaption>
-									<ul>
+									<ul class="resp-1050px-name-margin">
 										<li class="place-name bold-text margin-bottom
 												   resp-670px-place-name
 												   resp-380px-place-name">
@@ -350,10 +370,9 @@
 							</figure>
 						</a>
 						<div class="star flex row
+									resp-1050px-star-box-2
 									resp-670px-star-box  resp-670px-margin-star
-									
-									resp-380px-star-box resp-380px-margin-star
-									">
+									resp-380px-star-box resp-380px-margin-star">
 							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
 							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
@@ -368,18 +387,22 @@
 					</div>
 
 					<div class="image-box shadow-box
+								resp-1370px-image-box 
+								resp-1050px-image-box
 								resp-380px-image-box 
 								resp-670px-image-box">
 					<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-4		-->
 						<a href="">
 							<figure>
 								<img class="img-size-top margin-bottom
-											resp-670-img-size-top 
+											resp-1370px-img-size-top
+											resp-1050px-img-size-top 
+											resp-670px-img-size-top 
 											resp-380px-img-size-top"
 									src="assets/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
 									alt=""/>
 								<figcaption>
-									<ul>
+									<ul class="resp-1050px-name-margin">
 										<li class="place-name bold-text margin-bottom
 												   resp-670px-place-name
 												   resp-380px-place-name">
@@ -395,10 +418,9 @@
 							</figure>
 						</a>
 						<div class="star flex row
-									resp-670px-star-box  resp-670px-margin-star
-									
-									resp-380px-star-box resp-380px-margin-star
-									">
+									resp-1050px-star-box-2
+									resp-670px-star-box resp-670px-margin-star
+									resp-380px-star-box resp-380px-margin-star">
 							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
 							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
@@ -413,18 +435,22 @@
 					</div>
 
 					<div class="image-box shadow-box
+								resp-1370px-image-box 
+								resp-1050px-image-box
 								resp-670px-image-box 
 								resp-380px-image-box">
 					<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-5		-->
 						<a href="">
 							<figure>
 								<img class="img-size-top margin-bottom
-											resp-670-img-size-top 
+											resp-1370px-img-size-top
+											resp-1050px-img-size-top 
+											resp-670px-img-size-top 
 											resp-380px-img-size-top"
 									src="assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
 									alt=" "/>
 								<figcaption>
-									<ul>
+									<ul class="resp-1050px-name-margin">
 										<li class="place-name bold-text margin-bottom
 												   resp-670px-place-name
 												   resp-380px-place-name">
@@ -440,10 +466,9 @@
 							</figure>
 						</a>
 						<div class="star flex row
+									resp-1050px-star-box-2
 									resp-670px-star-box  resp-670px-margin-star
-									
-									resp-380px-star-box resp-380px-margin-star
-									">
+									resp-380px-star-box resp-380px-margin-star">
 							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
 							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
@@ -458,18 +483,22 @@
 					</div>
 
 					<div class="image-box shadow-box
+								resp-1370px-image-box 
+								resp-1050px-image-box
 								resp-670px-image-box 
 								resp-380px-image-box">
 					<!--		MAIN PART · html > head > body > header > main.middle.div.accommodation-box-img-6		-->
 						<a href="">
 							<figure>
 								<img class="img-size-top margin-bottom
-											resp-670-img-size-top 
+											resp-1370px-img-size-top
+											resp-1050px-img-size-top 
+											resp-670px-img-size-top 
 											resp-380px-img-size-top"
 									src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
 									alt=" "/>
 								<figcaption>
-									<ul>
+									<ul class="resp-1050px-name-margin">
 										<li class="place-name bold-text margin-bottom
 												   resp-670px-place-name
 												   resp-380px-place-name">
@@ -485,10 +514,9 @@
 							</figure>
 						</a>
 						<div class="star flex row
+									resp-1050px-star-box-2
 									resp-670px-star-box  resp-670px-margin-star
-									
-									resp-380px-star-box resp-380px-margin-star
-									">
+									resp-380px-star-box resp-380px-margin-star">
 							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
 							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
@@ -507,11 +535,11 @@
 					</p>
 				</section>
 
-				<section class="popular-box 
-							    resp-1050px-popular-box 
+				<section class="popular-box column between
+								resp-1370px-popular-box 
+								resp-1050px-popular-box 
 								resp-670px-popular-box 
-								resp-380px-popular-box 
-								">
+								resp-380px-popular-box">
 				<!--		MAIN PART · html > head > body > header > main.middle.div.popular-box		-->
 
 					<div class="title-box flex row between 
@@ -521,55 +549,60 @@
 								   resp-670px-title-popular">
 							Les plus populaires
 						</h3>
-						<img class="icon " 
+						<img class="icon" 
 							src="assets/images/icon/chart-line-solid.svg"> 
 					</div>
 					<div class="thumbnail-box flex column around
+								resp-1370px-thumbnail-box
 								resp-1050px-thumbnail-box
 								resp-670px-thumbnail-box
-								resp-380px-thumbnail-box 
-								">
-						<div class="image-box-2 flex column  shadow-box 
+								resp-380px-thumbnail-box">
+						<div class="image-box-2 flex column shadow-box 
+									resp-1370px-image-box-2 
 									resp-1050px-image-box-2 
 									resp-670px-image-box-2 
-									resp-380px-image-box-2 
-									"> 
+									resp-380px-image-box-2"> 
 						<!--		MAIN PART · html > head > body > header > main.middle.popular-img-1		-->
 							<figure class="figure-size flex row 
+										   resp-1370px-figure-size
+										   resp-1050px-figure-size
 										   resp-670px-figure-size
-										   resp-380px-figure-size
-										   ">
+										   resp-380px-figure-size">
 									<img class="img-size-top-2
+												resp-1370px-img-size-top-2		
+												resp-1050px-img-size-top-2		
 												resp-670px-img-size-top-2
-												
 												resp-380px-img-size-top-2" 
 										src="assets/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
 										alt=" "/>
 								<figcaption>
 									<ul class="name-margin
+											   resp-1050px-name-margin
 											   resp-670px-name-margin
-											   resp-380px-name-margin
-												">
-										<li class="place-name bold-text">
-												Hôtel Le soleil du
+											   resp-380px-name-margin">
+										<li class="place-name bold-text
+												   resp-380px-place-name">
+											Hôtel Le soleil du
 										</li> 
-										<li class="place-name bold-text">
-												matin
+										<li class="place-name bold-text
+												   resp-380px-place-name">
+											matin
 										</li> 
 										<li class="place-name name-margin grey-size grey-text
-												   resp-380px-name-margin
-												   resp-670px-name-margin">
-												Nuit à partir de 128<span class="bold-text">€</span>
+												   resp-1370px-name-margin
+												   resp-1050px-name-margin
+												   resp-670px-name-margin
+												   resp-380px-name-margin">
+											Nuit à partir de 128<span class="bold-text">€</span>
 										</li>
 									</ul>			
 								</figcaption>
 							</figure>
 							<div class="star-box flex row margin-bottom 
-
+										resp-1370px-star-box
+										resp-1050px-star-box-2
 										resp-670px-star-box-2
-
-										resp-380px-star-box-2
-										">
+										resp-380px-star-box-2">
 								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
 								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
@@ -584,24 +617,27 @@
 						</div>
 
 						<div class="flex column image-box-2 shadow-box 
+									resp-1370px-image-box-2 
+									resp-1050px-image-box-2 
 									resp-670px-image-box-2 
-									resp-380px-image-box-2 
-									"> 
+									resp-380px-image-box-2"> 
 						<!--		MAIN PART · html > head > body > header > main.middle.popular-img-1		-->
 							<figure class="figure-size flex row 
-											resp-670px-figure-size
-											resp-380px-figure-size
-											">
+										   resp-1370px-figure-size
+										   resp-1050px-figure-size
+										   resp-670px-figure-size
+										   resp-380px-figure-size">
 								<img class="img-size-top-2
-										    resp-670px-img-size-top-2
-										   
+											resp-1370px-img-size-top-2		
+											resp-1050px-img-size-top-2		
+											resp-670px-img-size-top-2
 										   resp-380px-img-size-top-2" 
 								     src="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg">
 								<figcaption>
 									<ul class="name-margin
+											  resp-1050px-name-margin
 										      resp-670px-name-margin
-											  resp-380px-name-margin
-												  ">
+											  resp-380px-name-margin">
 										<li class="place-name bold-text
 												   resp-380px-place-name">
 											Au coeur de l'eau
@@ -611,6 +647,8 @@
 											Chambres d'hôtes
 										</li>
 										<li class="place-name name-margin grey-size grey-text
+												   resp-1370px-name-margin
+												   resp-1050px-name-margin
 												   resp-380px-place-name
 												   resp-670px-name-margin">
 											Nuit à partir de 71<span class="bold-text">€</span>
@@ -619,11 +657,10 @@
 								</figcaption>
 							</figure>
 							<div class="star-box flex row margin-bottom
-
+										resp-1370px-star-box
+										resp-1050px-star-box-2
 										resp-670px-star-box-2
-
-										resp-380px-star-box-2
-										">
+										resp-380px-star-box-2">
 								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
 								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
@@ -638,21 +675,25 @@
 						</div>
 
 						<div class="flex column image-box-2 shadow-box
+									resp-1370px-image-box-2 
+									resp-1050px-image-box-2 
 									resp-670px-image-box-2 
-									resp-380px-image-box-2
-									"> 
+									resp-380px-image-box-2"> 
 						<!--		MAIN PART · html > head > body > header > main.middle.popular-img-1		-->
 							<figure class="figure-size flex row 
+											resp-1370px-figure-size
+											resp-1050px-figure-size
 											resp-670px-figure-size
-											resp-380px-figure-size
-											">
+											resp-380px-figure-size">
 									<img class="img-size-top-2
-										    resp-670px-img-size-top-2
-										   
+											resp-1370px-img-size-top-2		
+											resp-1050px-img-size-top-2		
+											resp-670px-img-size-top-2
 										    resp-380px-img-size-top-2" 
 								   	src="assets/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
 								<figcaption>
 									<ul class="name-margin
+											   resp-1050px-name-margin
 											   resp-380px-name-margin
 											   resp-670px-name-margin">
 										<li class="place-name bold-text
@@ -664,21 +705,19 @@
 												Blanc
 										</li>
 										<li class="place-name name-margin grey-size grey-text
+												   resp-1050px-name-margin
 												   resp-670px-name-margin
-												   resp-380px-name-margin
-												   
-												   ">
+												   resp-380px-name-margin">
 											Nuit à partir de 68<span class="bold-text">€</span>
 										</li>
 									</ul>		
 								</figcaption>
 							</figure>
 							<div class="star-box flex row margin-bottom
-
+										resp-1370px-star-box
+										resp-1050px-star-box-2
 										resp-670px-star-box-2
-
-										resp-380px-star-box-2
-										">
+										resp-380px-star-box-2">
 								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
 								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
@@ -693,31 +732,40 @@
 						</div>
 					</div>
 				</section>
-
 			</div>
 
-			<section class="activities-box flex column margin-right margin-left margin-bottom 
-							resp-380px-activities-box resp-380px-margin-top-bottom
-							resp-670px-activities-box resp-670px-margin-top-bottom" id="Activités">
+			<section class="activities-box flex column margin-bottom 
+							resp-1370px-activities-box 
+							resp-1050px-activities-box 
+							resp-670px-activities-box resp-670px-margin-top-bottom
+							resp-380px-activities-box resp-380px-margin-top-bottom"
+					id="Activités">
 				<!--		MAIN PART · html > head > body > header > main.bottom.div.activities-box		-->
 				<h3 class="title-box-activities margin-bottom 
-						   resp-380px-margin-left resp-380px-title-box-activities 
-						   resp-670px-title-box-activities">
+						   resp-1050px-title-box-activities 
+						   resp-670px-title-box-activities
+						   resp-380px-title-box-activities">
 					Activités à Marseille
 				</h3>		
 					
 				<div class="container-activities flex row between 
-							resp-380px-column resp-380px-between resp-380px-container-activities
-							resp-670px-container-activities resp-670px-row resp-670px-wrap">
+							resp-1370px-container-activities
+							resp-1050px-container-activities
+							resp-670px-container-activities 
+							resp-380px-container-activities">
 					<div class="image-box-large shadow-box-2 
-								resp-380px-image-box-large
-								resp-670px-image-box-large">
+								resp-1370px-image-box-large
+								resp-1050px-image-box-large
+								resp-670px-image-box-large
+								resp-380px-image-box-large">
 					<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-1		-->
 						<a href="">
 							<figure>
 								<img class="vieux-port-img image-size-large 
-											resp-380px-image-size-large
-											resp-670px-image-size-large" 
+											resp-1370px-image-size-large
+											resp-1050px-image-size-large
+											resp-670px-image-size-large
+											resp-380px-image-size-large" 
 									src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
 									alt="Reservia : Vieux port de Marseille" />
 								<figcaption>
@@ -730,17 +778,23 @@
 					</div>
 
 					<div class="duo-box flex column between 
-								resp-380px-duo-box resp-380px-flex resp-380px-between
-								resp-670px-duo-box resp-670px-row resp-670px-wrap">
+								resp-1370px-duo-box 
+								resp-1050px-duo-box 
+								resp-670px-duo-box  
+								resp-380px-duo-box">
 						<div class="fort-pomegues-box image-box-small shadow-box-2
-									resp-380px-image-box-small
-									resp-670px-image-box-small">
+									resp-1370px-image-box-small
+									resp-1050px-image-box-small
+									resp-670px-image-box-small
+									resp-380px-image-box-small">
 						<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-2 + 3		-->
 							<a href="">
 								<figure>
 									<img class="fort-pomegues-img image-size-small
-												resp-380px-image-size-small
-												resp-670px-image-size-small" 
+												resp-1370px-image-size-small
+												resp-1050px-image-size-small
+												resp-670px-image-size-small
+												resp-380px-image-size-small" 
 										src="assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
 										alt="Reservia : Fort de Pomégues"/>
 									<figcaption>
@@ -753,13 +807,17 @@
 						</div>
 
 						<div class="frioul-box image-box-small shadow-box-2
-									resp-380px-image-box-small
-									resp-670px-image-box-small">
+									resp-1370px-image-box-small
+									resp-1050px-image-box-small
+									resp-670px-image-box-small
+									resp-380px-image-box-small">
 							<a href=""> 
 								<figure>
 									<img class="frioul-img image-size-small
-												resp-380px-image-size-small
-												resp-670px-image-size-small" 
+												resp-1370px-image-size-small
+												resp-1050px-image-size-small
+												resp-670px-image-size-small
+												resp-380px-image-size-small" 
 										src="assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
 										alt="Reservia : Îles du Frioul"/>
 									<figcaption>
@@ -773,14 +831,18 @@
 					</div>
 
 					<div class="image-box-large shadow-box-2
-								resp-380px-image-box-large
-								resp-670px-image-box-large">
+								resp-1370px-image-box-large
+								resp-1050px-image-box-large
+								resp-670px-image-box-large
+								resp-380px-image-box-large">
 					<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-4		-->
 						<a href="">
 							<figure>
 								<img class="calanques-img image-size-large
-											resp-380px-image-size-large
-											resp-670px-image-size-large" 
+											resp-1370px-image-size-large
+											resp-1050px-image-size-large
+											resp-670px-image-size-large
+											resp-380px-image-size-large" 
 									src="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
 									alt="Reservia : Parc National des Calanques"/>
 								<figcaption>						
@@ -793,17 +855,23 @@
 					</div> 
 
 					<div class="duo-box flex column between 
-								resp-380px-duo-box resp-380px-flex resp-380px-between
-								resp-670px-duo-box resp-670px-row resp-670px-wrap">
+								resp-1370px-duo-box
+								resp-1050px-duo-box
+								resp-670px-duo-box
+								resp-380px-duo-box">
 					<!--		MAIN PART · html > head > body > header > main.bottom.activities-box-5 + 6		-->
 						<div class="notre-dame-box image-box-small shadow-box-2
-									resp-380px-image-box-small
-									resp-670px-image-box-small">
+									resp-1370px-image-box-small
+									resp-1050px-image-box-small
+									resp-670px-image-box-small
+									resp-380px-image-box-small">
 							<a href="">
 								<figure>
 									<img class="notre-dame-img image-size-small
-												resp-380px-image-size-small
-												resp-670px-image-size-small" 
+												resp-1370px-image-size-small
+												resp-1050px-image-size-small
+												resp-670px-image-size-small
+												resp-380px-image-size-small" 
 										src="assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
 										alt="Reservia : Notre-Dame-de-la-Garde"/>
 										<figcaption>
@@ -815,13 +883,17 @@
 							</a>
 						</div>
 						<div class="longchamps-box image-box-small shadow-box-2
-										resp-380px-image-box-small
-										resp-670px-image-box-small">
+									resp-1370px-image-box-small
+									resp-1050px-image-box-small
+									resp-670px-image-box-small
+									resp-380px-image-box-small">
 							<a href="">
 								<figure>
 									<img class="longchamps-img image-size-small 
-												resp-380px-image-size-small
-												resp-670px-image-size-small" 
+												resp-1370px-image-size-small
+												resp-1050px-image-size-small
+												resp-670px-image-size-small
+												resp-380px-image-size-small" 
 										src="assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
 										alt="Reservia : Parc Longchamp"/>
 									<figcaption>
@@ -842,10 +914,12 @@
 
 		<footer>
 			<section class="footer-box 
+							resp-1050px-background 
 							resp-670px-background 
 							resp-380px-background
 							"> 
 				<div class="ul-box flex row between 
+							resp-1050px-footer-box 
 						    resp-670px-footer-box 
 						    resp-380px-footer-box">
 					<ul class="resp-380px-ul-box">
