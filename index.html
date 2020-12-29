@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-		<link rel="stylesheet" type="text/css" href="./assets/css/style-1050px.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/style-1370px.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style-1050px.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/style-670px.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/style-380px.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
@@ -32,13 +32,14 @@
 						 alt=""/>
 				</div>
 				<ul class="header row between align-center 
-						   resp-1050px-header
+						   resp-1050px-header 
 						   resp-670px-header
 						   resp-380px-header">
 					<li class="resp-670px-hebergement 
 							   resp-380px-hebergement">
 						<a href="#Hébergements" 
 						class="blue-text barr
+							   resp-1370px-blue-text
 							   resp-1050px-blue-text
 							   resp-670px-blue-text
 							   resp-380px-blue-text resp-380px-barr">
@@ -48,7 +49,8 @@
 					<li class="resp-670px-activities
 							   resp-380px-activities">
 						<a href="#Activités" 
-						class="white-text barr
+						   class="black-text barr
+							   resp-1370px-black-text
 							   resp-1050px-black-text
 							   resp-670px-black-text
 							   resp-380px-black-text resp-380px-barr">
@@ -56,10 +58,12 @@
 						</a>
 					</li>
 					<li class="bold-text 
+							   resp-1050px-register
 							   resp-670px-register
 							   resp-380px-register">
 						<a href="" 
-						class="blue-text barr
+						   class="blue-text barr
+							   resp-1370px-blue-text
 							   resp-1050px-blue-text
 							   resp-670px-blue-text
 							   resp-380px-blue-text-2 resp-380px-barr">
@@ -77,9 +81,10 @@
 		<main>
 		<!--			MAIN TOP · html > head > body > header > main top	resp-670px-colummn r	-->
 			<div class="main-top flex column border
-						resp-1050px-main-top
-						resp-380px-main-top  
-						resp-670px-margin-right-left">
+						resp-1370px-main-top resp-1370px-margin
+						resp-1050px-main-top resp-1050px-margin
+						resp-380px-main-top resp-380px-margin 
+						resp-670px-main-top resp-670px-margin">
 			<!--		MAIN TOP · html > head > body > header > main.top.title	resp-670px-title-top resp-670px-text-size	-->
 				<div class="flex column
 							resp-380px-margin-bottom">
@@ -92,7 +97,7 @@
 					</h3>
 					<p class="typo-grey margin-bottom
 							  resp-1050px-typo-grey
-							  resp-670px-margin-top-bottom
+							  resp-670px-head-typo-grey
 							  resp-380px-typo-grey resp-380px-margin-top"> 
 							En plein centre ville ou en pleine nature
 					</p>	
@@ -100,7 +105,9 @@
 
 				<!--		MAIN TOP · html > head > body > header > main.top.search	resp-670px-button-search	-->
 				<div class="search flex row margin-bottom 
+							resp-1370px-search
 							resp-1050px-search
+							resp-670px-search
 							resp-380px-search">
 					<div class="container-maker
 								resp-1050px-container-maker">
@@ -109,7 +116,10 @@
 							 alt=""/>
 					</div>
 					<input class="input-size bold-text
-								  resp-1050px-input-size" type="search" placeholder="Marseille, France" name="search">
+								  resp-1050px-input-size
+								  resp-670px-input-size
+								  resp-380px-input-size" 
+							type="search" placeholder="Marseille, France" name="search">
 					<button class="button-search 
 								   resp-1050px-button-search
 								   resp-380px-button-search" 
@@ -128,11 +138,12 @@
 				<div class="filter flex row 
 							resp-1050px-filter 
 							resp-670px-filter
-							resp-380px-filter ">
+							resp-380px-filter">
 				<!--		MAIN TOP · html > head > body > header > main.top.filter		-->
 					<p class="title-filter bold-text align-center 
 							  resp-1050px-title-filter
-							  resp-380px-title-filter resp-380px-margin-bottom">
+							  resp-670px-title-filter
+							  resp-380px-title-filter">
 						Filtres
 					</p>	
 
@@ -148,7 +159,8 @@
 									<img src="assets/images/icon/money-bill-wave-solid.svg" class="filter-icon"
 											alt=""/>
 								</span>
-								<span class="name bold-text">
+								<span class="name bold-text
+											 resp-380px-bold-text">
 										Économique
 								</span>
 							</label>
@@ -209,11 +221,13 @@
 										resp-1050px-border 	
 										resp-380px-border">
 								<img src="assets/images/icon/info-solid.svg" class="icon-info 
-																					resp-1050px-icon-info" 
+																					resp-1050px-icon-info
+																					resp-380px-icon-info" 
 									alt=""/>
 							</div>	
 						</li>
 						<li class="typo-grey 
+								   resp-1370px-typo-grey 
 								   resp-1050px-typo-grey 
 								   resp-670px-typo-grey
 								   resp-380px-typo-grey">
@@ -234,8 +248,10 @@
 								resp-1050px-accommodation-box 
 								resp-670px-accommodation-box 
 								resp-380px-accommodation-box" 
-								id="Hébergements">
-					<h3 class="title-size-1">
+						id="Hébergements">
+					<h3 class="title-size-1
+							   resp-670px-title-size-1
+							   resp-380px-title-size-1">
 							Hébergements à Marseille
 					</h3>
 					<div class="flex column image-box shadow-box 
@@ -254,15 +270,23 @@
 									src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
 									alt=" "/>
 								<figcaption>
-									<ul class="resp-1050px-name-margin">
-										<li class="place-name bold-text margin-bottom
-												   resp-670px-place-name
-												   resp-380px-place-name">
+									<ul class="name-margin-hebergement
+											   resp-1370px-name-margin-hebergement
+											   resp-1050px-name-margin-hebergement
+											   resp-670px-name-margin-hebergement
+											   resp-380px-name-margin-hebergement">
+										<li class="place-name-hebergement bold-text margin-bottom
+												   resp-1370px-place-name-hebergement
+												   resp-1050px-place-name-hebergement
+												   resp-670px-place-name-hebergement
+												   resp-380px-place-name-hebergement">
 											Auberge de la Cannebiére
 										</li>
-										<li class="place-name grey-size grey-text margin-bottom
-												   resp-670px-place-name
-												   resp-670px-place-name">
+										<li class="rate-hebergement grey-size grey-text margin-bottom
+												   resp-1370px-rate-hebergement
+												   resp-1050px-rate-hebergement
+												   resp-670px-rate-hebergement
+												   resp-380px-rate-hebergement">
 											Nuit à partir de
 											<span class="bold-text">
 													25€
@@ -272,20 +296,40 @@
 								</figcaption>
 							</figure>
 						</a>
-						<div class="star flex row
-									resp-1370px-star-box
-									resp-1050px-star-box-2
-									resp-670px-star-box
-									resp-380px-star-box">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+						<div class="star-hebergement flex row
+									resp-1370px-star-hebergement
+									resp-1050px-star-hebergement
+									resp-670px-star-hebergement
+									resp-380px-star-hebergement">
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
-							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Auberge de la Cannebiére"/>
 						</div>
 					</div>
@@ -301,40 +345,69 @@
 								<img class="img-size-top margin-bottom
 											resp-1370px-img-size-top
 											resp-1050px-img-size-top 
-											resp-670px-img-size-top 
-											resp-380px-img-size-top " 
+											resp-670px-img-size-top
+											resp-380px-img-size-top" 
 										 src="assets/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
 										 alt=" "/>
 								<figcaption>
-									<ul class="resp-1050px-name-margin">
-										<li class="place-name bold-text margin-bottom
-													resp-670px-place-name
-													resp-380pxplace-name">
+									<ul class="name-margin-hebergement
+											   resp-1370px-name-margin-hebergement
+											   resp-1050px-name-margin-hebergement
+											   resp-670px-name-margin-hebergement
+											   resp-380px-name-margin-hebergement">
+										<li class="place-name-hebergement bold-text margin-bottom
+												   resp-1370px-place-name-hebergement
+												   resp-1050px-place-name-hebergement
+												   resp-670px-place-name-hebergement
+												   resp-380px-place-name-hebergement">
 											Hôtel du port
 										</li>
-										<li class="place-name grey-size grey-text margin-bottom
-												   resp-670px-place-name
-												   resp-380px-place-name">
+										<li class="rate-hebergement grey-size grey-text margin-bottom
+												   resp-1370px-rate-hebergement
+												   resp-1050px-rate-hebergement
+												   resp-670px-rate-hebergement
+												   resp-380px-rate-hebergement">
 											Nuit à partir de 52<span class="bold-text">€</span>
 										</li>
 									</ul>				
 								</figcaption>
 							</figure>
 						</a>
-						<div class="star flex row
-									resp-1050px-star-box-2
-									resp-670px-star-box  resp-670px-margin-star
-									resp-380px-star-box resp-380px-margin-star">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-										alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-										alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-										alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-										alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-										alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+						<div class="star-hebergement flex row
+									resp-1370px-star-hebergement
+									resp-1050px-star-hebergement
+									resp-670px-star-hebergement
+									resp-380px-star-hebergement">
+							<img class="blue-star 
+									resp-1370px-blue-star
+									resp-1050px-blue-star
+									resp-670px-blue-star
+									resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+							<img class="blue-star 
+									resp-1370px-blue-star
+									resp-1050px-blue-star
+									resp-670px-blue-star
+									resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+							<img class="blue-star 
+									resp-1370px-blue-star
+									resp-1050px-blue-star
+									resp-670px-blue-star
+									resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+							<img class="blue-star 
+									resp-1370px-blue-star
+									resp-1050px-blue-star
+									resp-670px-blue-star
+									resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
+							<img class="blue-star 
+									resp-1370px-blue-star
+									resp-1050px-blue-star
+									resp-670px-blue-star
+									resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+								alt="Les visiteurs ont voté 5 / 5 Hôtel du port"/>
 						</div>
 					</div>
 
@@ -349,39 +422,68 @@
 								<img class="img-size-top margin-bottom
 											resp-1370px-img-size-top
 											resp-1050px-img-size-top 
-											resp-670px-img-size-top 
+											resp-670px-img-size-top
 											resp-380px-img-size-top" 
 									src="assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
 									alt=" "/>
 								<figcaption>
-									<ul class="resp-1050px-name-margin">
-										<li class="place-name bold-text margin-bottom
-												   resp-670px-place-name
-												   resp-380px-place-name">
+									<ul class="name-margin-hebergement
+											   resp-1370px-name-margin-hebergement
+											   resp-1050px-name-margin-hebergement
+											   resp-670px-name-margin-hebergement
+											   resp-380px-name-margin-hebergement">
+										<li class="place-name-hebergement bold-text margin-bottom
+												   resp-1370px-place-name-hebergement
+												   resp-1050px-place-name-hebergement
+												   resp-670px-place-name-hebergement
+												   resp-380px-place-name-hebergement">
 											Hôtel Les mouettes
 										</li> 
-										<li class="place-name grey-size grey-text margin-bottom
-												   resp-670px-place-name
-												   resp-380px-place-name">
+										<li class="rate-hebergement grey-size grey-text margin-bottom
+												   resp-1370px-rate-hebergement
+												   resp-1050px-rate-hebergement
+												   resp-670px-rate-hebergement
+												   resp-380px-rate-hebergement">
 										Nuit à partir de 76<span class="bold-text">€</span>
 										</li>
 									</ul>				
 								</figcaption>
 							</figure>
 						</a>
-						<div class="star flex row
-									resp-1050px-star-box-2
-									resp-670px-star-box  resp-670px-margin-star
-									resp-380px-star-box resp-380px-margin-star">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+						<div class="star-hebergement flex row
+									resp-1370px-star-hebergement
+									resp-1050px-star-hebergement
+									resp-670px-star-hebergement
+									resp-380px-star-hebergement">
+							<img class="blue-star 
+									resp-1370px-blue-star
+									resp-1050px-blue-star
+									resp-670px-blue-star
+									resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+							<img class="blue-star 
+									resp-1370px-blue-star
+									resp-1050px-blue-star
+									resp-670px-blue-star
+									resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
-							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Hôtel Les mouettes"/>
 						</div>
 					</div>
@@ -397,39 +499,68 @@
 								<img class="img-size-top margin-bottom
 											resp-1370px-img-size-top
 											resp-1050px-img-size-top 
-											resp-670px-img-size-top 
-											resp-380px-img-size-top"
+											resp-670px-img-size-top
+											resp-380px-img-size-top" 
 									src="assets/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
 									alt=""/>
 								<figcaption>
-									<ul class="resp-1050px-name-margin">
-										<li class="place-name bold-text margin-bottom
-												   resp-670px-place-name
-												   resp-380px-place-name">
+									<ul class="name-margin-hebergement
+											   resp-1370px-name-margin-hebergement
+											   resp-1050px-name-margin-hebergement
+											   resp-670px-name-margin-hebergement
+											   resp-380px-name-margin-hebergement">
+										<li class="place-name-hebergement bold-text margin-bottom
+												   resp-1370px-place-name-hebergement
+												   resp-1050px-place-name-hebergement
+												   resp-670px-place-name-hebergement
+												   resp-380px-place-name-hebergement">
 											Hôtel de la mer
 										</li>
-										<li class="place-name grey-size grey-text margin-bottom
-												   resp-670px-place-name
-												   resp-380px-place-name">
+										<li class="rate-hebergement grey-size grey-text margin-bottom
+												   resp-1370px-rate-hebergement
+												   resp-1050px-rate-hebergement
+												   resp-670px-rate-hebergement
+												   resp-380px-rate-hebergement">
 											Nuit à partir de 46<span class="bold-text">€</span>
 										</li>
 									</ul>			
 								</figcaption>
 							</figure>
 						</a>
-						<div class="star flex row
-									resp-1050px-star-box-2
-									resp-670px-star-box resp-670px-margin-star
-									resp-380px-star-box resp-380px-margin-star">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+						<div class="star-hebergement flex row
+									resp-1370px-star-hebergement
+									resp-1050px-star-hebergement
+									resp-670px-star-hebergement
+									resp-380px-star-hebergement">
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
-							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
-							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 3 / 5 Hôtel de la mer"/>
 						</div>
 					</div>
@@ -445,39 +576,69 @@
 								<img class="img-size-top margin-bottom
 											resp-1370px-img-size-top
 											resp-1050px-img-size-top 
-											resp-670px-img-size-top 
-											resp-380px-img-size-top"
+											resp-670px-img-size-top
+											resp-380px-img-size-top" 
 									src="assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
 									alt=" "/>
 								<figcaption>
-									<ul class="resp-1050px-name-margin">
-										<li class="place-name bold-text margin-bottom
-												   resp-670px-place-name
-												   resp-380px-place-name">
+									<figcaption>
+										<ul class="name-margin-hebergement
+												   resp-1370px-name-margin-hebergement
+												   resp-1050px-name-margin-hebergement
+												   resp-670px-name-margin-hebergement
+												   resp-380px-name-margin-hebergement">
+											<li class="place-name-hebergement bold-text margin-bottom
+													   resp-1370px-place-name-hebergement
+													   resp-1050px-place-name-hebergement
+													   resp-670px-place-name-hebergement
+													   resp-380px-place-name-hebergement">
 											Auberge Le Panier
 										</li>
-										<li class="place-name grey-size grey-text margin-bottom
-												   resp-670px-place-name
-												   resp-380px-place-name">
+										<li class="rate-hebergement grey-size grey-text margin-bottom
+												   resp-1370px-rate-hebergement
+												   resp-1050px-rate-hebergement
+												   resp-670px-rate-hebergement
+												   resp-380px-rate-hebergement">											
 											Nuit à partir de <span class="bold-text">23€</span>
 										</li>
 									</ul>				
 								</figcaption>
 							</figure>
 						</a>
-						<div class="star flex row
-									resp-1050px-star-box-2
-									resp-670px-star-box  resp-670px-margin-star
-									resp-380px-star-box resp-380px-margin-star">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+						<div class="star-hebergement flex row
+									resp-1370px-star-hebergement
+									resp-1050px-star-hebergement
+									resp-670px-star-hebergement
+									resp-380px-star-hebergement">
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
-							<img class="blue-star" src="assets/images/icon/grey-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 4 / 5 Auberge Le Panier"/>
 						</div>
 					</div>
@@ -493,44 +654,73 @@
 								<img class="img-size-top margin-bottom
 											resp-1370px-img-size-top
 											resp-1050px-img-size-top 
-											resp-670px-img-size-top 
-											resp-380px-img-size-top"
+											resp-670px-img-size-top
+											resp-380px-img-size-top" 
 									src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
 									alt=" "/>
 								<figcaption>
-									<ul class="resp-1050px-name-margin">
-										<li class="place-name bold-text margin-bottom
-												   resp-670px-place-name
-												   resp-380px-place-name">
+									<ul class="name-margin-hebergement
+											   resp-1370px-name-margin-hebergement
+											   resp-1050px-name-margin-hebergement
+											   resp-670px-name-margin-hebergement
+											   resp-380px-name-margin-hebergement">
+										<li class="place-name-hebergement bold-text margin-bottom
+												   resp-1370px-place-name-hebergement
+												   resp-1050px-place-name-hebergement
+												   resp-670px-place-name-hebergement
+												   resp-380px-place-name-hebergement">
 											Hôtel chez Amina
 										</li>
-										<li class="place-name grey-size grey-text margin-bottom
-												   resp-670px-place-name
-												   resp-380px-place-name">
+										<li class="rate-hebergement grey-size grey-text margin-bottom
+												   resp-1370px-rate-hebergement
+												   resp-1050px-rate-hebergement
+												   resp-670px-rate-hebergement
+												   resp-380px-rate-hebergement">
 											Nuit à partir de 96<span class="bold-text">€</span>
 										</li>
 									</ul>				
 								</figcaption>
 							</figure>
 						</a>
-						<div class="star flex row
-									resp-1050px-star-box-2
-									resp-670px-star-box  resp-670px-margin-star
-									resp-380px-star-box resp-380px-margin-star">
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+						<div class="star-hebergement flex row
+									resp-1370px-star-hebergement
+									resp-1050px-star-hebergement
+									resp-670px-star-hebergement
+									resp-380px-star-hebergement">
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
-							<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
+							<img class="blue-star 
+										resp-1370px-blue-star
+										resp-1050px-blue-star
+										resp-670px-blue-star
+										resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
 									alt="Les visiteurs ont voté 5 / 5 Hôtel chez Amina"/>
 						</div>
 					</div>
 					<p class="title-size-1 bold-text
-							  resp-380px-image-margin-left">
+							  resp-380px-title-size-1">
 						Afficher plus
 					</p>
 				</section>
@@ -543,9 +733,13 @@
 				<!--		MAIN PART · html > head > body > header > main.middle.div.popular-box		-->
 
 					<div class="title-box flex row between 
+								resp-1370px-title-box 
+								resp-1050px-title-box 
 								resp-670px-title-box 
 								resp-380px-title-box">
 						<h3 class="title-popular 
+								   resp-1370px-title-popular
+								   resp-1050px-title-popular
 								   resp-670px-title-popular">
 							Les plus populaires
 						</h3>
@@ -563,56 +757,85 @@
 									resp-670px-image-box-2 
 									resp-380px-image-box-2"> 
 						<!--		MAIN PART · html > head > body > header > main.middle.popular-img-1		-->
-							<figure class="figure-size flex row 
-										   resp-1370px-figure-size
-										   resp-1050px-figure-size
-										   resp-670px-figure-size
-										   resp-380px-figure-size">
-									<img class="img-size-top-2
-												resp-1370px-img-size-top-2		
-												resp-1050px-img-size-top-2		
-												resp-670px-img-size-top-2
-												resp-380px-img-size-top-2" 
-										src="assets/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-										alt=" "/>
-								<figcaption>
-									<ul class="name-margin
-											   resp-1050px-name-margin
-											   resp-670px-name-margin
-											   resp-380px-name-margin">
-										<li class="place-name bold-text
-												   resp-380px-place-name">
-											Hôtel Le soleil du
-										</li> 
-										<li class="place-name bold-text
-												   resp-380px-place-name">
-											matin
-										</li> 
-										<li class="place-name name-margin grey-size grey-text
-												   resp-1370px-name-margin
-												   resp-1050px-name-margin
-												   resp-670px-name-margin
-												   resp-380px-name-margin">
-											Nuit à partir de 128<span class="bold-text">€</span>
-										</li>
-									</ul>			
-								</figcaption>
-							</figure>
-							<div class="star-box flex row margin-bottom 
-										resp-1370px-star-box
-										resp-1050px-star-box-2
-										resp-670px-star-box-2
-										resp-380px-star-box-2">
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+							<a href="">
+								<figure class="figure-size flex row 
+											resp-1370px-figure-size
+											resp-1050px-figure-size
+											resp-670px-figure-size
+											resp-380px-figure-size">
+										<img class="img-size-top-2
+													resp-1370px-img-size-top-2		
+													resp-1050px-img-size-top-2		
+													resp-670px-img-size-top-2
+													resp-380px-img-size-top-2" 
+											src="assets/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+											alt=" "/>
+									<figcaption>
+										<ul class="name-margin-popular
+												   resp-1370px-name-margin-popular
+												   resp-1050px-name-margin-popular
+												   resp-670px-name-margin-popular
+												   resp-380px-name-margin-popular">
+											<li class="place-name-popular bold-text
+													   resp-1370px-place-name-popular
+													   resp-1050px-place-name-popular
+													   resp-670px-place-name-popular
+													   resp-380px-place-name-popular">
+												Hôtel Le soleil du
+											</li> 
+											<li class="place-name-popular bold-text
+													   resp-1370px-place-name-popular
+													   resp-1050px-place-name-popular
+													   resp-670px-place-name-popular
+													   resp-380px-place-name-popular">
+												matin
+											</li> 
+											<li class="rate-popular grey-size grey-text
+													   resp-1370px-rate-popular
+													   resp-1050px-rate-popular
+													   resp-670px-rate-popular
+													   resp-380px-rate-popular">
+												Nuit à partir de 128<span class="bold-text">€</span>
+											</li>
+										</ul>			
+									</figcaption>
+								</figure>
+							</a>
+							<div class="star-popular flex row margin-bottom 
+										resp-1370px-star-popular
+										resp-1050px-star-popular
+										resp-670px-star-popular
+										resp-380px-star-popular">
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
 							</div>
 						</div>
 
@@ -622,55 +845,84 @@
 									resp-670px-image-box-2 
 									resp-380px-image-box-2"> 
 						<!--		MAIN PART · html > head > body > header > main.middle.popular-img-1		-->
-							<figure class="figure-size flex row 
-										   resp-1370px-figure-size
-										   resp-1050px-figure-size
-										   resp-670px-figure-size
-										   resp-380px-figure-size">
-								<img class="img-size-top-2
-											resp-1370px-img-size-top-2		
-											resp-1050px-img-size-top-2		
-											resp-670px-img-size-top-2
-										   resp-380px-img-size-top-2" 
-								     src="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg">
-								<figcaption>
-									<ul class="name-margin
-											  resp-1050px-name-margin
-										      resp-670px-name-margin
-											  resp-380px-name-margin">
-										<li class="place-name bold-text
-												   resp-380px-place-name">
-											Au coeur de l'eau
-										</li>
-										<li class="place-name bold-text
-												   resp-380px-place-name">
-											Chambres d'hôtes
-										</li>
-										<li class="place-name name-margin grey-size grey-text
-												   resp-1370px-name-margin
-												   resp-1050px-name-margin
-												   resp-380px-place-name
-												   resp-670px-name-margin">
-											Nuit à partir de 71<span class="bold-text">€</span>
-										</li>
-									</ul>		
-								</figcaption>
-							</figure>
-							<div class="star-box flex row margin-bottom
-										resp-1370px-star-box
-										resp-1050px-star-box-2
-										resp-670px-star-box-2
-										resp-380px-star-box-2">
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+							<a href="">
+								<figure class="figure-size flex row 
+											resp-1370px-figure-size
+											resp-1050px-figure-size
+											resp-670px-figure-size
+											resp-380px-figure-size">
+									<img class="img-size-top-2
+												resp-1370px-img-size-top-2		
+												resp-1050px-img-size-top-2		
+												resp-670px-img-size-top-2
+											resp-380px-img-size-top-2" 
+										src="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg">
+									<figcaption>
+										<ul class="name-margin-popular
+												   resp-1370px-name-margin-popular
+												   resp-1050px-name-margin-popular
+												   resp-670px-name-margin-popular
+												   resp-380px-name-margin-popular">
+											<li class="place-name-popular bold-text
+													   resp-1370px-place-name-popular
+													   resp-1050px-place-name-popular
+													   resp-670px-place-name-popular
+													   resp-380px-place-name-popular">
+												Au coeur de l'eau
+											</li>
+											<li class="place-name-popular bold-text
+													   resp-1370px-place-name-popular
+													   resp-1050px-place-name-popular
+													   resp-670px-place-name-popular
+													   resp-380px-place-name-popular">
+												Chambres d'hôtes
+											</li>
+											<li class="rate-popular grey-size grey-text
+													   resp-1370px-rate-popular
+													   resp-1050px-rate-popular
+													   resp-670px-rate-popular
+													   resp-380px-rate-popular">
+												Nuit à partir de 71<span class="bold-text">€</span>
+											</li>
+										</ul>		
+									</figcaption>
+								</figure>
+							</a>
+							<div class="star-popular flex row margin-bottom 
+										resp-1370px-star-popular
+										resp-1050px-star-popular
+										resp-670px-star-popular
+										resp-380px-star-popular">
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 Au coeur de l'eau Chambres d'hôtes"/>
 							</div>
 						</div>
 
@@ -680,54 +932,84 @@
 									resp-670px-image-box-2 
 									resp-380px-image-box-2"> 
 						<!--		MAIN PART · html > head > body > header > main.middle.popular-img-1		-->
-							<figure class="figure-size flex row 
-											resp-1370px-figure-size
-											resp-1050px-figure-size
-											resp-670px-figure-size
-											resp-380px-figure-size">
-									<img class="img-size-top-2
-											resp-1370px-img-size-top-2		
-											resp-1050px-img-size-top-2		
-											resp-670px-img-size-top-2
-										    resp-380px-img-size-top-2" 
-								   	src="assets/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-								<figcaption>
-									<ul class="name-margin
-											   resp-1050px-name-margin
-											   resp-380px-name-margin
-											   resp-670px-name-margin">
-										<li class="place-name bold-text
-												   resp-380px-place-name">
+							<a href="">
+								<figure class="figure-size flex row 
+												resp-1370px-figure-size
+												resp-1050px-figure-size
+												resp-670px-figure-size
+												resp-380px-figure-size">
+										<img class="img-size-top-2
+												resp-1370px-img-size-top-2		
+												resp-1050px-img-size-top-2		
+												resp-670px-img-size-top-2
+												resp-380px-img-size-top-2" 
+										src="assets/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+									<figcaption>
+										<ul class="name-margin-popular
+												   resp-1370px-name-margin-popular
+												   resp-1050px-name-margin-popular
+												   resp-670px-name-margin-popular
+												   resp-380px-name-margin-popular">
+											<li class="place-name-popular bold-text
+													   resp-1370px-place-name-popular
+													   resp-1050px-place-name-popular
+													   resp-670px-place-name-popular
+													   resp-380px-place-name-popular">
 												Hôtel Tout Bleu et
-										</li>
-										<li class="place-name bold-text
-												   resp-380px-place-name">
+											</li>
+											<li class="place-name-popular bold-text
+													   resp-1370px-place-name-popular
+													   resp-1050px-place-name-popular
+													   resp-670px-place-name-popular
+													   resp-380px-place-name-popular">
 												Blanc
-										</li>
-										<li class="place-name name-margin grey-size grey-text
-												   resp-1050px-name-margin
-												   resp-670px-name-margin
-												   resp-380px-name-margin">
-											Nuit à partir de 68<span class="bold-text">€</span>
-										</li>
-									</ul>		
-								</figcaption>
-							</figure>
-							<div class="star-box flex row margin-bottom
-										resp-1370px-star-box
-										resp-1050px-star-box-2
-										resp-670px-star-box-2
-										resp-380px-star-box-2">
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
-								<img class="blue-star" src="assets/images/icon/blue-star-solid.svg"
-									alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+											</li>
+											<li class="rate-popular grey-size grey-text
+													   resp-1370px-rate-popular
+													   resp-1050px-rate-popular
+													   resp-670px-rate-popular
+													   resp-380px-rate-popular">
+												Nuit à partir de 68<span class="bold-text">€</span>
+											</li>
+										</ul>		
+									</figcaption>
+								</figure>
+							</a>
+							<div class="star-popular flex row margin-bottom 
+										resp-1370px-star-popular
+										resp-1050px-star-popular
+										resp-670px-star-popular
+										resp-380px-star-popular">
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
+								<img class="blue-star 
+											resp-1370px-blue-star
+											resp-1050px-blue-star
+											resp-670px-blue-star
+											resp-380px-blue-star" src="assets/images/icon/blue-star-solid.svg"
+										alt="Les visiteurs ont voté 4 / 5 l'Hôtel Tout Bleu et Blanc"/>
 							</div>
 						</div>
 					</div>
@@ -916,13 +1198,13 @@
 			<section class="footer-box 
 							resp-1050px-background 
 							resp-670px-background 
-							resp-380px-background
-							"> 
+							resp-380px-background"> 
 				<div class="ul-box flex row between 
 							resp-1050px-footer-box 
 						    resp-670px-footer-box 
 						    resp-380px-footer-box">
-					<ul class="resp-380px-ul-box">
+					<ul class="resp-670px-ul-box
+							   resp-380px-ul-box">
 						<li class="margin-title
 								   resp-380px-margin-title">
 							<h4>
@@ -946,7 +1228,8 @@
 						</li>
 					</ul>
 					
-					<ul class="resp-380px-ul-box">
+					<ul class="resp-670px-ul-box
+							   resp-380px-ul-box">
 						<li class="margin-title
 								   resp-380px-margin-title">
 							<h4>
@@ -965,7 +1248,8 @@
 						</li>
 					</ul>
 					
-					<ul class="resp-380px-ul-box">
+					<ul class="resp-670px-ul-box
+							   resp-380px-ul-box">
 						<li class="margin-title
 								   resp-380px-margin-title">
 							<h4 class="margin-text bold-text">

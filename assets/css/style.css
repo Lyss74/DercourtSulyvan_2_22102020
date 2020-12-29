@@ -1,42 +1,40 @@
-
+/* resp = responsive*/ 
 /* BODY CONFIGURATION */
 body {
     height: auto;
 }
-header, main, footer {
-    margin: 1.5%;
-}
+/* margin CONFIGURATION */
+header, main { 
+    margin: 2%
+} 
 /* HEADER NAVIGATION CONFIGURATION */
 img.img-reservia { 
-    right: 0.4rem;
-    height: 4rem;
-    width: 6rem;
+    object-fit: cover;
+    right: 3rem;
+    height: 3rem;
+    width: 8rem;
     max-width: 100%;
     margin: auto 0;
 }
 ul.header { 
-    width: 23rem;
+    width: 25rem;
     display: flex;
 }
 a.blue-text {
-    height: 5rem;
     color: #0065FC;
     font-size: 1rem;
-    padding-top: 16px;
-    padding-right: 25px;
-    padding-left: 25px;
+    height: 5rem;
+    padding: 16px 25px 0px 25px;
 }
 a.black-text {
     color: black;
     font-size: 1rem;
-    padding-top: 16px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding: 16px 25px 0px 25px;
 }
 .barr:hover {
     border-top: #0065FC 0.2rem solid;
-    width: 150px;
     height: 50px;
+    width: 150px;
     padding-bottom: 100px;
 }
 /* MAIN-TOP FILTER CONFIGURATION */
@@ -49,34 +47,34 @@ input::placeholder {
     color: black;
     padding-left: 15px;
 }
-/*	MAIN PART · html > head > body > header > main.top { box }	*/
 main > div.main-top { 
     width: 100%;
 }
-h3.title-top {
+h3.title-top { 
     color: black;
     font-size: 15pt;
     font-weight: bold;
-    margin-bottom: 0.3%;
+    margin-bottom: 10px;
 }		
 br.resp-380px-jump-line {
     display: none;
 }	
-/*	MAIN PART · html > head > body > header > main.top.search	*/
-img.map-maker {
+img.map-maker { 
+    object-fit: cover;
     height: 20px;
     width: 20px;
-    margin-top: 10px;
-    margin-left: 14px;
     max-width: 100%;
+    margin: 10px 0px 0px 14px;
 }
 div.container-maker { 
     background-color: rgb(184, 174, 174);
     border-radius: 10px 0px 0px 10px;	
     width: 2.5rem;	
 }
-div.search {
+div.search { 
     height: 2.5rem;
+    margin-top: -10px;
+
 }
 button.button-search {
     background-color: #0065FC;
@@ -90,16 +88,14 @@ img.resp-380px-search-glass {
 button.button-text {
     margin: 0.5rem;
 }
-/*	MAIN PART · html > head > body > header > main.top.filter	*/
 div.filter  { 
-    width: 700px;
     height: auto;
+    width: 700px;
     margin-bottom: 3%;
     padding: 10px 5px;
 }
 p.title-filter {
-    margin-top: 1%;
-    margin-right: 10px;
+    margin: 1% 10px 0px 0px;
 }
 ul.filter-list { 
     width: 38rem;
@@ -132,26 +128,28 @@ ul.filter-list > li.filter-item > label.filter-name > span.cropper {
     align-items: center;
 }
 ul.filter-list > li.filter-item > label.filter-name > span.cropper > img.filter-icon {
+    object-fit: cover;
     height: 15px;
     width: 15px;
     max-width: 100%;
     margin: auto 0;
 }
 ul.filter-list > li.filter-item > label.filter-name > span.name {
-    padding: 0 10px 0 5px;
+    padding: 0 10px 0px 5px;
     line-height: 34px;
 }
-/*	MAIN PART · html > head > body > header > main.top.info	*/
-div > ul > li > div > img.icon-info {
+div > ul > li > div > img.icon-info { 
+    object-fit : cover;
     height: 15px;
     width: 15px;
     margin: 3.5px 0px 0px 9px;
 }
-div.container-info > ul > li > div.border {
+div.container-info > ul > li > div.border { 
     border: 1.5px solid #9E9E9E;
     border-radius: 20px ;
     height: 22px;
     width: 22px;
+    margin-right: 10px;
 }
 ul.filter-list > li.filter-item > label.filter-name:hover {
     background-color: #f0f0f0;
@@ -163,7 +161,8 @@ ul.part-information {
 }
 li.typo-grey, p.typo-grey {
     font-size: 12pt;
-}/*	MAIN-MIDDLE · html > head > body > header > main.middle.accomodation	*/
+}
+/*	MAIN-MIDDLE · html > head > body > header > main.middle.accomodation	*/
 div.main-middle { 
     width: 100%;																	
 }
@@ -178,11 +177,20 @@ main > div > section.accommodation-box {
     height: 40rem;
     width: 64.5rem;
     padding: 1%;
+    margin-bottom: 20px;
 }
 .title-size-1 {
     width: 100%;
+    margin-left: 15px;
 }
-/*	MAIN-MIDDLE · html > head > body > header > main.middle.image-box	*/
+ul.name-margin-hebergement { 
+    height: 5%;
+    margin-left: 4%;
+}
+div.star-hebergement { 
+    margin-top: 3%;
+    margin-left: 4%;
+}
 div.image-box {
     background-color: white;
     height: 13rem;
@@ -191,35 +199,24 @@ div.image-box {
     border-radius: 20px 20px 20px 20px;
     box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
 }
-/*	MAIN-MIDDLE · html > head > body > header > main.middle.image	*/
 img.img-size-top { 
+    object-fit: cover;
     background-position: top;
     border-radius: 20px 20px 0px 0px;
     height: 8rem;
     width: 100%;
     max-width: 100%;
 }
-/*	MAIN-MIDDLE · html > head > body > header > main.middle.image-name	*/
-li.place-name {
-    margin-left: 10px;
-}
-/*	MAIN-MIDDLE · html > head > body > header > main.middle.star-image {margin}	*/
-div.star {
-    margin-left: 10px;
-}
-/*	MAIN-MIDDLE · html > head > body > header > main.middle.star-image {size}	*/
 img.blue-star {
-    margin: 0.1%;
+    object-fit: cover;
     height: 15px;
     width: 15px;
     max-width: 100%;
-    margin: auto 0;
+    margin: auto 0.1%;
 }
-/*MAIN-MIDDLE · html > head > body > header > main.middle.popular-box*/
-div.title-box {
+div.title-box { 
     width: 100%;
-    margin-top: 10%;
-    margin-bottom: 4%;
+    margin: 30px 0px 25px 10px;
 }
 section.popular-box { 
     width: 20rem;
@@ -228,22 +225,39 @@ section.popular-box {
     border-radius: 20px 20px 20px 20px;
     background-color: rgb(242, 242, 242);
 }
-/*MAIN-MIDDLE · html > head > body > header > main.middle.popular.image-box*/
+img.icon {
+    margin-right: 25px;
+}
 div.thumbnail-box {
     height: 90%;
+}
+ul.name-margin-popular { 
+    height: 50%;
+    width: 10rem;
+    margin-top: 5%;
+    margin-left: 5%;
+
+}
+li.rate-popular { 
+    width: 9rem;
+    margin-top: 4%;
+}
+div.star-popular { 
+    margin-top: -9%;
+    margin-left: 47%;
 }
 div.image-box-2 {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    height: 9rem;
-    width: 17.5rem;
-    padding: 1px;
-    margin-bottom: 10%;
-    margin: auto;
     box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
+    height: 9rem;
+    width: 18rem;
+    margin: auto;
+    margin-bottom: 10%;
+    padding: 4px;
 }
-/*MAIN-MIDDLE · html > head > body > header > main.middle.popular.image-size*/
 img.img-size-top-2 {
+    object-fit: cover;
     background-position: left;
     border-radius: 20px 0px 0px 20px;
     height: 9rem;
@@ -251,21 +265,15 @@ img.img-size-top-2 {
     max-width: 100%;
     margin: auto 0;
 }
-/*MAIN-MIDDLE · html > head > body > header > main.middle.popular.title-char*/
 li.grey-size {
     font-size: 10pt;
 }
-/*MAIN-MIDDLE · html > head > body > header > main.middle.popular.star-box*/
-div.star-box {
-    margin-top: -1.5rem;
-    margin-left: 9rem;
-}
-/*MAIN-MIDDLE · html > head > body > header > main.middle.popular.star-size*/
-div.img.star-size {
-    height: 10px;
-    width: 10px;
+img.blue-star {
+    object-fit: cover;
+    height: 12px;
+    width: 12px;
     max-width: 100%;
-    margin: auto 0;
+    margin: 0;
 }
 
 
@@ -277,82 +285,79 @@ div.activities-box {
     height: 35rem auto;
     width: 100%;
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.p.margin-text-activities*/
 figure > figcaption > p.margin-text-activities {
-    margin-top: 4%;
-    margin-left: 9%;
+    margin: 4% 0% 0% 9%;
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-box-large*/
 div.image-box-large {
-    border-radius: 20px 20px 20px 20px;
-    width: 21rem;
-    height: 30rem;						
     box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
     background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    height: 29rem;						
+    width: 22rem;
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-size-large*/
 figure > img.image-size-large {
+    object-fit : cover;
     border-radius: 20px 20px 0px 0px;
-    height: 425px;		
-    width: 21rem;
+    height: 420px;		
+    width: 100%;
     max-height: 85%;
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-box-small*/
 div.image-box-small {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
     width: 21rem;
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-box-small*/
 figure > img.image-size-small {
+    object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     height: 415px;
     width: 21rem;
     max-height: 85%;
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-pomegues-size*/
 div.fort-pomegues-box {
-    height: 16rem;
+    height: 15.5rem;
 }
 figure > img.fort-pomegues-img {
+    object-fit: cover;
     height: 200px;
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-pomegues-size*/
 div.frioul-box {
     height: 12rem;
 }
- figure > img.frioul-img {
-    height: 140px;
+figure > img.frioul-img {
+    object-fit: cover;
+    height: 146px;
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-pomegues-size*/
 div.notre-dame-box {
-    height: 13rem;		
+    height: 12.5rem;		
 }
 figure > img.notre-dame-img {
+    object-fit: cover;
     height: 155px;		
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-pomegues-size*/
 div.longchamps-box {
     height: 15rem;		
 }
 figure > img.longchamps-img {
-    height: 190px		
+    object-fit: cover;
+    height: 195px		
 }
-/* HEADER · html > head > body > header > footer */
+footer {
+    margin: 3% 0px 0px 0px;
+}
 section.footer-box { 
-    /*background-color: rgb(242, 242, 242);*/
+    background-color: rgb(242, 242, 242);
     height: 100%;
     width: 100%;
 } 
 div.ul-box {
     width: 75%;
     margin: 0% 5% 0% 5%;
-    padding-top: 2%;
-    padding-left: 0.7%;
+    padding: 2% 0% 0% 0.7%;
 }
 ul > li.margin-title {
-    margin-bottom: 10%
+    margin: 10% 0% 10% 0%;
 }
 li.margin-text {
     margin-bottom: 7%;
@@ -399,10 +404,10 @@ button, h1, h2, h3, h4, h5, h6 {
 }
 /* TEXT */
 @font-face {
-    font-family: "Raleway";
     src: url('assets/font/Raleway-VariableFont_wght.ttf') format('truetype'),
-        url('assets/font/Raleway-VariableFont_wght.ttf') format('truetype'),
-        url('assets/font/static/Raleway-Bold.ttf') format('truetype');
+         url('Raleway-Italic-VariableFont_wght.ttf') format('truetype'),
+         url('assets/font/static/Raleway-BlackItalic.ttf') format('truetype');
+    font-family: "Raleway", Helvetica, sans-serif;	
     font-weight: normal;
     font-style: normal;
 }	
@@ -430,13 +435,3 @@ ul {
 .shadow-box-2 {
     box-shadow: 0.5px rgb(250, 245, 249);
 } 
-.PROD {background-color: red;}
-.PRODI {background-color: blue;}
-.PRODII {background-color: tomato;}
-.PRODIII {background-color: yellow;}
-/*div.main-top {display: none;} 
-main > div > section.accommodation-box {display: none;}
-main > div > section.popular-box {display: none;}
-main > section.activities-box {display: none;}
-footer > section.footer-box {display: none;}*/
-

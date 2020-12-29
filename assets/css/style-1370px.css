@@ -1,9 +1,6 @@
-/* resp = responsive */ 
+/* resp = responsive object-fit : cover*/ 
 @media screen and (max-width: 1370px)
 { 
-    header, main, footer {
-        margin: 1.5%;
-    }
     img.resp-1370px-img-reservia { 
         height: 3rem;
         width: 5rem;
@@ -23,9 +20,7 @@
     .resp-1370px-hebergement { 
         border-bottom: rgb(184, 174, 174) 0.1rem solid;
         width: 100%;
-        margin-top: 20%;
         padding-left: 40px;
-        margin-bottom: 10%;
         padding-bottom: 15px;	
     }
     .resp-1370px-activities { 
@@ -33,12 +28,11 @@
         width: 100%;
         margin-top: 20%;
         padding-right: 40px;
-        margin-bottom: 10%;
         padding-bottom: 15px;
     }
-    .barr:hover {
+    /*.barr:hover {
         display:none;
-    }
+    }*/
     .resp-1370px-hebergement:hover,
     .resp-1370px-activities:hover { 
         border-bottom: #0065FC 0.2rem solid;
@@ -51,12 +45,12 @@
 
 
 
-    p.title-filter {
+    p.title-filter { 
+        font-size: 14pt;
         height: 15px;
     }
     div.resp-1370px-main-top { 
         width: 100%;
-        margin-left: 0%;															
     }
     h3.resp-1370px-text-size {
         font-size: 17pt;
@@ -75,9 +69,9 @@
     span.resp-1370px-desktop-text {
         display: none;
     }
-    div.resp-1370px-search {
-        margin-top: 5%;
-        margin-bottom: 5%;
+    div.resp-1370px-search { 
+        margin-top: 1%;
+        margin-bottom: 0.5%;
     }
     button.resp-1370px-button-search {
         background-color: #0065FC;
@@ -96,11 +90,11 @@
         max-width: 100%;
     }
     li.resp-1370px-border { 
-        margin-bottom: 30%;
+        margin-bottom: 3%;
     }
     li.resp-1370px-typo-grey { 
-        font-size: 12pt;
-        margin-left: 5%;
+        font-size: 15pt;
+        margin-left: 0.5%;
     }
 
 
@@ -113,126 +107,123 @@
         width: 100%;
     }
     main > div > section.resp-1370px-accommodation-box {  
-        height: 42rem;
-        width: 65%;																	
-        background-color: white;
+        /*background-color: rgb(242, 242, 242);*/
+        height: 45rem;
+        width: 68%;																	
+    }
+    img.resp-1370px-blue-star {
+        object-fit: cover;
+        height: 20px;
+        width: 20px;
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    ul.resp-1370px-name-margin-hebergement {
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    li.resp-1370px-place-name-hebergement {
+        font-size: 15pt;
+    }
+    li.resp-1370px-rate-hebergement {
+        font-size: 12pt;
     }
     div.resp-1370px-image-box {    
-        height: 11.5rem;
-        width: 25%;																	
+        height: 17rem;
+        width: 30%;																	
         max-width: 100%;																	
     }
     figure  >img.resp-1370px-img-size-top {
-        height: 7rem;
+        height: 10rem;
         width: 100%;																
     }
-    div.resp-1370px-star-box {
-        margin-bottom: 2%;
-    }
 
 
 
 
-    section.resp-1370px-popular-box { 
+    section.resp-1370px-popular-box {  
         border-radius: 0px 0px 0px 0px;
-        height: 42rem;
-        width: 25%;		
+        height: 45rem;
+        width: 27%;		
     }
-    div.resp-1370px-title-box { 
-
+    div.resp-1370px-title-box {  
+        margin-top: 6%;
+        margin-bottom: 2.7rem;
         height: 15px;
     }
     div.resp-1370px-thumbnail-box {
             flex-direction: column;
-        height: 35rem;
+        height: 39rem;
         width: 100%;		
     }
     figure.resp-1370px-figure-size {
-            flex-direction: row;  
+        flex-direction: row;  
         height: auto;
+    }
+    ul.resp-1370px-name-margin-popular { 
+        width: 15rem;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    li.resp-1370px-place-name-popular {
+        font-size: 15pt;
+    }
+    li.resp-1370px-rate-popular {
+        font-size: 12pt;
+    }
+    div.resp-1370px-star-popular {
+        margin-left: 44.5%;
     }
     div.resp-1370px-image-box-2 {  
         border-radius: 20px 20px 20px 20px;
-        height: 9rem;
+        height: 11.5rem;
+        width: 20rem;
         padding: 1%;
     }
-    div.resp-1370px-star-box {
-        margin-top: -1.5rem;
-        margin-left: 8.5rem;
+    img.resp-1370px-img-size-top-2{
+        height: 11rem;
     }
-    
 
 
 
 /*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box*/
-div.resp-1370px-activities-box { 
+section.resp-1370px-activities-box {  
     margin: 2% 0% 0% 0%;
     padding: 1%;
-    height: 35rem auto;
+    height: 36rem;
     width: 100%;
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.p.margin-text-activities*/
 figure > figcaption > p.resp-1370px-margin-text-activities { 
     margin-top: 4%;
-    margin-left: 9%;
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-box-large*/
 div.resp-1370px-image-box-large {  
     border-radius: 20px 20px 20px 20px;
-    width: 19rem;
-    height: 20rem;						
+    width: 20rem;
+    height: 30rem;						
     box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
-    /*background-color: white;*/
+    background-color: white;
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-size-large*/
 figure > img.resp-1370px-image-size-large { 
     border-radius: 20px 20px 0px 0px;
     height: 425px;		
     width: 100%;
     max-height: 85%;
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-box-small*/
 div.resp-1370px-image-box-small { 
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
-    height: 13.5rem;
+    height: 14.3rem;
     width: 19rem;
 }
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-box-small*/
 figure > img.resp-1370px-image-size-small { 
     border-radius: 20px 20px 0px 0px;
     height: 160px;
     width: 100%;
     max-height: 85%;
-}
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-pomegues-size*/
-div.resp-1370px-fort-pomegues-box {
-    height: 16rem;
-}
-figure > img.resp-1370px-fort-pomegues-img {
-    height: 200px;
-}
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-pomegues-size*/
-div.resp-1370px-frioul-box {
-    height: 12rem;
-}
- figure > img.resp-1370px-frioul-img {
-    height: 140px;
-}
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-pomegues-size*/
-div.resp-1370px-notre-dame-box {
-    height: 13rem;		
-}
-figure > img.resp-1370px-notre-dame-img {
-    height: 155px;		
-}
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-image-pomegues-size*/
-div.resp-1370px-longchamps-box {
-    height: 15rem;		
-}
-figure > img.resp-1370px-longchamps-img {
-    height: 190px		
 }
 
 
@@ -257,58 +248,4 @@ figure > img.resp-1370px-longchamps-img {
     ul > li.resp-1370px-margin-text {
         margin-bottom: 4%;
     }
-
-
-
-    
-    .resp-1370px-row { 
-        flex-direction: row;
-    }
-    .resp-1370px-wrap { 
-        flex-wrap: wrap;						
-    }
-    .resp-1370px-row-reverse { 
-        flex-direction: row-reverse;
-    }
-    .resp-1370px-column { 
-        flex-direction: column;
-    }
-    .resp-1370px-column-reverse { 
-        flex-direction: column-reverse;
-    }
-    .resp-1370px-between {
-        align-content: space-between;
-        justify-content: space-between;
-    }
-    .resp-1370px-around {
-        align-content: space-around;
-        justify-content: space-around;
-    }
-    .resp-1370px-align-center {
-        align-items: center;
-    }	
-    /*RESPONSIVE MARGIN - PADDING*/ 
-    .resp-1370px-margin-right-left { 
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .resp-1370px-margin-top-bottom {
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-    .resp-1370px-margin-top {
-        margin-top: 2%;
-    }
-    .resp-1370px-margin-right {
-        margin-right: 2%;
-    }
-    .resp-1370px-margin-bottom {
-        margin-bottom: 2%;
-    } 
-    .resp-1370px-margin-left {
-        margin-left: 2%;
-    }
-
-
-
 }

@@ -1,18 +1,18 @@
 /* resp = responsive */ 
-@media screen and (max-width: 380px)
+@media screen and (max-width: 380px) 
 { 
-    header, main, footer {
-        margin: 0%;
-    }
-        
+    /* margin CONFIGURATION */
+    main > div.resp-380px-margin{  
+        margin: 1.5%
+    } 
     img.resp-380px-img-reservia { 
         height: 2.5rem;
         width: 5rem;
         position: absolute;
-        left: 30px;
+        left: 20px;
         top: 1px;
     }
-    nav.resp-380px-nav-top {  
+    nav.resp-380px-nav-top {  margin-bottom: 10%;
         width: 100%;
         margin-left: 0%;
     }
@@ -24,14 +24,12 @@
         border-bottom: rgb(184, 174, 174) 0.1rem solid;
         width: 350px;
         margin-top: 20%;
-    
         padding-bottom: 15px;	
     }
     li.resp-380px-activities {  
         border-bottom: rgb(184, 174, 174) 0.1rem solid;
         width: 350px;
         margin-top: 20%;
-    
         padding-bottom: 15px;
     }
     a.barr:hover {
@@ -39,7 +37,7 @@
     }
     li.resp-380px-register { 
         position: absolute;
-        left: 230px;
+        left: 270px;
         top: 12px;
     }
     a.resp-380px-blue-text {
@@ -84,17 +82,17 @@
 
     div > h3.resp-380px-title-top {
         font-size: 15pt;
+        margin-bottom: -5px;
     }
     p.resp-380px-typo-grey {
         font-size: 15pt;
+        margin-top: 5%;
     }
-
-    p.resp-380px-title-filter {
-        height: 15px;
+    p.resp-380px-title-filter { 
+        margin-bottom: 10%;
     }
     div.resp-380px-main-top { 
         width: 100%;
-        margin-left: 0%;															
     }
     h3.resp-380px-text-size {
         font-size: 17pt;
@@ -102,17 +100,24 @@
     br.resp-380px-jump-line {
         display: initial;
     }	
-    div.resp-380px-filter {  
+    div.resp-380px-filter {   
         flex-direction: column;
         align-items: flex-start;
         height: auto;
-        width: 100%;																	
+        width: 100%;	
+        margin-bottom: 10%;																
     }
     ul.resp-380px-filter-list { 
         flex-direction: row;
         flex-wrap: wrap;
         height: 6.5rem;
-        width: 250px;
+        width: 280px;
+    }
+    div.resp-380px-container-info { 
+        margin-bottom: 10%;
+    }
+    span.resp-380px-bold-text {
+        margin-left: 20px;
     }
     span.resp-380px-desktop-text {
         display: none;
@@ -121,6 +126,10 @@
         margin-top: 5%;
         margin-bottom: 5%;
     }
+    input.resp-670px-input-size {
+        width: 17rem;
+    }
+
     button.resp-380px-button-search {
         background-color: #0065FC;
         border-radius: 10px 10px 10px 10px;		
@@ -137,91 +146,102 @@
         margin-left: 10%;
         max-width: 100%;
     }
-    li.resp-380px-border { 
+    li > div.resp-380px-border { 
         margin-bottom: 30%;
     }
     li.resp-380px-typo-grey { 
         font-size: 12pt;
-        margin-left: 5%;
-    }
-    p.resp-380px-typo-grey {
-        font-size: 12pt;
+        margin-top: 1%;
+        margin-left: 1%;
     }
 
 
-    main > div.resp-380px-main-middle {         
+    main > div.resp-380px-main-middle {      
         flex-direction: column-reverse;
         height: 130rem;
         width: 100%;
-        margin-top: 10%;
+        margin-top: 20%;
         padding: 0%; 
     }
-    main > div > section.resp-380px-accommodation-box {  
-        height: 95rem;
+    main > div > section.resp-380px-accommodation-box { 
+        height: 112rem;
         width: 100%;																	
         background-color: white;
         margin: 0%;
     }
+    h3.resp-380px-title-size-1 {
+        margin: 0% 5% 5% 2%;
+    }
     div.resp-380px-image-box {
-        height: 13rem;
-        width: 95%;																	
-        max-width: 100%;																	
+        height: 12.5rem;
+        width: 92%;																	
+        max-width: 100%;		
+        margin-left: 1%;															
     }
     figure > img.resp-380px-img-size-top {
         height: 7rem;
         width: 100%;																
     }
 
-    div.resp-380px-star-box {
-        margin-top: 3%;
-        margin-left: 1.6rem ;
-
+    p.resp-380px-title-size-1 {
+        margin-left: 2%;
     }
-
+    div.resp-380px-star-hebergement {
+        margin-top: -5%;
+    }
+    img.resp-380px-blue-star {
+        object-fit: cover;
+        height: 15px;
+        width: 15px;
+        max-width: 100%;
+        margin: auto 0.1%;    
+    }
 
 
 
     section.resp-380px-popular-box { 
         border-radius: 0px 0px 0px 0px;
-        height: 35rem;
+        height: 40rem;
         width: 100%;		
-        margin-top: 20%;
+        margin: 20% 0% 0% 0%;
     }
     div.resp-380px-title-box { 
         height: 15px;
+        width: 21rem;
+        margin-left: 3%;
     }
     div.resp-380px-thumbnail-box { 
         flex-direction: column;
-        height: 31rem;
+        height: auto;
         width: 100%;		
     }
     figure.resp-380px-figure-size { 
         flex-direction: row;  
         height: auto;
     }
+    ul.resp-380px-name-margin-popular {
+        margin-left: 1rem;
+    }
+    div.resp-380px-star-popular { 
+        margin-bottom: 25%;
+        margin-left: 8.1rem;
+    }
     div.resp-380px-image-box-2 { 
         border-radius: 20px 20px 20px 20px;
-        height: 9rem;
-        width: 95%;	
-        padding: 1%;
+        height: 9.5rem;
+        width: 92%;	
+        padding: 1.2%;
+        margin-left: 1%;
     }
     img.resp-380px-img-size-top-2 {  
         background-position: left;
         border-radius: 20px 0px 0px 20px;
-        height: 9rem;
+        height: 9.5rem;
         width: 36%;
         max-width: 100%;
     }
-    div.resp-380px-star-box-2 {
-        margin-top: -10%;
-        margin-left: 8rem ;
-    }
-    ul.resp-380px-name-margin, 
-    li.resp-380px-name-margin { 
-        width: 12rem;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
+
+
 
 
 
@@ -229,6 +249,8 @@
     section.resp-380px-activities-box {         
         height: 70rem;
         width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     } 
     div.resp-380px-container-activities {           
         height: 69rem;
@@ -237,6 +259,7 @@
     }
     h3.resp-380px-title-box-activities {  
         margin-bottom: 10%;
+        margin-left: 3%;
     }
     div.resp-380px-duo-box {
         flex-direction: column;
@@ -247,6 +270,7 @@
     div.resp-380px-image-box-small {  
         height: 10rem;
         width: 95%;
+        margin-left: 1.5%;
     }
     figure > img.resp-380px-image-size-large,
     figure > img.resp-380px-image-size-small { 
@@ -256,17 +280,17 @@
 
 
 
-    section.resp-380px-background {           
+    section.resp-380px-background {          
         flex-direction: column;
+        height: 32rem;
         width: 100%;		
-        padding-top: 50px;
     }
-    section > div.resp-380px-footer-box {
+    section > div.resp-380px-footer-box { 
         flex-direction: column;
         height: 25rem;
         width: 100%;		
     } 
-    div > ul.resp-380px-ul-box {
+    div > ul.resp-380px-ul-box { 
         margin-bottom: 20px;
     }
     ul > li.resp-380px-margin-title, 
