@@ -1,5 +1,19 @@
-/* resp = responsive */ 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*  resp-1050px = responsive max-width: 1050px   */ 
 @media screen and (max-width: 1050px) { 
+
+    /*  MARGIN CONFIGURATION    */
+    header {
+        margin-bottom: 5%;
+    }
+
+    /*  HEADER NAVIGATION CONFIGURATION    */
 
     img.resp-1050px-img-reservia { 
         height: 4rem;
@@ -20,9 +34,6 @@
     a.resp-1370px-black-text {
         font-size: 17pt;
     }
-    header {
-        margin-bottom: 5%;
-    }
     li.resp-1050px-register { 
         position: absolute;
         left: 54rem;
@@ -30,9 +41,11 @@
     }
 
 
+    /*  MAIN-TOP FILTER CONFIGURATION   */
+
     div.resp-1050px-main-top { 
-        width: 100%;
         height: 20rem;
+        width: 100%;
     }
     h3.resp-1050px-title-top {
         font-size: 20pt;
@@ -42,9 +55,8 @@
         font-size: 15pt;
         margin-bottom: 1%;
     }
-    div.resp-1050px-search { 
-        margin-top: 4%;  
-        margin-bottom: 3.5%;  
+    div.resp-1050px-search {
+        margin: 4% 0% 3.5% 0%;
     }
     input.resp-1050px-input-size {  
         height: 2.5rem;
@@ -61,8 +73,11 @@
         width: 600px;
     } 
     div.resp-1050px-filter {   
-        align-content: space-between;
-        align-items: center;
+        -ms-flex-line-pack: justify;   
+            align-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 1rem;
         width: 850px;
     } 
@@ -83,39 +98,60 @@
 
 
     div.resp-1050px-main-middle {  
-        flex-direction: column-reverse;
-        align-content: space-between;
-        justify-content: space-between;
+        -webkit-box-orient: vertical;  
+        -webkit-box-direction: reverse;  
+            -ms-flex-direction: column-reverse;  
+                flex-direction: column-reverse;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         height: 90rem;
         width: 100%;
         margin-top: 3%;
     }
 
 
+/*  MAIN-MIDDLE · html > head > body > header > main.middle.accomodation    */
 
     main > div > section.resp-1050px-accommodation-box { 
-        justify-content: space-between;
         background-color: white;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         height: 50rem;
-        margin-right: 5%;
         width: 100%;
+        margin-right: 5%;
+    }
+    section > h3.resp-1050px-title-size-hebergement { 
+        font-size: 18pt;
     }
     h3.resp-1050px-title-margin {
         margin-top: 5%;
         margin-left: 1%;
     }
+    h3.resp-1050px-title-size-hebergement {  
+        font-size: 15pt;
+        height: 25px;
+        width: 98%;
+        margin-left: 0%;
+    }
+    p.resp-1050px-title-size-1 {  
+        font-size: 15pt;
+        width: 98%;
+        margin-left: 0%;
+    }
+
     div.resp-1050px-image-box { 
         border-radius: 20px 20px 20px 20px;
         height: 18rem;
         width: 30.5%;
         min-width: 25%;
     }
-    ul.resp-1050px-name-margin-hebergement {
+    ul.resp-1050px-name-margin-hebergement {  
         font-size: 15pt;
-
-        margin-top: 2%;
-        margin-left: 5%;
-        margin-bottom: 8%;
+        margin: 2% 0% 8% 5%;
     }
     li.resp-1050px-place-name-hebergement {
         font-size: 15pt;
@@ -126,6 +162,10 @@
     div.resp-1050px-star-hebergement {
         margin-top: 2%;
     }
+    div.resp-1050px-star-hebergement-cannebiere {         
+        margin-top: 0.2%;
+        margin-left: 4%;
+    }
     img.resp-1050px-img-size-top {
         background-position: top;
         border-radius: 20px 20px 0px 0px;
@@ -135,21 +175,38 @@
     }
 
 
-
+    /*  MAIN-MIDDLE · html > head > body > header > main.middle.popular-box    */
 
     section.resp-1050px-popular-box { 
         border-radius: 0px 0px 0px 0px;
         height: 35rem;
         width: 100%;
     }
-    div.resp-1050px-title-box  { 
-        margin-bottom: 5%;
+    div.resp-1050px-title-box {  
+        height: 25px;
+        width: 98%;
+        margin: 6% 0% 2.7rem 0%;
     }
+    div > h3.resp-1050px-title-popular {
+        font-size: 18pt;
+    }
+    img.resp-1050px-icon-popular {
+        height: 1.5rem;
+        width: 1.5rem;
+        max-width: 100%;
+    }
+
     div.resp-1050px-thumbnail-box {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-line-pack: justify;
+            align-content: space-between; 
+        -webkit-box-pack: justify; 
+            -ms-flex-pack: justify; 
+                justify-content: space-between;
         height: 16px;
-        flex-direction: row;
-        align-content: space-between; 
-        justify-content: space-between;
         width: 100%;
     }
     ul.resp-1050px-name-margin-popular {   
@@ -159,14 +216,12 @@
         font-size: 14pt;    
     }
     li.resp-1050px-rate-popular { 
-        width: 100%;
         font-size: 12pt;    
+        width: 100%;
     }
     div.resp-1050px-star-popular {  
         width: 6rem;
-        margin-top: 0.1%;
-        margin-left: 5%;
-
+        margin: 0.1% 0% 0% 5%;
     }
     div.resp-1050px-image-box-2 { 
         border-radius: 20px 20px 20px 20px;
@@ -175,7 +230,10 @@
         padding: 0.5%;
     }
     figure.resp-1050px-figure-size {  
-        flex-direction: column;  
+        -webkit-box-orient: vertical;  
+        -webkit-box-direction: normal;  
+            -ms-flex-direction: column;  
+                flex-direction: column;  
     }
     img.resp-1050px-img-size-top-2 {  
         background-position: top;
@@ -186,21 +244,35 @@
     }
 
 
+    /*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
 
     section.resp-1050px-activities-box { 
-        justify-content: space-between;
+        -webkit-box-pack: justify; 
+            -ms-flex-pack: justify; 
+                justify-content: space-between;
         height: 50rem;
         width: 100%;
     } 
     div.resp-1050px-container-activities {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
                 flex-direction: row; 
-                flex-wrap: wrap;
+        -ms-flex-wrap: wrap; 
+            flex-wrap: wrap;
         height: 39.5rem;
         width: 100%;		
         margin: auto
     }
+    section > h3.resp-1050px-title-box-activities  { 
+        font-size: 18pt;
+        height: 30px;
+    }
     div.resp-1050px-duo-box { 
-        flex-direction: row;
+        -webkit-box-orient: horizontal; 
+        -webkit-box-direction: normal; 
+            -ms-flex-direction: row; 
+                flex-direction: row;
         height: 15rem;
         width: 40rem;
     }
@@ -214,20 +286,34 @@
         height: 15rem;
         width: 100%;
     }
-    
+    h3.resp-1050px-title-box-activities { 
+        font-size: 15pt;
+    }
+    p.resp-1050px-text-size-activities {
+        font-size: 15pt;
+    }
 
 
+    /*  MAIN-BOTTOM · html > head > body > footer  */
 
     section.resp-1050px-background {   
         height: 100%;
         width: 100%;		
+        margin-bottom: 5%;
     }
     div.resp-1050px-footer-box {   
-        flex-direction: row;
+        -webkit-box-orient: horizontal;   
+        -webkit-box-direction: normal;   
+            -ms-flex-direction: row;   
+                flex-direction: row;
         height: 8.5rem;
         width: 80%;	
         margin-left: 5%;																
     } 
+    h4.resp-1050px-title-size-footer,
+    a.resp-1050px-link-size-footer {
+        font-size: 15pt;
+    }
     ul > li.resp-1050px-margin-title, 
     ul > li.resp-1050px-margin-text {  
          margin-bottom: 3%;

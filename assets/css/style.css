@@ -1,15 +1,26 @@
-/* resp = responsive*/ 
-/* BODY CONFIGURATION */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*  resp == responsive  */ 
+/*  BODY CONFIGURATION  */
 body {
     height: auto;
 }
-/* margin CONFIGURATION */
+
+/*  margin CONFIGURATION    */
 header, main { 
     margin: 2%
 } 
-/* HEADER NAVIGATION CONFIGURATION */
+
+
+
+/*  HEADER NAVIGATION CONFIGURATION    */
+
 img.img-reservia { 
-    object-fit: cover;
     right: 3rem;
     height: 3rem;
     width: 8rem;
@@ -18,6 +29,8 @@ img.img-reservia {
 }
 ul.header { 
     width: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 a.blue-text {
@@ -37,9 +50,36 @@ a.black-text {
     width: 150px;
     padding-bottom: 100px;
 }
-/* MAIN-TOP FILTER CONFIGURATION */
+
+
+/*  MAIN-TOP FILTER CONFIGURATION   */
+
 .input-size {
     width: 240px;
+}
+input::-webkit-input-placeholder {
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+    padding-left: 15px;
+}
+input::-moz-placeholder {
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+    padding-left: 15px;
+}
+input:-ms-input-placeholder {
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+    padding-left: 15px;
+}
+input::-ms-input-placeholder {
+    font-size: 12pt;
+    font-weight: bold;
+    color: black;
+    padding-left: 15px;
 }
 input::placeholder {
     font-size: 12pt;
@@ -60,7 +100,6 @@ br.resp-380px-jump-line {
     display: none;
 }	
 img.map-maker { 
-    object-fit: cover;
     height: 20px;
     width: 20px;
     max-width: 100%;
@@ -101,14 +140,18 @@ ul.filter-list {
     width: 38rem;
 }
 ul.filter-list > li.filter-item {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
 }
 ul.filter-list > li.filter-item > input {
     display: none;
 }
 ul.filter-list > li.filter-item > label.filter-name {
-    display: flex;
     background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     border-radius: 20px;
     height: 30px;
     border-top: 0.5px solid rgb(199, 196, 196);
@@ -121,14 +164,19 @@ ul.filter-list > li.filter-item > label.filter-name > span.cropper {
     border-radius: 50%;
     height: 31px;
     width: 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
     margin-bottom: 5%;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 ul.filter-list > li.filter-item > label.filter-name > span.cropper > img.filter-icon {
-    object-fit: cover;
     height: 15px;
     width: 15px;
     max-width: 100%;
@@ -139,7 +187,8 @@ ul.filter-list > li.filter-item > label.filter-name > span.name {
     line-height: 34px;
 }
 div > ul > li > div > img.icon-info { 
-    object-fit : cover;
+    -o-object-fit : cover; 
+       object-fit : cover;
     height: 15px;
     width: 15px;
     margin: 3.5px 0px 0px 9px;
@@ -154,7 +203,8 @@ div.container-info > ul > li > div.border {
 ul.filter-list > li.filter-item > label.filter-name:hover {
     background-color: #f0f0f0;
 }
-/* typo style */
+
+/*  typo style  */
 ul.part-information {
     height: 25px;
     margin-bottom: 3%;
@@ -162,15 +212,26 @@ ul.part-information {
 li.typo-grey, p.typo-grey {
     font-size: 12pt;
 }
-/*	MAIN-MIDDLE · html > head > body > header > main.middle.accomodation	*/
+
+
+/*  MAIN-MIDDLE · html > head > body > header > main.middle.accomodation    */
+
 div.main-middle { 
     width: 100%;																	
 }
 main > div > section.accommodation-box { 
-        display: flex;
-        flex-direction: row;
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-line-pack: distribute;
         align-content: space-around;
+    -ms-flex-pack: distribute;
         justify-content: space-around;
     background-color: rgb(242, 242, 242);
     border-radius: 20px 20px 20px 20px;
@@ -187,9 +248,8 @@ ul.name-margin-hebergement {
     height: 5%;
     margin-left: 4%;
 }
-div.star-hebergement { 
-    margin-top: 3%;
-    margin-left: 4%;
+div.star-hebergement {  
+    margin: 3% 0% 0% 4%;
 }
 div.image-box {
     background-color: white;
@@ -197,10 +257,10 @@ div.image-box {
     width: 18rem;
     padding: 3px;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
+    -webkit-box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
+            box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
 }
 img.img-size-top { 
-    object-fit: cover;
     background-position: top;
     border-radius: 20px 20px 0px 0px;
     height: 8rem;
@@ -208,48 +268,58 @@ img.img-size-top {
     max-width: 100%;
 }
 img.blue-star {
-    object-fit: cover;
+    height: 12px;
+    width: 12px;
+    max-width: 100%;
+    margin: 0;
+}
+
+img.blue-star {
     height: 15px;
     width: 15px;
     max-width: 100%;
     margin: auto 0.1%;
 }
-div.title-box { 
-    width: 100%;
+div.title-box {  
+    width: 99%;
     margin: 30px 0px 25px 10px;
 }
-section.popular-box { 
-    width: 20rem;
-    height: 40rem;
-    padding: 1%;
+
+
+/*  MAIN-MIDDLE · html > head > body > header > main.middle.popular-box    */
+
+section.popular-box {  
     border-radius: 20px 20px 20px 20px;
     background-color: rgb(242, 242, 242);
+    height: 40rem;
+    width: 20rem;
+    padding: 1%;
 }
-img.icon {
-    margin-right: 25px;
+img.icon {  
+    height: 1rem;
+    width: 1rem;
+    max-width: 100%;
 }
-div.thumbnail-box {
+div.thumbnail-box {  
     height: 90%;
 }
-ul.name-margin-popular { 
+ul.name-margin-popular {   
     height: 50%;
     width: 10rem;
-    margin-top: 5%;
-    margin-left: 5%;
-
+    margin: 5% 0% 0% 5%;
 }
-li.rate-popular { 
+li.rate-popular {  
     width: 9rem;
     margin-top: 4%;
 }
 div.star-popular { 
-    margin-top: -9%;
-    margin-left: 47%;
+    margin: -9% 0% 0% 47%;
 }
-div.image-box-2 {
+div.image-box-2 {  
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
+    -webkit-box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
+            box-shadow: 3px 3px 3px 3px rgb(190, 189, 189);
     height: 9rem;
     width: 18rem;
     margin: auto;
@@ -257,7 +327,6 @@ div.image-box-2 {
     padding: 4px;
 }
 img.img-size-top-2 {
-    object-fit: cover;
     background-position: left;
     border-radius: 20px 0px 0px 20px;
     height: 9rem;
@@ -265,38 +334,32 @@ img.img-size-top-2 {
     max-width: 100%;
     margin: auto 0;
 }
-li.grey-size {
+li.grey-size {  
     font-size: 10pt;
 }
-img.blue-star {
-    object-fit: cover;
-    height: 12px;
-    width: 12px;
-    max-width: 100%;
-    margin: 0;
-}
 
 
+/*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
 
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box*/
 div.activities-box {
     margin: 2% 0% 0% 0%;
     padding: 1%;
-    height: 35rem auto;
     width: 100%;
 }
 figure > figcaption > p.margin-text-activities {
     margin: 4% 0% 0% 9%;
 }
 div.image-box-large {
-    box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+    -webkit-box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+            box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     height: 29rem;						
-    width: 22rem;
+    width: 21rem;
 }
 figure > img.image-size-large {
-    object-fit : cover;
+    -o-object-fit : cover;
+       object-fit : cover;
     border-radius: 20px 20px 0px 0px;
     height: 420px;		
     width: 100%;
@@ -305,11 +368,11 @@ figure > img.image-size-large {
 div.image-box-small {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+    -webkit-box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+            box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
     width: 21rem;
 }
 figure > img.image-size-small {
-    object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     height: 415px;
     width: 21rem;
@@ -319,30 +382,31 @@ div.fort-pomegues-box {
     height: 15.5rem;
 }
 figure > img.fort-pomegues-img {
-    object-fit: cover;
     height: 200px;
 }
 div.frioul-box {
     height: 12rem;
 }
 figure > img.frioul-img {
-    object-fit: cover;
     height: 146px;
 }
 div.notre-dame-box {
     height: 12.5rem;		
 }
 figure > img.notre-dame-img {
-    object-fit: cover;
     height: 155px;		
 }
 div.longchamps-box {
     height: 15rem;		
 }
 figure > img.longchamps-img {
-    object-fit: cover;
     height: 195px		
 }
+
+
+
+/*  MAIN-BOTTOM · html > head > body > footer  */
+
 footer {
     margin: 3% 0px 0px 0px;
 }
@@ -362,29 +426,48 @@ ul > li.margin-title {
 li.margin-text {
     margin-bottom: 7%;
 }
-/* General css setting */
-/* FLEXBOX */
+
+/*  General css setting    */
+/*  FLEXBOX    */
+
 .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .row {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 .column {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .between {
-    align-content: space-between;
-    justify-content: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .around {
-    align-content: space-around;
-    justify-content: space-around;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .align-center {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }	
-/*MARGIN - PADDING*/
+
+/*  MARGIN - PADDING    */
+
 .margin-top {
     margin-top: 2%;
 }
@@ -402,20 +485,41 @@ button, h1, h2, h3, h4, h5, h6 {
     margin: 0%;
     padding: 0%;
 }
-/* TEXT */
+.cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+/*  TEXT   */
+
 @font-face {
-    src: url('assets/font/Raleway-VariableFont_wght.ttf') format('truetype'),
-         url('Raleway-Italic-VariableFont_wght.ttf') format('truetype'),
-         url('assets/font/static/Raleway-BlackItalic.ttf') format('truetype');
-    font-family: "Raleway", Helvetica, sans-serif;	
+    src: url('assets/font/Raleway-VariableFont_wght.ttf') format('ttf'),
+         url('Raleway-Italic-VariableFont_wght.ttf') format('ttf'),
+         url('assets/font/static/Raleway-BlackItalic.ttf') format('ttf');
+    font-family: "Raleway", "Helvetica", sans-serif;	
     font-weight: normal;
     font-style: normal;
 }	
-a, ul, ul.li, p, i, span, input::placeholder,
+input::-webkit-input-placeholder {
+    font-family: "Raleway", Helvetica, sans-serif;	
+}	
+input::-moz-placeholder {
+    font-family: "Raleway", Helvetica, sans-serif;	
+}	
+input:-ms-input-placeholder {
+    font-family: "Raleway", Helvetica, sans-serif;	
+}	
+input::-ms-input-placeholder {
+    font-family: "Raleway", Helvetica, sans-serif;	
+}	
+a, ul, ul.li, li, p, i, span, input::placeholder,  
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", Helvetica, sans-serif;	
 }
-.grey-text {
+.raleway-font {
+    font-family: "Raleway", Helvetica, sans-serif;	
+}
+.grey-text { 
     color: #303030
 }
 .bold-text {
@@ -428,10 +532,14 @@ a {
 ul {
     list-style: none;
 }		
-/* shadow */
-.shadow-box {
-    box-shadow: 1px rgb(221, 219, 219);
+
+/*  shadow  */
+
+.shadow-box { 
+    -webkit-box-shadow: 1px 0.5px 0.5px rgb(221, 219, 219); 
+            box-shadow: 1px 0.5px 0.5px rgb(221, 219, 219);
 }
 .shadow-box-2 {
-    box-shadow: 0.5px rgb(250, 245, 249);
+    -webkit-box-shadow: 1px 0.5px 0.5px rgb(250, 245, 249);
+            box-shadow: 1px 0.5px 0.5px rgb(250, 245, 249);
 } 

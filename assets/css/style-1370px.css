@@ -1,6 +1,15 @@
-/* resp = responsive object-fit : cover*/ 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*  resp-1370px = responsive max-width: 1370px   */ 
 @media screen and (max-width: 1370px)
 { 
+    /*  HEADER NAVIGATION CONFIGURATION    */
+
     img.resp-1370px-img-reservia { 
         height: 3rem;
         width: 5rem;
@@ -30,9 +39,9 @@
         padding-right: 40px;
         padding-bottom: 15px;
     }
-    /*.barr:hover {
-        display:none;
-    }*/
+    .barr:hover {
+        display: initial;
+    }
     .resp-1370px-hebergement:hover,
     .resp-1370px-activities:hover { 
         border-bottom: #0065FC 0.2rem solid;
@@ -43,7 +52,7 @@
     }
 
 
-
+    /*  MAIN-TOP FILTER CONFIGURATION   */
 
     p.title-filter { 
         font-size: 14pt;
@@ -70,15 +79,14 @@
         display: none;
     }
     div.resp-1370px-search { 
-        margin-top: 1%;
-        margin-bottom: 0.5%;
+        margin: 1% 0% 0.5% 0%;
     }
     button.resp-1370px-button-search {
         background-color: #0065FC;
         border-radius: 10px 10px 10px 10px;		
         border: #0065FC;
-        width: 2.5rem;
         height: 2.5rem;
+        width: 2.5rem;
         margin-left: -10px;
     }
     img.resp-1370px-search-glass {  							
@@ -86,7 +94,6 @@
         height: 15px;
         width: 15px;
         margin: 15% 0% 0% 10%; 
-        margin-left: 10%;
         max-width: 100%;
     }
     li.resp-1370px-border { 
@@ -98,33 +105,45 @@
     }
 
 
+    /*  MAIN-MIDDLE · html > head > body > header > main.middle.accomodation    */
 
-
-    main > div.resp-1370px-main-middle {         padding: 0%;
-
-        flex-direction: column-reverse;
+    main > div.resp-1370px-main-middle {         
+        -webkit-box-orient: vertical;         
+        -webkit-box-direction: reverse;         
+            -ms-flex-direction: column-reverse;         
+                flex-direction: column-reverse;
         height: 125rem;
         width: 100%;
     }
     main > div > section.resp-1370px-accommodation-box {  
-        /*background-color: rgb(242, 242, 242);*/
         height: 45rem;
-        width: 68%;																	
+        width: 66%;																	
+    }
+    h3.resp-1370px-title-size-hebergement {
+        font-size: 18pt;
+        width: 98%;
+        margin-left: 0%;
+    }
+    p.resp-1370px-title-size-1 {  
+        font-size: 15pt;
+        width: 98%;
+        margin-left: 0%;
+    }
+    div.resp-1370px-star-hebergement-cannebiere {         
+        margin-top: 0.2%;
+        margin-left: 4%;
     }
     img.resp-1370px-blue-star {
-        object-fit: cover;
         height: 20px;
         width: 20px;
         max-width: 100%;
         margin: 0;
     }
-    
-    ul.resp-1370px-name-margin-hebergement {
-        margin-top: 5%;
-        margin-left: 5%;
-        margin-bottom: 5%;
+    ul.resp-1370px-name-margin-hebergement { 
+        margin: 5% 0% 5% 4%;
     }
-    li.resp-1370px-place-name-hebergement {
+    li.resp-1370px-place-name-hebergement {  
+        width: 100%;
         font-size: 15pt;
     }
     li.resp-1370px-rate-hebergement {
@@ -132,7 +151,7 @@
     }
     div.resp-1370px-image-box {    
         height: 17rem;
-        width: 30%;																	
+        width: 31%;																	
         max-width: 100%;																	
     }
     figure  >img.resp-1370px-img-size-top {
@@ -140,33 +159,52 @@
         width: 100%;																
     }
 
+    figure  >img.resp-1370px-img-size-top-cannebiere {
+        height: 10rem;
+        width: 100%;						
+        margin-top: 1.5%;										
+    }
 
 
+    /*  MAIN-MIDDLE · html > head > body > header > main.middle.popular-box    */
 
-    section.resp-1370px-popular-box {  
+    section.resp-1370px-popular-box {   
         border-radius: 0px 0px 0px 0px;
         height: 45rem;
         width: 27%;		
     }
     div.resp-1370px-title-box {  
-        margin-top: 6%;
-        margin-bottom: 2.7rem;
-        height: 15px;
+        font-size: 15pt;
+        height: 25px;
+        width: 98%;
+        margin: 6% 0% 2.7rem 0%;
+    }
+    div > h3.resp-1370px-title-popular {
+        font-size: 18pt;
+    }
+    img.resp-1370px-icon-popular {
+        height: 1.5rem;
+        width: 1.5rem;
+        max-width: 100%;
     }
     div.resp-1370px-thumbnail-box {
-            flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: 39rem;
         width: 100%;		
     }
     figure.resp-1370px-figure-size {
-        flex-direction: row;  
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;  
         height: auto;
     }
     ul.resp-1370px-name-margin-popular { 
         width: 15rem;
-        margin-top: 5%;
-        margin-left: 5%;
-        margin-bottom: 5%;
+        margin: 5% 0% 5% 5%;
     }
     li.resp-1370px-place-name-popular {
         font-size: 15pt;
@@ -188,59 +226,77 @@
     }
 
 
+    /*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
 
-/*MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box*/
-section.resp-1370px-activities-box {  
-    margin: 2% 0% 0% 0%;
-    padding: 1%;
-    height: 36rem;
-    width: 100%;
-}
-figure > figcaption > p.resp-1370px-margin-text-activities { 
-    margin-top: 4%;
-}
-div.resp-1370px-image-box-large {  
-    border-radius: 20px 20px 20px 20px;
-    width: 20rem;
-    height: 30rem;						
-    box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
-    background-color: white;
-}
-figure > img.resp-1370px-image-size-large { 
-    border-radius: 20px 20px 0px 0px;
-    height: 425px;		
-    width: 100%;
-    max-height: 85%;
-}
-div.resp-1370px-image-box-small { 
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
-    height: 14.3rem;
-    width: 19rem;
-}
-figure > img.resp-1370px-image-size-small { 
-    border-radius: 20px 20px 0px 0px;
-    height: 160px;
-    width: 100%;
-    max-height: 85%;
-}
+    section.resp-1370px-activities-box {  
+        height: 36rem;
+        width: 100%;
+        margin: 2% 0% 0% 0%;
+        padding: 1%;
+    }
+    figure > figcaption > p.resp-1370px-margin-text-activities { 
+        margin-top: 4%;
+    }
+    div.resp-1370px-image-box-large {  
+        background-color: white;
+        -webkit-box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+                box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+        border-radius: 20px 20px 20px 20px;
+        height: 30rem;						
+        width: 20rem;
+    }
+    figure > img.resp-1370px-image-size-large { 
+        border-radius: 20px 20px 0px 0px;
+        height: 425px;		
+        width: 100%;
+        max-height: 85%;
+    }
+    div.resp-1370px-image-box-small { 
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        -webkit-box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+                box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+        height: 14.3rem;
+        width: 19rem;
+    }
+    figure > img.resp-1370px-image-size-small { 
+        border-radius: 20px 20px 0px 0px;
+        height: 160px;
+        width: 100%;
+        max-height: 85%;
+    }
+    section > h3.resp-1370px-title-box-activities { 
+        font-size: 18pt;
+    }
+    p.resp-1370px-text-size-activities {
+        font-size: 15pt;
+    }
 
 
-
+    /*  MAIN-BOTTOM · html > head > body > footer  */
 
     section.resp-1370px-background {            
-        flex-direction: column;
+        -webkit-box-orient: vertical;            
+        -webkit-box-direction: normal;            
+            -ms-flex-direction: column;            
+                flex-direction: column;
         height: 100%;
         width: 100%;		
         margin-top: 3rem;
         padding-top: 50px;
     }
     section > div.resp-1370px-footer-box { 
-            flex-direction: column;
+        -webkit-box-orient: vertical; 
+        -webkit-box-direction: normal; 
+            -ms-flex-direction: column; 
+                flex-direction: column;
         height: 26rem;
         width: 100%;		
     } 
+    h4.resp-1370px-title-size-footer,
+    a.resp-1370px-link-size-footer {
+        font-size: 15pt;
+    }
     div > ul.resp-1370px-ul-box {
         margin-bottom: 20px;
     }
