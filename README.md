@@ -7,8 +7,9 @@ Reservia : La meilleure expérience réservation
 ## Liens :
 
 * Réaliser un site web à partir d'une maquette :
+- Dépôt Git : https://github.com/Lyss74/DercourtSulyvan_2_22102020
+- Url du site : https://lyss74.github.io/DercourtSulyvan_2_22102020/
 - Page d'accueil du projet : https://openclassrooms.com/fr/paths/185/projects/639/assignment
-- Dépôt Git: https://github.com/Lyss74/DercourtSulyvan_2_22102020
 
 ## Scénario :
 
