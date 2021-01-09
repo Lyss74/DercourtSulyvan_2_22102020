@@ -1,0 +1,270 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@media (max-width: 815px) and (max-height: 420px) {
+    /*  HEADER NAVIGATION CONFIGURATION    */
+
+    img.img-reservia { 
+        position: absolute;
+        top: 1%;
+        left: 2%;
+        height: 2rem;
+        width: 5rem;
+    }
+    nav.nav-top {  
+        height: 50px;
+        width: 99%;
+    }
+    ul.header {   
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: space-between;
+        width: 80%;
+        margin-top: 1%;
+    }
+    li.hebergement {  
+        width: 40%;
+    }
+    li.activities {  
+        width: 30%;
+    }
+    .barr:hover {
+        border-top: #0065FC 0.2rem solid;
+        height: 50px;
+        width: 150px;
+    }
+    div.main-top {  
+        height: 20rem;
+        width: 85%;
+    }
+    div > h3.title-top {  
+        font-size: 17pt;
+        margin: 0% 0% 5% 0%;
+    }
+    div.filter { 
+        flex-wrap: wrap;
+        height: 3.5rem;
+        width: 95%;
+    }
+    p.title-filter {
+        margin-bottom: 5%;
+    }
+    ul.filter-list {   
+        flex-wrap: wrap;
+        height: 140%;
+        width: 80%;
+    } 
+    div.search {
+        margin: 1.5% 0% 3% 0%;
+    }
+    input.input-size {
+        width: 20rem;
+    }
+    div.container-info { 
+        margin-top: 3%;    
+    }
+    li.typo-grey {
+        font-size: 12.5pt;
+    }
+    p.head-typo-grey { 
+        font-size: 15pt;
+        margin-bottom: 5%;
+    } 
+    div.main-middle {  
+        flex-direction: column-reverse;
+        align-content: space-between;
+        justify-content: space-between;
+        height: 80rem;
+        width: 100%;	
+    }
+
+
+    /*  MAIN-MIDDLE · html > head > body > header > main.middle.accomodation    */
+
+    main > div > section.accommodation-box { 
+        background-color: white;
+        height: 35rem;
+        width: 99%;																	
+    }
+    section > h3.title-size-hebergement { 
+        font-size: 12pt;
+        height: 20px;
+        margin-left: 0.5%;
+    }
+    p.title-size-1 {
+        font-size: 11pt;
+        width: 98%;
+        margin-left: 0%;
+    }
+    div.image-box {
+        height: 13rem;
+        width: 30%;
+    }
+    img.blue-star {
+        height: 15px;
+        width: 15px;
+        max-width: 100%;
+        margin: auto 0.1%;    
+    }
+    ul.name-margin-hebergement {
+        font-size: 12pt;
+        margin: 3% 0% 0% 3%;
+    }
+    li.place-name-hebergement {  
+        font-size: 10pt;
+    }
+    li.rate-hebergement {
+        font-size: 10pt;
+    }
+    div.star-hebergement {
+        margin: 10% 0% 0% 3%;
+    }
+    div.star-hebergement-cannebiere {
+        margin: 7.5% 0% 0% 3%;
+    }
+    figure > img.img-size-top {
+        background-position: top;
+        border-radius: 20px 20px 0px 0px;
+        height: 7rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /*  MAIN-MIDDLE · html > head > body > header > main.middle.popular-box    */
+
+    section.popular-box {  
+        flex-direction: column; 
+        border-radius: 0px 0px 0px 0px;
+        height: 42rem;
+        width: 99%;	
+    }
+    div.title-box {  
+        height: 20px;
+        width: 95%;
+        margin-left: 3%;
+    }
+    div > h3.title-popular { 
+        font-size: 12pt;
+    } 
+
+    img.icon-popular {
+        height: 1rem;
+        width: 1rem;
+        max-width: 100%;
+    }
+
+    div.thumbnail-box {
+        flex-direction: column;        
+        align-content: space-between;
+        justify-content: space-between;
+        height: 31rem;
+        width: 80%;	
+        margin: auto;	
+    }
+    figure.figure-size { 
+        flex-direction: row;  
+        height: auto;
+    }
+    li.place-name-popular,
+    li.rate-popular {
+        font-size: 12pt;
+    }
+    div.star-popular { 
+        width: 5rem;
+        margin: 12% 0% 0% 5%;
+    }
+    div.image-box-2 { 
+        border-radius: 20px 20px 20px 20px;
+        height: 9rem;
+        width: 100%;		
+        padding: 0.5%;
+    }
+    img.img-size-top-2 {  
+        background-position: left;
+        border-radius: 20px 0px 0px 20px;
+        height: 9rem;
+        width: 50%;
+        max-width: 100%;
+    }
+
+
+    /*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
+
+    section.activities-box {  
+        justify-content: space-around;
+        height: 32rem;
+        width: 99%;
+        margin-bottom: 3%;
+    } 
+    div.container-activities {  
+        flex-direction: row; 
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;		
+    }
+    section > h3.title-box-activities {
+        font-size: 12pt;
+    }
+    p.text-size-activities {
+        font-size: 10pt;
+    }
+    div.duo-box {  
+        flex-direction: row;
+        height: 15rem;
+        width: 65%;
+    }
+    div.image-box-small { 
+        height: 14rem;
+        width: 47.6%;
+    }
+    figure > img.image-size-small {
+        height: 11rem;
+        width: 100%;
+    }
+    div.image-box-large { 
+        height: 14rem;
+        width: 31.5%;
+    } 
+    figure > img.image-size-large {
+        height: 11rem;
+        width: 100%;
+    } 
+    
+
+    /*  MAIN-BOTTOM · html > head > body > footer  */
+
+    section.section-footer {   
+        background-color: rgb(242, 242, 242);
+        height: 12rem;
+        width: 99%;		
+    }
+    div.footer-box {   
+        background-color: rgb(242, 242, 242);
+        height: 95%;
+        width: 90%;	
+    } 
+    ul.ul-box {   
+        background-color: rgb(242, 242, 242);
+        height: 95%;
+        margin-left: 5%;
+    }
+    h4.title-size-footer,
+    a.link-size-footer {
+        font-size: 10pt;
+    }
+    ul > li.margin-title, 
+    ul > li.margin-text { 
+         margin-bottom: 3%;
+    }
+  /*  nav.nav-top {display: none;}
+div.main-top {display: none;} 
+main > div > section.accommodation-box {display: none;}
+main > div > section.popular-box {display: none;}
+main > section.activities-box {display: none;}
+footer > section.footer-box {display: none;}*/
+}

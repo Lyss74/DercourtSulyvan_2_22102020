@@ -1,0 +1,282 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*  resp-1050px = responsive max-width: 1050px   */ 
+@media (max-width: 1030px) and (max-height: 1370px) {
+
+    /*  HEADER NAVIGATION CONFIGURATION    */
+
+    img.img-reservia { 
+        position: absolute;
+        top: 1%;
+        left: 2%;
+        height: 2rem;
+        width: 5rem;
+    }
+    nav.nav-top { background-color: rebeccapurple;
+        height: 50px;
+        width: 99%;
+    }
+    ul.header { background-color: beige;
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: space-between;
+        width: 55%;
+        margin-top: 1%;
+        margin-right: 2%;
+
+    }
+    li.hebergement {  
+        width: 40%;
+    }
+    li.activities {  
+        width: 30%;
+    }
+
+    /*  MAIN-TOP FILTER CONFIGURATION   */
+
+    div.main-top {     
+        align-content: space-around;
+        justify-content: space-around;
+        height: 30rem;
+        width: 100%;
+    }
+    h3.title-top {  
+        font-size: 17pt;
+        margin-bottom: 1%;
+    }
+    p.typo-grey { 
+        font-size: 13.5pt;
+        margin-bottom: 1%;
+    }
+    div.search { 
+        width: 75%;
+        margin: 4% 0% 3.5% 0%;
+    }
+    input.input-size {   
+        height: 2.5rem;
+        width: 100%;
+    }  
+    p.title-filter {  
+        margin-bottom: 10px;
+    }
+    ul.filter-list {   
+        flex-wrap: wrap;
+        height: 5.5rem;
+        width: 55%;
+    } 
+    div.filter {   
+        height: 1rem;
+        width: 90%;
+    } 
+    div.container-info { 
+        margin-top: 15%;
+    }
+    li.typo-grey { background-color: beige;
+        font-size: 13.5pt;
+    } 
+    div > div.border { 
+        border: 1.5px solid #9E9E9E;
+        border-radius: 20px ;
+        height: 22px;
+        width: 22px;
+    }
+    img.icon-info {
+        height: 20px;
+        width: 20px;
+        margin: 2px 0px 0px 8px;
+    }
+
+
+    div.main-middle {  
+        flex-direction: column-reverse;
+        align-content: space-between;
+        justify-content: space-between;
+        height: 90rem;
+        width: 100%;
+        margin-top: 3%;
+    }
+
+
+/*  MAIN-MIDDLE · html > head > body > header > main.middle.accomodation    */
+
+    main > div > section.accommodation-box { 
+        /*background-color: white;*/
+        justify-content: space-between;
+        height: 50rem;
+        width: 98.8%;
+    }
+    section > h3.title-size-hebergement {  
+        font-size: 15pt;
+        height: 25px;
+        width: 95%;
+        margin-left: 0%;
+    }
+    div.image-box {  
+        border-radius: 20px 20px 20px 20px;
+        height: 19rem;
+        width: 30.5%;
+        min-width: 25%;
+    }
+    ul.name-margin-hebergement {  
+        font-size: 15pt;
+        margin: 2% 0% 8% 5%;
+    }
+    li.place-name-hebergement {
+        font-size: 15pt;
+    }
+    li.rate-hebergement {
+        font-size: 12pt;
+    }
+    div.star-hebergement {
+        margin-top: 2%;
+    }
+    img.img-size-top {
+        background-position: top;
+        border-radius: 20px 20px 0px 0px;
+        height: 12rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /*  MAIN-MIDDLE · html > head > body > header > main.middle.popular-box    */
+
+    section.popular-box {   
+        border-radius: 0px 0px 0px 0px;
+        height: 35rem;
+        width: 98.5%;
+    }
+    div.title-box {   
+        height: 25px;
+        width: 98%;
+        margin: 6% 0% 2.7rem 0%;
+    }
+    div > h3.title-popular {  
+        font-size: 18pt;
+    }
+    img.icon-popular { 
+        height: 1.5rem;
+        width: 1.5rem;
+        max-width: 100%;
+    }
+    div.thumbnail-box {  
+        flex-direction: row;
+        align-content: space-between; 
+        justify-content: space-between;
+        height: 16px;
+        width: 100%;
+    }
+    ul.name-margin-popular {    
+        width: 99%;
+    }
+    li.place-name-popular { 
+        font-size: 12.5pt;    
+    }
+    li.rate-popular { 
+        font-size: 12pt;    
+        width: 100%;
+    }
+    div.star-popular {  
+        width: 6rem;
+        margin: 0.1% 0% 0% 5%;
+    }
+    div.image-box-2 { 
+        border-radius: 20px 20px 20px 20px;
+        height: 23rem;
+        width: 30%;
+        padding: 0.5%;
+    }
+    figure.figure-size {  
+        flex-direction: column;  
+    }
+    img.img-size-top-2 {  
+        background-position: top;
+        border-radius: 20px 20px 0px 0px;
+        height: 17rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
+
+    section.activities-box {  
+        align-content: space-between;
+        justify-content: space-between;
+        height: 52rem;
+        width: 100%;
+    } 
+    div.container-activities {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        height: 80%;
+        width: 100%;		
+        margin: auto
+    }
+    section > h3.title-box-activities  { 
+        font-size: 18pt;
+        height: 30px;
+    }
+    div.duo-box {  
+        flex-direction: row;
+        height: 48%;
+        width: 65%;
+    }
+    div.image-box-small {  
+        height: 100%;
+        width: 48%;
+    }
+    div.image-box-large {  
+        height: 48%;
+        width: 32%;
+    }
+    figure > img.image-size-small,
+    figure > img.image-size-large {
+        height: 15rem;
+        width: 100%;
+    }
+    h3.title-box-activities { 
+        font-size: 15pt;
+    }
+    p.text-size-activities {
+        font-size: 15pt;
+    }
+
+
+    /*  MAIN-BOTTOM · html > head > body > footer  */
+
+    section.section-footer {   
+        background-color: rgb(242, 242, 242);
+        height: 12rem;
+        width: 99%;		
+    }
+    div.footer-box {   
+        background-color: rgb(242, 242, 242);
+        height: 95%;
+        width: 90%;	
+    } 
+    ul.ul-box {   
+        background-color: rgb(242, 242, 242);
+        height: 95%;
+        margin-left: 5%;
+    }
+    h4.title-size-footer,
+    a.link-size-footer {
+        font-size: 10pt;
+    }
+    ul > li.margin-title, 
+    ul > li.margin-text { 
+         margin-bottom: 3%;
+    }
+/*nav.nav-top {display: none;}
+div.main-top {display: none;} 
+main > div > section.accommodation-box {display: none;}
+main > div > section.popular-box {display: none;}
+main > section.activities-box {display: none;}
+footer > section.footer-box {display: none;}*/
+}
