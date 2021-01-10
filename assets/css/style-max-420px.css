@@ -5,8 +5,7 @@
 * Browsers: last 4 version
 */
 
-/*  resp-resp-max-420px = responsive max-width: resp-max-420px   */ 
-@media (max-width: 420px) and (max-height: 815px) {
+@media only screen and (max-width: 420px) {  body { background-color: lightgreen;}
 
 /*@media screen and (max-width: 420px){  */
 
