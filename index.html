@@ -4,17 +4,12 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
 		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-				<!--		HEADER PART · html > head > body > header			-->
+				<!--		CONFIGURATION CSS DESKTOP			-->
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-				<!--		HEADER PART · html > head > body > header			-->
-				<link rel="stylesheet" type="text/css" href="./assets/css/style-max-420px.css">
-				<!--		HEADER PART · html > head > body > header			-->
-				<link rel="stylesheet" type="text/css" href="./assets/css/style-max-815px.css">
-				<!--		HEADER PART · html > head > body > header			-->
-				<link rel="stylesheet" type="text/css" href="./assets/css/style-max-1024px.css">
-				<!--		HEADER PART · html > head > body > header			-->
-				<link rel="stylesheet" type="text/css" href="./assets/css/style-max-1370px.css">
-				<!--		HEADER PART · html > head > body > header			-->
+				<!--		CONFIGURATION CSS MOBILE 420PX AND 815PX			-->
+		<link rel="stylesheet" type="text/css" href="./assets/css/style-420px-815px.css">
+				<!--		CONFIGURATION CSS PADLE 1024PX AND1500PX			-->
+		<link rel="stylesheet" type="text/css" href="./assets/css/style-1024px-1500pxcss">
 		<link href="assets/images/logo/R-Reservia.png" rel="shortcut icon"/>
 		<title>				
 			Reservia : La meilleure expérience réservation
@@ -26,7 +21,7 @@
 		<header>
 		<!--		HEADER PART · html > head > body > header			-->
 
-			<nav class="nav-top margin-bottom">
+			<nav class="nav-top">
 			<!--				HEADER PART · header.nav				-->
 				<ul class="header flex row between align-center">
 					<li class="logo">
@@ -38,13 +33,13 @@
 					</li>
 					<li class="hebergement">
 						<a href="#Hébergements" 
-						   class="blue-text barr">
+						   class="hebergement blue-text barr">
 							Hébergements
 						</a>
 					</li>
 					<li class="activities">
 						<a href="#Activités" 
-						   class="black-text barr">
+						   class="activities black-text barr">
 							Activités
 						</a>
 					</li>
@@ -64,20 +59,20 @@
 		<main>
 		<!--			MAIN TOP · html > head > body > header > main top -->
 
-			<div class="main-top flex column border">
-				<div class="flex column">
+			<div class="main-top flex column between ">
+				<div class="flex column ">
 					<h3 class="title-top bold-text"> 
 						Trouvez votre hébergement<br class="jump-line"/>
 						pour des vacances de rêve
 					</h3>
-					<p class="typo-grey margin-bottom"> 
+					<p class="typo-grey"> 
 						En plein centre ville ou en pleine nature
 					</p>	
 				</div>
 
 				<!--		MAIN TOP · html > head > body > header > main.top.search	-->
 
-				<div class="search flex row margin-bottom">
+				<div class="search flex row ">
 					<div class="container-maker">
 						<i class="map-maker cover fas fa-map-marker-alt"></i>
 					</div>
@@ -87,27 +82,25 @@
 						<span class="desktop-text"> 
 							Rechercher
 						</span> 
-						<div class="search-icon">
-							<i class="search-glass cover fas fa-search"></i>
-						</div>
+						<span class="search-icon">
+							<i class="search-glass fas fa-search"></i>
+						</span>
 					</button> 
 				</div>
 
-				<div class="filter flex row" !-->
+				<div class="filter flex row around align-center">
 				<!--		MAIN TOP · html > head > body > header > main.top.filter		-->
 
-					<p class="title-filter bold-text align-center">
+					<p class="title-filter bold-text">
 						Filtres
 					</p>	
 
 					<ul class="filter-list flex row between align-center">
 						<li class="filter-item">
 							<input type="checkbox" id="economy"/>
-							<label for="economy" class="filter-name">
-								<span class="cropper">
-									<img src="assets/images/icon/money-bill-wave-solid.svg" class="filter-icon cover"
-										 alt="Reservia : Système de recherche par filtres"/>											
-								</span>
+							<label for="economy" class="filter-name flex">
+								<span class="cropper flex">
+									<i class="blue filter-icon fas fa-money-bill-wave"></i>								</span>
 								<span class="name bold-text">
 									Économique
 								</span>
@@ -116,10 +109,9 @@
 
 						<li class="filter-item family">
 							<input type="checkbox" id="familial"/>
-							<label for="familial" class="filter-name">
-								<span class="cropper"> 
-									<img src="assets/images/icon/child-solid.svg" class="filter-icon cover"
-										alt="Reservia : Système de recherche par filtres"/>											
+							<label for="familial" class="filter-name flex">
+								<span class="cropper flex"> 
+									<i class="blue filter-icon fas fa-child"></i>								
 								</span>
 								<span class="name bold-text">
 									Familial
@@ -129,10 +121,9 @@
 
 						<li class="filter-item">
 							<input type="checkbox" id="romantique"/>
-							<label for="romantique" class="filter-name">
-								<span class="cropper">
-									<img src="assets/images/icon/heart-solid.svg" class="filter-icon cover"
-										alt="Reservia : Système de recherche par filtres"/>											
+							<label for="romantique" class="filter-name flex">
+								<span class="cropper flex">
+									<i class="blue filter-icon fas fa-heart"></i>
 								</span>
 								<span class="name bold-text">
 									Romantique
@@ -142,10 +133,9 @@
 
 						<li class="filter-item">
 							<input type="checkbox" id="pets-allowed"/>
-							<label for="pets-allowed" class="filter-name">
-								<span class="cropper">
-									<img src="assets/images/icon/dog-solid.svg" class="filter-icon cover"
-										alt="Reservia : Système de recherche par filtres"/>											
+							<label for="pets-allowed" class="filter-name flex">
+								<span class="cropper flex">
+									<i class="blue filter-icon fas fa-dog"></i>								
 								</span>
 								<span class="name bold-text">
 									Animaux autorisés
@@ -161,11 +151,10 @@
 					<ul class="part-information flex row align-center">
 						<li>
 							<div class="border">
-								<img src="assets/images/icon/info-solid.svg" class="icon-info cover" 
-									alt="Reservia : Affichage du nombre de résultats des disponibilités"/>											
+								<i class="blue icon-info fas fa-info"></i>
 							</div>	
 						</li>
-						<li class="typo-grey">
+						<li class="typo-grey-bottom">
 							Plus de 500 logements sont disponibles<br class="jump-line"/>
 							dans cette ville
 						</li> 
@@ -173,331 +162,322 @@
 				</div>				
 			</div>
 
-			<div class="main-middle flex row between margin-bottom">
+			<div class="main-middle flex row between">
 
 			<!--		MAIN-MIDDLE · html > head > body > header > main middle  	-->
 
-				<section class="accommodation-box flex row wrap around" id="Hébergements">
+				<section class="accommodation-box flex row wrap around background-grey" id="Hébergements">
 					<h3 class="title-size-hebergement">
 						Hébergements à Marseille
 					</h3>
-					<div class="flex column image-box shadow-box">
+					<div class="image-box flex column shadow-box">
 						<a href="">
-							<figure class="flex column">
-								<img class="img-size-top margin-bottom cover" 
-									src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-									alt="Reservia : Residence La Cannebiere, Marseille dès 25€ sur Reservia"/>											
-								<figcaption>
-									<ul class="name-margin-hebergement">
-										<li class="place-name-hebergement bold-text margin-bottom raleway-font">
+							<figure class="flex column around">
+								<img class="img-size-top cover" 
+									 src="assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+									 alt="Reservia : Residence La Cannebiere, Marseille dès 25€ sur Reservia"/>                     
+								<figcaption class="flex column between">
+									<ul class="fig-content-accomodation flex column between">
+										<li class="bold-text bold-text-accomodation">
 											Auberge de la Cannebiére
 										</li>
-										<li class="rate-hebergement grey-size grey-text margin-bottom raleway-font">
+										<li class="grey-text grey-text-accomodation">
 											Nuit à partir de
-											<span class="bold-text">
-													25€
-											</span>
+										<span class="bold-text bold-text-accomodation">
+											25€
+										</span>
 										</li>
-									</ul>		
-									<div class="star-hebergement flex row">
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-
-										<i class="blue-star fas fa-star"></i>
-									</div>
+											<li class="star-hebergement flex row">
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="grey fas fa-star"></i>
+											<i class="grey fas fa-star"></i>
+										</li>
+									</ul>   
 								</figcaption>
 							</figure>
 						</a>
 					</div>
-
-					<div class="image-box shadow-box">
+					<div class="image-box flex column shadow-box">
 						<a href="">
-							<figure>
-								<img class="img-size-top margin-bottom cover" 
-										 src="assets/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-										 alt="Reservia : Hôtel du port, Marseille dès 52€ sur Reservia"/>											
-								<figcaption>
-									<ul class="name-margin-hebergement">
-										<li class="place-name-hebergement bold-text margin-bottom">
+							<figure class="flex column around">
+								<img class="img-size-top cover" 
+									 src="assets/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+									  alt="Reservia : Hôtel du port, Marseille dès 52€ sur Reservia"/>                    
+								<figcaption class="flex column between">
+									<ul class="fig-content-accomodation flex column between">
+										<li class="bold-text bold-text-accomodation">
 											Hôtel du port
 										</li>
-										<li class="rate-hebergement grey-size grey-text margin-bottom">
+										<li class="grey-text grey-text-accomodation">
 											Nuit à partir de 
-											<span class="bold-text">
-												52€
-											</span>
+										<span class="bold-text bold-text-accomodation">
+											52€
+										</span>
 										</li>
-									</ul>		
-									<div class="star-hebergement flex row">
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-									</div>
+										<li class="star-hebergement flex row">
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+										</li>
+									</ul>   
 								</figcaption>
 							</figure>
 						</a>
 					</div>
-
-					<div class="image-box shadow-box">
+					<div class="image-box flex column shadow-box">
 						<a href="">
-							<figure>
-								<img class="img-size-top margin-bottom cover" 
-									src="assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-									alt="Reservia : Hôtel les mouettes, Marseille dès 76€ sur Reservia"/>											
-								<figcaption>
-									<ul class="name-margin-hebergement">
-										<li class="place-name-hebergement bold-text margin-bottom">
+							<figure class="flex column around">
+								<img class="img-size-top cover" 
+									 src="assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+									 alt="Reservia : Hôtel les mouettes, Marseille dès 76€ sur Reservia"/>                   
+								<figcaption class="flex column between">
+									<ul class="fig-content-accomodation flex column between">
+										<li class="bold-text bold-text-accomodation">
 											Hôtel Les mouettes
-										</li> 
-										<li class="rate-hebergement grey-size grey-text margin-bottom">
-											Nuit à partir de 
-											<span class="bold-text">
-												76€
-											</span>
 										</li>
-									</ul>		
-									<div class="star-hebergement flex row">
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-
-										<i class="blue-star fas fa-star"></i>
-									</div>
+										<li class="grey-text grey-text-accomodation">
+											Nuit à partir de 
+										<span class="bold-text bold-text-accomodation">
+											76€
+										</span>
+										</li>
+										<li class="star-hebergement flex row">
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="grey fas fa-star"></i>
+										</li>
+									</ul>   
 								</figcaption>
 							</figure>
 						</a>
 					</div>
-
-					<div class="image-box shadow-box">
+					<div class="image-box flex column shadow-box">
 						<a href="">
-							<figure>
-								<img class="img-size-top margin-bottom cover" 
-									src="assets/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-									alt="Reservia : Hôtel de la mer, Marseille dès 46€ sur Reservia"/>											
-								<figcaption>
-									<ul class="name-margin-hebergement">
-										<li class="place-name-hebergement bold-text margin-bottom">
+							<figure class="flex column around">
+								<img class="img-size-top cover" 
+								     src="assets/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+								     alt="Reservia : Hôtel de la mer, Marseille dès 46€ sur Reservia"/>											
+							<figcaption class="flex column between">
+								<ul class="fig-content-accomodation flex column between">
+									<li class="bold-text bold-text-accomodation">
 											Hôtel de la mer
 										</li>
-										<li class="rate-hebergement grey-size grey-text margin-bottom">
+										<li class="grey-text grey-text-accomodation">
 											Nuit à partir de
-											<span class="bold-text">
-												46€
-											</span>
+										<span class="bold-text bold-text-accomodation">
+											46€
+										</span>
 										</li>
-									</ul>			
-									<div class="star-hebergement flex row">
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-									</div>
+										<li class="star-hebergement flex row">
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="grey fas fa-star"></i>
+											<i class="grey fas fa-star"></i>
+										</li>
+									</ul>   
 								</figcaption>
 							</figure>
 						</a>
 					</div>
-
-					<div class="image-box shadow-box">
+					<div class="image-box flex column shadow-box">
 						<a href="">
-							<figure>
-								<img class="img-size-top margin-bottom cover" 
-									src="assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-									alt="Reservia : Auberge Le Panier, Marseille dès 23€ sur Reservia"/>											
-								<figcaption>
-									<ul class="name-margin-hebergement">
-										<li class="place-name-hebergement bold-text margin-bottom">
+							<figure class="flex column around">
+								<img class="img-size-top cover" 
+								     src="assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+								     alt="Reservia : Auberge Le Panier, Marseille dès 23€ sur Reservia"/>											
+								<figcaption class="flex column between">
+									<ul class="fig-content-accomodation flex column between">
+										<li class="bold-text bold-text-accomodation">
 											Auberge Le Panier
 										</li>
-										<li class="rate-hebergement grey-size grey-text margin-bottom">											
+										<li class="grey-text grey-text-accomodation">
 											Nuit à partir de 
-											<span class="bold-text">
-												23€
-											</span>
+										<span class="bold-text bold-text-accomodation">
+											23€
+										</span>
 										</li>
-									</ul>			
-									<div class="star-hebergement flex row">
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-
-										<i class="grey-star fas fa-star"></i>
-									</div>
+										<li class="star-hebergement flex row">
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="grey fas fa-star"></i>
+										</li>
+									</ul>   
 								</figcaption>
 							</figure>
 						</a>
 					</div>
-
-					<div class="image-box shadow-box">
+					<div class="image-box flex column shadow-box">
 						<a href="">
-							<figure>
-								<img class="img-size-top margin-bottom cover" 
-									src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-									alt="Reservia : Hôtel chez Amina, Marseille dès 96€ sur Reservia"/>											
-								<figcaption>
-									<ul class="name-margin-hebergement">
-										<li class="place-name-hebergement bold-text margin-bottom">
+							<figure class="flex column around">
+								<img class="img-size-top cover" 
+									 src="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+									 alt="Reservia : Hôtel chez Amina, Marseille dès 96€ sur Reservia"/>											
+								<figcaption class="flex column between">
+									<ul class="fig-content-accomodation flex column between">
+										<li class="bold-text bold-text-accomodation">
 											Hôtel chez Amina
 										</li>
-										<li class="rate-hebergement grey-size grey-text margin-bottom">
+										<li class="grey-text grey-text-accomodation">
 											Nuit à partir de 
-											<span class="bold-text">
-												96€
-											</span>
+										<span class="bold-text bold-text-accomodation">
+											96€
+										</span>
 										</li>
-									</ul>			
-									<div class="star-hebergement flex row">
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-										<i class="blue-star fas fa-star"></i>
-									</div>
+										<li class="star-hebergement flex row">
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+											<i class="blue fas fa-star"></i>
+										</li>
+									</ul>   
 								</figcaption>
 							</figure>
 						</a>
 					</div>
+
 					<p class="title-size-bottom-hebergement bold-text">
 						Afficher plus
 					</p>
 				</section>
 
-				<section class="popular-box column between">
+				<section class="popular-box flex column around background-grey">
 
 				<!--		MAIN PART · html > head > body > header > main.middle.div.popular-box		-->
 
-					<div class="title-box flex row between">
+					<div class="title-box flex row between align-center">
 						<h3 class="title-popular">
 							Les plus populaires
 						</h3>
 						<i class="icon fas fa-chart-line"></i>
 					</div>
-					<div class="thumbnail-box flex column around">
-						<div class="image-box-2 flex column shadow-box"> 
-							<a href="">
-								<figure class="figure-size flex row">
-									<img class="img-size-top-2 cover" 
-										src="assets/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-										alt="Reservia : Hôtel Le soleil du matin, Marseille dès 128€ sur Reservia"/>											
-									<figcaption>
-										<ul class="name-margin-popular">
-											<li class="place-name-popular bold-text">
-												Hôtel Le soleil du
-											</li> 
-											<li class="place-name-popular bold-text">
-												matin
-											</li> 
-											<li class="rate-popular grey-size grey-text">
-												Nuit à partir de 
-												<span class="bold-text">
-													128€
-												</span>
-											</li>
-										</ul>			
-										<div class="star-popular flex row margin-bottom">
-											<i class="blue-star fas fa-star"></i>
-											<i class="blue-star fas fa-star"></i>
-											<i class="blue-star fas fa-star"></i>
-											<i class="blue-star fas fa-star"></i>
-											<i class="blue-star fas fa-star"></i>
-										</div>
-									</figcaption>
-								</figure>
-							</a>
+						<div class="thumbnail-box flex column around">
+
+							<div class="image-box-2 flex column between shadow-box"> 
+								<a href="">
+									<figure class="figure-size flex row around">
+										<img class="img-size-top-2 cover" 
+											src="assets/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+											alt="Reservia : Hôtel Le soleil du matin, Marseille dès 128€ sur Reservia"/>											
+										<figcaption class="flex column between">
+											<ul class="fig-content-popular flex column">
+												<li class="bold-text bold-text-popular">
+													Hôtel Le soleil du
+												</li> 
+												<li class="bold-text bold-text-popular">
+													matin
+												</li> 
+												<li class="grey-text grey-text-popular">
+													Nuit à partir de 
+													<span class="bold-text bold-text-popular">
+														128€
+													</span>
+												</li>
+												<li class="star-popular flex row">
+													<i class="blue fas fa-star"></i>
+													<i class="blue fas fa-star"></i>
+													<i class="blue fas fa-star"></i>
+													<i class="blue fas fa-star"></i>
+													<i class="blue fas fa-star"></i>
+												</li>
+											</ul>			
+										</figcaption>
+									</figure>
+								</a>
+							</div>
+
+							<div class="image-box-2 flex column between shadow-box"> 
+								<a href="">
+									<figure class="figure-size flex row around">
+										<img class="img-size-top-2 cover" 
+											 src="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
+											 alt="Reservia : Au coeur de l'eau, Marseille dès 71€ sur Reservia"/>											
+										<figcaption class="flex column between">
+											<ul class="fig-content-popular flex column">
+												<li class="bold-text bold-text-popular">
+													Au coeur de l'eau
+												</li> 
+												<li class="bold-text bold-text-popular">
+													Chambres d'hôtes
+												</li> 
+												<li class="grey-text grey-text-popular">
+													Nuit à partir de 
+													<span class="bold-text bold-text-popular">
+														71€
+													</span>
+												</li>
+												<li class="star-popular flex row">
+													<i class="blue fas fa-star"></i>
+													<i class="blue fas fa-star"></i>
+													<i class="blue fas fa-star"></i>
+													<i class="blue fas fa-star"></i>
+													<i class="grey fas fa-star"></i>
+												</li>
+											</ul>			
+										</figcaption>
+									</figure>
+								</a>
+							</div>
+
+							<div class="image-box-2 flex column between shadow-box"> 
+								<a href="">
+									<figure class="figure-size flex row around">
+										<img class="img-size-top-2 cover" 
+											 src="assets/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+											 alt="Reservia : Hôtel Tout Bleu et Blanc, Marseille dès 68€ sur Reservia"/>											
+										<figcaption class="flex column between">
+											<ul class="fig-content-popular flex column"> 
+												<li class="bold-text bold-text-popular">
+													Hôtel Tout Bleu et
+												</li> 
+												<li class="bold-text bold-text-popular">
+													Blanc
+												</li> 
+												<li class="grey-text grey-text-popular">
+													Nuit à partir de 
+													<span class="bold-text bold-text-popular">
+														68€
+													</span>
+												</li>
+												<li class="star-popular flex row">
+													<i class="blue fas fa-star"></i>
+													<i class="blue fas fa-star"></i>
+													<i class="blue fas fa-star"></i>
+													<i class="blue fas fa-star"></i>
+													<i class="grey fas fa-star"></i>
+												</li>
+											</ul>			
+										</figcaption>
+									</figure>
+								</a>
+							</div>
 						</div>
-
-						<div class="flex column image-box-2 shadow-box"> 
-							<a href="">
-								<figure class="figure-size flex row">
-									<img class="img-size-top-2 cover" 
-										src="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
-										alt="Reservia : Au coeur de l'eau, Marseille dès 71€ sur Reservia"/>											
-									<figcaption>
-										<ul class="name-margin-popular">
-											<li class="place-name-popular bold-text">
-												Au coeur de l'eau
-											</li>
-											<li class="place-name-popular bold-text">
-												Chambres d'hôtes
-											</li>
-											<li class="rate-popular grey-size grey-text">
-												Nuit à partir de 
-												<span class="bold-text">
-													71€
-												</span>
-											</li>
-										</ul>		
-										<div class="star-popular flex row margin-bottom">
-											<i class="blue-star fas fa-star"></i>
-											<i class="blue-star fas fa-star"></i>
-											<i class="blue-star fas fa-star"></i>
-											<i class="blue-star fas fa-star"></i>
-
-											<i class="blue-star fas fa-star"></i>
-										</div>
-									</figcaption>
-								</figure>
-							</a>
-						</div>
-
-						<div class="flex column image-box-2 shadow-box"> 
-							<a href="">
-								<figure class="figure-size cover flex row">
-									<img class="img-size-top-2 cover" 
-										src="assets/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-										alt="Reservia : Hôtel Tout Bleu et Blanc, Marseille dès 68€ sur Reservia"/>											
-									<figcaption>
-										<ul class="name-margin-popular">
-											<li class="place-name-popular bold-text">
-												Hôtel Tout Bleu et
-											</li>
-											<li class="place-name-popular bold-text">
-												Blanc
-											</li>
-											<li class="rate-popular grey-size grey-text">
-												Nuit à partir de 
-												<span class="bold-text">
-													68€
-												</span>
-											</li>
-										</ul>		
-										<div class="star-popular flex row margin-bottom">
-											<i class="blue-star fas fa-star"></i>
-											<i class="blue-star fas fa-star"></i>
-											<i class="blue-star fas fa-star"></i>
-											<i class="blue-star fas fa-star"></i>
-
-											<i class="blue-star fas fa-star"></i>
-										</div>
-									</figcaption>
-								</figure>
-							</a>
-						</div>
-					</div>
 				</section>
 			</div>
 
-			<section class="activities-box flex column margin-bottom" id="Activités">
-				<h3 class="title-box-activities margin-bottom">
+			<section class="activities-box flex column between" id="Activités">
+				<h3 class="title-box-activities">
 					Activités à Marseille
 				</h3>		
 					
 				<div class="container-activities flex row between">
-					<div class="image-box-large shadow-box-2">
+					<div class="image-box-large flex column">
 						<a href="">
-							<figure>
+							<figure class="flex column">
 								<img class="vieux-port-img image-size-large cover" 
 									src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
 									alt="Reservia : Vieux port de Marseille"/>
-								<figcaption>
-									<p class="bold-text margin-text-activities">
+								<figcaption class="fig-content-activitie flex column">
+									<p class="bold-text margin-text-activities text-size-activities">
 										Vieux port 
 									</p>			
 								</figcaption>
@@ -506,14 +486,14 @@
 					</div>
 
 					<div class="duo-box flex column between">
-						<div class="fort-pomegues-box image-box-small shadow-box-2">						
+						<div class="fort-pomegues-box image-box-small">						
 							<a href="">
-								<figure>
+								<figure class="flex column">
 									<img class="fort-pomegues-img image-size-small cover" 
 										src="assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
 										alt="Reservia : Fort de Pomégues"/>
-									<figcaption>
-										<p class="bold-text margin-text-activities">
+									<figcaption class="fig-content-activitie flex column">
+										<p class="bold-text margin-text-activities text-size-activities">
 											Fort de Pomégues
 										</p>		
 									</figcaption>
@@ -521,14 +501,14 @@
 							</a>
 						</div>
 
-						<div class="frioul-box image-box-small shadow-box-2">
+						<div class="frioul-box image-box-small">
 							<a href=""> 
-								<figure>
+								<figure class="flex column">
 									<img class="frioul-img image-size-small cover" 
 										src="assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
 										alt="Reservia : Îles du Frioul"/>
-									<figcaption>
-										<p class="bold-text margin-text-activities">
+									<figcaption class="fig-content-activitie flex column">
+										<p class="bold-text margin-text-activities text-size-activities">
 											Îles du Frioul
 										</p>		
 									</figcaption>
@@ -537,14 +517,14 @@
 						</div>
 					</div>
 
-					<div class="image-box-large shadow-box-2">
+					<div class="image-box-large flex column">
 						<a href="">
-							<figure>
+							<figure class="flex column">
 								<img class="calanques-img image-size-large cover" 
 									src="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
 									alt="Reservia : Parc National des Calanques"/>
-								<figcaption>						
-									<p class="bold-text margin-text-activities">
+								<figcaption class="fig-content-activitie flex column">
+									<p class="bold-text margin-text-activities text-size-activities">
 										Parc National des Calanques
 									</p>
 								</figcaption>
@@ -553,27 +533,27 @@
 					</div> 
 
 					<div class="duo-box flex column between">
-						<div class="notre-dame-box image-box-small shadow-box-2">
+						<div class="notre-dame-box image-box-small">
 							<a href="">
-								<figure>
+								<figure class="flex column">
 									<img class="notre-dame-img image-size-small cover" 
 										src="assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
 										alt="Reservia : Notre-Dame-de-la-Garde"/>
-									<figcaption>
-										<p class="bold-text margin-text-activities">
+									<figcaption class="fig-content-activitie flex column">
+										<p class="bold-text margin-text-activities text-size-activities">
 											Notre-Dame-de-la-Garde
 										</p>		
 									</figcaption>
 								</figure>
 							</a>
 						</div>
-						<div class="longchamps-box image-box-small shadow-box-2">
+						<div class="longchamps-box image-box-small flex column">
 							<a href="">
-								<figure>
+								<figure class="flex column">
 									<img class="longchamps-img image-size-small cover" 
 										src="assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
 										alt="Reservia : Parc Longchamp"/>
-									<figcaption>
+									<figcaption class="fig-content-activitie flex column">
 										<p class="bold-text margin-text-activities text-size-activities">
 											Parc Longchamp
 										</p>		
@@ -590,9 +570,9 @@
 
 
 		<footer>
-			<section class="section-footer"> 
+			<section class="section-footer background-grey"> 
 				<div class="footer-box flex row between">
-					<ul class="ul-box">
+					<ul class="ul-box flex column">
 						<li class="margin-title">
 							<h4 class="title-size-footer">
 								À propos
@@ -615,7 +595,7 @@
 						</li>
 					</ul>
 					
-					<ul class="ul-box">
+					<ul class="ul-box flex column">
 						<li class="margin-title">
 							<h4 class="title-size-footer">
 								Nos hébergements
@@ -633,7 +613,7 @@
 						</li>
 					</ul>
 					
-					<ul class="ul-box">
+					<ul class="ul-box flex column">
 						<li class="margin-title">
 							<h4 class="title-size-footer">
 								Assistance
