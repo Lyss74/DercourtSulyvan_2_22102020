@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@media only screen and (min-width: 815px) and (max-width: 1030px) {   
+@media only screen and (min-width: 815px) and (max-width: 1030px) {   body {background-color: lightblue;}
 
     /*  HEADER NAVIGATION CONFIGURATION    */
 
@@ -41,7 +41,7 @@
         height: 20rem;
         width: 100%;
     }
-    h3.title-top {    
+    h2.title-top {    
         font-size: 17pt;
         margin-bottom: 1%;
     }
@@ -56,7 +56,7 @@
         height: 2.5rem;
         width: 100%;
     }  
-    p.title-filter { 
+    b.title-filter { 
         margin-bottom: 2%;
     }
     div.filter {    
@@ -79,14 +79,14 @@
         height: 5.5rem;
         width: 70%;
     } 
+    div.container-info { 
+        margin-top: 5%;
+    }
     ul.part-information {  
         height: -webkit-max-content;  
         height: -moz-max-content;  
         height: max-content;
         width: 100%;
-    }
-    div.container-info { 
-        margin-top: 5%;
     }
     li.typo-grey { 
         width: 100%;
@@ -124,7 +124,7 @@
     section.accommodation-box {  
         background-color: #F2F2F2;
         height: 47rem;
-        width: 99%;
+        width: 100%;
     }
     h3.title-size-hebergement {          
         font-size: 18pt;
@@ -150,7 +150,6 @@
         width: 95%;
         margin: auto;
     }
-
     li.star-hebergement {
         margin-top: 5%;
     }
@@ -165,14 +164,14 @@
     section.popular-box {    
         border-radius: 0px 0px 0px 0px;
         height: 31rem;
-        width: 98%;
+        width: 100%;
     }
     div.title-box {             
         height: 25px;
         width: 97.5%;
         margin-left: 1%;
     }
-    h3.title-popular {  
+    h2.title-popular {  
         font-size: 18pt;
     }
     i.icon-popular { 
@@ -276,7 +275,7 @@
     h3.title-box-activities { 
         font-size: 15pt;
     }
-    p.text-size-activities {
+    b.text-size-activities {
         font-size: 15pt;
     }
 
@@ -285,7 +284,7 @@
 
     section.section-footer {   
         height: 12rem;
-        width: 99%;		  
+        width: 100%;		  
     }
     div.footer-box {   
         height: 95%;
@@ -296,9 +295,9 @@
         width: 33%;
         margin-left: 3%; 
     }
-    h4.title-size-footer,
+    h3.title-size-footer,
     a.link-size-footer {
-        font-size: 12pt;
+        font-size: 12.5pt;
     }
     li.margin-title, 
     li.margin-text { 
@@ -308,13 +307,13 @@
 
 
 
-@media only screen and (min-width: 1030px) and (max-width: 1500px) {  
+@media only screen and (min-width: 1030px) and (max-width: 1500px) {   body {background-color: cyan;}
 
     /*  HEADER NAVIGATION CONFIGURATION    */
 
     nav.nav-top {   
         height: 20%;
-        width: 99.5%;
+        width: 100%;
         margin: 0% 0% 5% 0%;
     }
 
@@ -338,21 +337,21 @@
     li.activities {   
         border-bottom: rgb(184, 174, 174) 0.1rem solid;
         width: 100%;
-        margin-top: 8%;
+            margin-top: 8%;
+            margin-right: 25%;	
         padding-bottom: 15px;
-        margin-right: 25%;	
     }
     li.register {  
         position: absolute;
-        top: 1%;
+        top: 2%;
         right: 6%;
     }
     a.barr:hover {
         display: none;
     }
-    a.blue-text {  
+    b.blue-text {  
         color: #0065FC;
-        font-size: 12pt;
+        font-size: 15pt;
         margin-left: 22%; 
         padding: 20px 20px 0px 20px;
     }
@@ -374,7 +373,7 @@
         height: 22rem;
         width: 100%;
     }
-    p.title-filter {  
+    b.title-filter {  
         font-size: 14pt;
         height: 15px;
     }
@@ -422,7 +421,7 @@
             -ms-flex-direction: row;          
                 flex-direction: row;
         height: 48rem;
-        width: 97.5%;
+        width: 100%;
     }
     section.accommodation-box {  
         height: 45rem;
@@ -436,7 +435,6 @@
     div.image-box {     
         height: 15rem;
         width: 30%;																	
-        max-width: 100%;																	
     }
     p.title-size-1 {  
         font-size: 15pt;
@@ -458,7 +456,7 @@
         width: 95%;
         margin: 6% 0% 2.7rem 2%;
     }
-    h3.title-popular { 
+    h2.title-popular { 
         font-size: 18pt;
     }
     i.icon-popular { 
@@ -506,7 +504,7 @@
         margin: 0% 0% 0% 0%;
         padding: 1%;
     }
-    p.margin-text-activities { 
+    b.margin-text-activities { 
         margin-top: 4%;
     }
     div.image-box-large {   
@@ -545,7 +543,7 @@
     h3.title-box-activities { 
         font-size: 18pt;
     }
-    p.text-size-activities {
+    b.text-size-activities {
         font-size: 15pt;
     }
 
@@ -573,7 +571,7 @@
         margin-bottom: 4%;
     }  
     a.link-size-footer,
-    h4.title-size-footer {
+    h3.title-size-footer {
         font-size: 14pt;
     }
 }
