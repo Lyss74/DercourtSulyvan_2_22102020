@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@media only screen and (max-width: 420px) {  body {background-color: lightgreen;}
+@media only screen and (max-width: 420px) {
 
     /*  HEADER NAVIGATION CONFIGURATION    */
     nav.nav-top {   
@@ -344,7 +344,7 @@
 
 
 
-@media only screen and (min-width: 420px) and (max-width: 815px) {   body {background-color: green;}
+@media only screen and (min-width: 420px) and (max-width: 815px) {
     /*  HEADER NAVIGATION CONFIGURATION    */
 
     nav.nav-top {   

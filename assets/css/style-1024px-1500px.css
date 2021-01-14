@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@media only screen and (min-width: 815px) and (max-width: 1030px) {   body {background-color: lightblue;}
+@media only screen and (min-width: 815px) and (max-width: 1030px) {
 
     /*  HEADER NAVIGATION CONFIGURATION    */
 
@@ -307,7 +307,7 @@
 
 
 
-@media only screen and (min-width: 1030px) and (max-width: 1500px) {   body {background-color: cyan;}
+@media only screen and (min-width: 1030px) and (max-width: 1500px) {
 
     /*  HEADER NAVIGATION CONFIGURATION    */
 
