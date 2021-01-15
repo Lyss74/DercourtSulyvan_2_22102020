@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@media only screen and (min-width: 815px) and (max-width: 1030px) {  
+@media only screen and (min-width: 815px) and (max-width: 1030px) {
 
     /*  HEADER NAVIGATION CONFIGURATION    */
 
@@ -324,7 +324,7 @@
 
 
 
-@media only screen and (min-width: 1030px) and (max-width: 1500px) {  
+@media only screen and (min-width: 1030px) and (max-width: 1500px) {
 
     /*  HEADER NAVIGATION CONFIGURATION    */
 
@@ -511,7 +511,7 @@
     div.image-box-2 {  
         border-radius: 20px 20px 20px 20px;
         height: 10rem;
-        width: 85%;
+        width: 90%;
         padding: 1%;
     }
     figure > img.img-size-top-2{
@@ -519,7 +519,7 @@
         height: 10rem;
     }
     li.grey-text-popular { 
-        font-size: 13.5pt;
+        font-size: 12.9pt;
         margin-top: 6%;
     }
     li.star-popular {  
