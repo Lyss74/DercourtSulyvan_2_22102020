@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {   
 
     /*  HEADER NAVIGATION CONFIGURATION    */
     nav.nav-top {   
@@ -30,7 +30,7 @@
         height: 2.5rem;
         width: 6rem;
     }
-    li.activities {  
+    li.activities { 
         border-bottom: rgb(184, 174, 174) 0.1rem solid;
         width: 50%;
         margin-top: 20%;
@@ -47,13 +47,16 @@
         top: 4%;
         right: 0%;
     }
+    a.activities {
+        padding-right: 25%;
+    }
     a.barr:hover {
         display: none;
     }
-    a.black-text {
+    a.black-text {         
         color: black;
         font-size: 12pt;
-        margin-left: 5%;
+        margin-left: 10%;
         padding: 16px 50px 0px 30px;
     }
     li.hebergement:hover,
@@ -130,7 +133,7 @@
         height: 15rem;
         width: 15rem;	
     }
-    ul.filter-list {   
+    ul.filter-list { 
         -webkit-box-orient: horizontal;   
         -webkit-box-direction: normal;   
             -ms-flex-direction: row;   
@@ -138,7 +141,7 @@
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         height: 8rem;
-        width: 95%;
+        width: 90%;
     }
     div.container-info {  
         width: 100%;
@@ -169,26 +172,26 @@
         -webkit-box-direction: reverse;       
             -ms-flex-direction: column-reverse;       
                 flex-direction: column-reverse;
-        height: 124rem;
+        height: 130rem;
         width: 100%;
     }
     section.accommodation-box {  
-        background-color: #F2F2F2;
+        background-color: white;
         border-radius: 0px 0px 0px 0px;
         height: 100%;
-        width: 99.5%;																	
+        width: 100%;	
     }
     h3.title-size-hebergement { 
         font-size: 12pt;
         height: 20px;
         width: 100%;
+        margin-top: 5%;																
         margin-left: 0.5%;
     }
     p.title-size-bottom-hebergement {   
-        font-size: 11pt;
+        font-size: 10pt;
         height: 20px;
         width: 100%;
-        margin-left: 0.5%;
     }
     div.image-box {  
         height: 12.5rem;
@@ -238,15 +241,15 @@
     }
     div.image-box-2 {  
         border-radius: 20px 20px 20px 20px;
-        height: 10rem;
-        width: 98%;																	
+        height: 9rem;
+        width: 90%;																	
         padding: 0.5%;
     }    
     figure > img.img-size-top-2 {  
         background-position: left;
         border-radius: 20px 0px 0px 20px;
         max-width: 100%;
-        height: 10rem;
+        height: 9rem;
         width: 50%;
     }
     figure.figure-size {   
@@ -263,15 +266,15 @@
         margin-left: 8%;
     }
     b.bold-text-popular {    
-        font-size: 12pt;
+        font-size: 11.5pt;
         margin-top: 5%;
     }
     b.bold-text-popular-2 { 
-        font-size: 12pt;
+        font-size: 11.5pt;
         margin-top: 5%;
     }
     li.grey-text-popular { 
-        font-size: 11pt;
+        font-size: 10.5pt;
         margin-top: 8%;
     }
     
@@ -279,16 +282,16 @@
     
     }
     li.star-popular {  
-        margin-top: 22%;
+        margin-top: 25%;
     }
     
 
 /*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
 
-    section.activities-box {     
+    section.activities-box {      
         height: 100%;
         width: 100%;
-        margin: 5% 0% 5% 0%;
+        margin: 15% 0% 15% 0%;
     } 
     div.container-activities {            
         -webkit-box-orient: vertical;            
@@ -302,6 +305,7 @@
     h3.title-box-activities {    
         font-size: 12pt;
         margin-bottom: 10%;
+        margin-left: 3.5%;
     }
     div.duo-box {  
         -webkit-box-orient: vertical;  
@@ -356,7 +360,7 @@
 
 
 
-@media only screen and (min-width: 420px) and (max-width: 815px) {
+@media only screen and (min-width: 420px) and (max-width: 815px) {   
     /*  HEADER NAVIGATION CONFIGURATION    */
 
     nav.nav-top {   
@@ -467,7 +471,7 @@
         margin-left: 2%;
     }
     div.image-box {
-        height: 32.5%;
+        height: 33%;
         width: 31%;
     }
     figure > img.img-size-top {
@@ -477,14 +481,20 @@
         width: 100%;
         max-width: 100%;
     }
-    p.title-size-bottom-hebergement {  
-        margin-left: 2%;
+    li.grey-text-accomodation {
+        font-size: 11pt;
     }
-    li.grey-text-accomodation,
-    li.bold-text-accomodation {   
-        font-size: 10.5pt;
-        margin-top: 1.5%;
+    
+    b.bold-text-accomodation {   
+        font-size: 10pt;
     }
+    b.price-text-accomodation {
+    
+    }
+    li.star-hebergement { 
+        margin-top: 10%;
+    }
+
 
 
     /*  MAIN-MIDDLE · html > head > body > header > main.middle.popular-box    */
@@ -522,7 +532,7 @@
     }
     div.image-box-2 {  
         border-radius: 20px 20px 20px 20px;
-        height: 10rem;
+        height: 9rem;
         width: 65%;		
     }
     figure.figure-size {   
@@ -531,7 +541,7 @@
             -ms-flex-direction: row; 
         flex-direction: row;  
         align-content: space-around;
-        height: 10rem;
+        height: 9rem;
     }
     figure > img.img-size-top-2 {   
         background-position: left;
@@ -549,8 +559,8 @@
         font-size: 11pt;
         margin-top: 5%;
     }
-    li.star-popular {
-        margin-top: 8%;
+    li.star-popular { 
+        margin-top: 25%;
     }
 
 

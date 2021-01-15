@@ -47,16 +47,6 @@ ul {
     color: #b4adad;
 }
 
-/*  COLOR   */
-
-.shadow-box { 
-    -webkit-box-shadow: 1px 0.5px 0.5px rgb(221, 219, 219); 
-            box-shadow: 1px 0.5px 0.5px rgb(221, 219, 219);
-}
-.shadow-box-2 {
-    -webkit-box-shadow: 1px 0.5px 0.5px rgb(250, 245, 249);
-            box-shadow: 1px 0.5px 0.5px rgb(250, 245, 249);
-} 
 /*  IMAGE   */
 .cover {
     -o-object-fit: cover;
@@ -133,7 +123,7 @@ li.register {
     margin-right: 2%;
 }
 a.blue-text,
-b.blue-text {
+b.blue-text { 
     color: #0065FC;
     padding: 16px 25px 0px 25px;
 }
@@ -319,13 +309,14 @@ h3.title-size-hebergement {
     margin-left: 2%;
 }
 b.title-size-bottom-hebergement {    
-    font-size: 13.5pt;
+    font-size: 13pt;
     width: 100%;
     margin-left: 3%;
 }
 div.image-box {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 0.5px 0.5px rgb(221, 219, 219);
     height: 34%;
     width: 28%;
     padding: 0.3%;
@@ -338,7 +329,6 @@ figure > img.img-size-top {
     height: 8rem;
     width: 100%;
 }
-
 ul.fig-content-accomodation {    
     height: 4.5rem;
     width: 95%;
@@ -388,6 +378,8 @@ div.thumbnail-box {
 div.image-box-2 {  
     background-color: white;
     border-radius: 20px 20px 20px 20px; 
+    box-shadow: 5px 0.5px 0.5px rgb(221, 219, 219);
+    -webkit-box-shadow: 5px 0.5px 0.5px rgb(221, 219, 219);
     height: 9.3rem;
     width: 80%;
     padding: 0.3%;    
@@ -405,6 +397,7 @@ ul.fig-content-popular {
     width: 9.5rem;
     margin-top: 8%;
     margin-left: 8%;
+
 }
 b.bold-text-popular {    
     font-size: 12.5pt;
@@ -435,8 +428,8 @@ section.activities-box {
 div.image-box-large { 
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    -webkit-box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
-            box-shadow: 3px 3px 3px 3px rgb(240, 228, 238);
+    -webkit-box-shadow: 5px 3px 3px 3px rgb(240, 228, 238);
+            box-shadow: 5px 3px 3px 3px rgb(240, 228, 238);
     height: 30rem;						
     width: 23%;                   
 }
@@ -466,8 +459,8 @@ b.text-size-activities {
     font-size: 13.5pt;
 }
 figure > img.image-size-small { 
-    border-radius: 20px 20px 0px 0px;
     background-position: top;
+    border-radius: 20px 20px 0px 0px;
     max-height: 100%;
     max-width: 100%;
     width: 100%;
