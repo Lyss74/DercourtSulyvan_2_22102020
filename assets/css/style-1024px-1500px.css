@@ -146,18 +146,25 @@
         max-width: 100%;
     }
     ul.fig-content-accomodation {    
-        height: 6rem;
+        height: 4.5rem;
         width: 95%;
-        margin: auto;
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+    
+    li.grey-text-accomodation {
+        font-size: 12.5pt;
+    }
+    
+    b.bold-text-accomodation {   
+        font-size: 13.5pt;
+    }
+    b.price-text-accomodation {
+    
     }
     li.star-hebergement {
-        margin-top: 5%;
     }
-
-    p.title-size-bottom-hebergement {  
-        margin-left: 2%;
-    }
-
+        
 
     /*  MAIN-MIDDLE · html > head > body > header > main.middle.popular-box    */
 
@@ -206,21 +213,31 @@
         width: 100%;
         max-width: 100%;
     }
-    ul.fig-content-popular {  
-        height: 6.5rem;
-        width: 17rem;
-        margin: auto;
+    ul.fig-content-popular {     
+        height: 90%;
+        width: 9.5rem;
+        margin-top: 6%;
+        margin-left: 6%;
     }
-    li.grey-text-popular,
-    li.bold-text-popular {  
+        b.bold-text-popular {    
         font-size: 13.5pt;
-        margin-top: 3.5%;
-    }
-    li.star-popular {
         margin-top: 5%;
     }
-
-
+    b.bold-text-popular-2 { 
+        font-size: 13.5pt;
+        margin-top: 5%;
+    }
+    li.grey-text-popular { 
+        font-size: 12.7pt;
+        margin-top: 8%;
+    }
+    b.price-text-popular {
+    
+    }
+    li.star-popular {  
+        margin-top: 7%;
+    }
+    
 
     /*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
 
