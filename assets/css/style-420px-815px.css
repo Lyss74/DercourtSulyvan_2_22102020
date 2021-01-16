@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {   
 
     /*  HEADER NAVIGATION CONFIGURATION    */
     nav.nav-top {   
@@ -141,7 +141,7 @@
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         height: 8rem;
-        width: 90%;
+        width: 95%;
     }
     div.container-info {  
         width: 100%;
@@ -202,13 +202,12 @@
         height: 7rem;
         width: 100%;																
     }
-    li.grey-text-accomodation,
-    li.bold-text-accomodation {   
+    b.bold-text-accomodation {   
         font-size: 11pt;
-        margin-top: 1.5%;
     }
-    li.star-hebergement {
-        margin-top: 1%;
+    li.price-text-accomodation,
+    li.grey-text-accomodation {
+        font-size: 10pt;
     }
 
 
@@ -237,20 +236,15 @@
     }
     div.thumbnail-box {   
         height: 40rem;
-        width: 100%;	
     }
     div.image-box-2 {  
         border-radius: 20px 20px 20px 20px;
-        height: 9rem;
-        width: 90%;																	
+        width: 85%;																	
         padding: 0.5%;
     }    
     figure > img.img-size-top-2 {  
         background-position: left;
         border-radius: 20px 0px 0px 20px;
-        max-width: 100%;
-        height: 9rem;
-        width: 50%;
     }
     figure.figure-size {   
         -webkit-box-orient: horizontal;   
@@ -259,32 +253,24 @@
                 flex-direction: row;  
         height: 100%;
     }
-    ul.fig-content-popular {     
-        height: 90%;
-        width: 9.5rem;
-        margin-top: 8%;
-        margin-left: 8%;
+    ul.fig-content-popular {
+        display: flex;
+        align-content: space-around;
+        justify-content: space-around;
+        height: 98%;
+        margin-top: 6%;
+        margin-left: 6%;    
     }
-    b.bold-text-popular {    
-        font-size: 11.5pt;
-        margin-top: 5%;
-    }
+    b.bold-text-popular,
     b.bold-text-popular-2 { 
-        font-size: 11.5pt;
+        font-size: 11pt;
         margin-top: 5%;
     }
-    li.grey-text-popular { 
-        font-size: 10.5pt;
+    li.grey-text-popular,
+    li.price-text-popular { 
+        font-size: 10pt;
         margin-top: 8%;
     }
-    
-    b.price-text-popular {
-    
-    }
-    li.star-popular {  
-        margin-top: 25%;
-    }
-    
 
 /*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
 
@@ -360,7 +346,7 @@
 
 
 
-@media only screen and (min-width: 420px) and (max-width: 815px) {
+@media only screen and (min-width: 420px) and (max-width: 815px) {   
     /*  HEADER NAVIGATION CONFIGURATION    */
 
     nav.nav-top {   
@@ -481,22 +467,14 @@
         width: 100%;
         max-width: 100%;
     }
-    li.grey-text-accomodation {
+    b.bold-text-accomodation {   
         font-size: 11pt;
     }
-    
-    b.bold-text-accomodation {   
+    li.price-text-accomodation,
+    li.grey-text-accomodation {
         font-size: 10pt;
     }
-    b.price-text-accomodation {
     
-    }
-    li.star-hebergement { 
-        margin-top: 1%;
-    }
-
-
-
     /*  MAIN-MIDDLE · html > head > body > header > main.middle.popular-box    */
 
     section.popular-box {   
@@ -533,7 +511,7 @@
     div.image-box-2 {  
         border-radius: 20px 20px 20px 20px;
         height: 9rem;
-        width: 65%;		
+        width: 85%;		
     }
     figure.figure-size {   
             -webkit-box-orient: horizontal; 
@@ -550,19 +528,22 @@
         height: 100%;
         width: 50%;
     }
-    ul.fig-content-popular {   
-        height: 100%;
-        width: 8.5rem;
+    ul.fig-content-popular {
+        display: flex;
+        align-content: space-around;
+        justify-content: space-around;
+        height: 90%;
     }
-    li.grey-text-popular,
-    li.bold-text-popular {   
+    b.bold-text-popular,
+    b.bold-text-popular-2 { 
         font-size: 11pt;
         margin-top: 5%;
     }
-    li.star-popular { 
-        margin-top: 25%;
+    li.grey-text-popular,
+    li.price-text-popular { 
+        font-size: 10pt;
+        margin-top: 8%;
     }
-
 
     /*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
 

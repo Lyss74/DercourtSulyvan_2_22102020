@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@media only screen and (min-width: 815px) and (max-width: 1030px) {
+@media only screen and (min-width: 815px) and (max-width: 1030px) {    
 
     /*  HEADER NAVIGATION CONFIGURATION    */
 
@@ -145,24 +145,12 @@
         width: 100%;
         max-width: 100%;
     }
-    ul.fig-content-accomodation {    
-        height: 5rem;
-        width: 95%;
-        margin-top: 3%;
-        margin-left: 3%;
-    }
-    
-    li.grey-text-accomodation {
-        font-size: 12.5pt;
-    }
-    
     b.bold-text-accomodation {   
-        font-size: 13.5pt;
+        font-size: 11pt;
     }
-    b.price-text-accomodation {
-    
-    }
-    li.star-hebergement {
+    li.price-text-accomodation,
+    li.grey-text-accomodation {
+        font-size: 10pt;
     }
             
 
@@ -197,7 +185,6 @@
     div.image-box-2 {  
         border-radius: 20px 20px 20px 20px;
         height: 20rem;
-        width: 30%;
         padding: 0.5%;
     }
     figure.figure-size {  
@@ -213,32 +200,25 @@
         width: 100%;
         max-width: 100%;
     }
-    ul.fig-content-popular {     
-        height: 90%;
-        width: 9.5rem;
+    ul.fig-content-popular {
+        display: flex;
+        align-content: space-around;
+        justify-content: space-around;
+        height: 100%;
         margin-top: 6%;
         margin-left: 6%;
     }
-        b.bold-text-popular {    
-        font-size: 13.5pt;
-        margin-top: 5%;
-    }
+    b.bold-text-popular,
     b.bold-text-popular-2 { 
-        font-size: 13.5pt;
+        font-size: 11pt;
         margin-top: 5%;
     }
-    li.grey-text-popular { 
-        font-size: 12.7pt;
+    li.grey-text-popular,
+    li.price-text-popular { 
+        font-size: 10pt;
         margin-top: 8%;
     }
-    b.price-text-popular {
     
-    }
-    li.star-popular {  
-        margin-top: 7%;
-    }
-    
-
     /*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
 
     section.activities-box {   
@@ -324,7 +304,7 @@
 
 
 
-@media only screen and (min-width: 1030px) and (max-width: 1500px) {
+@media only screen and (min-width: 1030px) and (max-width: 1500px) {    
 
     /*  HEADER NAVIGATION CONFIGURATION    */
 
@@ -333,7 +313,6 @@
         width: 100%;
         margin: 0% 0% 5% 0%;
     }
-
     img.img-reservia {   
         position: absolute;
         top: 0.5%;
@@ -460,17 +439,14 @@
     }
     li.grey-text-accomodation,
     li.bold-text-accomodation {   
-        font-size: 13.5pt;
+        font-size: 10pt;
         margin-top: 1.5%;
     }
-    li.grey-text-accomodation { 
-        font-size: 13.5pt;
-        margin-top: 6%;
+    li.price-text-accomodation,
+    li.grey-text-accomodation {
+        font-size: 11pt;
     }
-    li.star-hebergement {  
-        margin-top: 6.5%;
-    }
-
+    
 
     /*  MAIN-MIDDLE · html > head > body > header > main.middle.popular-box    */
 
@@ -518,12 +494,15 @@
         background-position: left;
         height: 10rem;
     }
-    li.grey-text-popular { 
-        font-size: 12.9pt;
-        margin-top: 6%;
+    b.bold-text-popular,
+    b.bold-text-popular-2 { 
+        font-size: 11pt;
+        margin-top: 5%;
     }
-    li.star-popular {  
-        margin-top: 30%;
+    li.grey-text-popular,
+    li.price-text-popular { 
+        font-size: 10pt;
+        margin-top: 8%;
     }
 
 

@@ -6,25 +6,37 @@
 */
 
 /*  Generic css setting    */
-/*  TEXT   */
-@font-face { 
+/*  FONT   */
+@font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: normal;
-    src: url('assets/font/raleway/Raleway-Regular.woff') format('woff');
-    src: url('assets/font/raleway/Raleway-Italic.woff') format('woff');
-    src: url('assets/font/raleway/Raleway-ExtraBold.woff') format('woff');
+    src: local('Raleway'), url('../font/raleway/Raleway-Regular.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Raleway ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway ExtraBold'), url('../font/raleway/Raleway-ExtraBold.woff') format('woff');
 }
+@font-face {
+    font-family: 'Raleway Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Light'), url('../font/raleway/Raleway-Light.woff') format('woff');
+    }
 
 body {
     font-family: 'Raleway', Helvetica, sans-serif;	
 }	
-.italic-text { 
-    font-family: 'Raleway Italic';
+.light-text { 
+    font-family: 'Raleway ExtraLight';
 }
 .bold-text {
     font-family: 'Raleway ExtraBold';
 }
+
+/*  STYLE   */
 a {
     text-decoration: none;
     color: black;
@@ -222,7 +234,7 @@ div.filter  {
 b.title-filter {
     margin: 0% 10px 0px 0px;
 }
-ul.filter-list { 
+ul.filter-list {  
     width: 100%;
 }
 ul.filter-list > li.filter-item {  
@@ -286,7 +298,7 @@ li.typo-grey, p.typo-grey {
     font-size: 13.5pt;
 }
 li.typo-grey-bottom {
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
 
@@ -335,18 +347,12 @@ ul.fig-content-accomodation {
     margin-top: 3%;
     margin-left: 3%;
 }
-
-li.grey-text-accomodation {
-    font-size: 12.5pt;
-}
-
 b.bold-text-accomodation {   
-    font-size: 13.5pt;
+    font-size: 12pt;
 }
-b.price-text-accomodation {
-
-}
-li.star-hebergement {
+li.price-text-accomodation,
+li.grey-text-accomodation {
+    font-size: 11pt;
 }
 
 
@@ -356,7 +362,7 @@ section.popular-box {
     border-radius: 20px 20px 20px 20px;
     background-color: #F2F2F2;
     height: 100%;
-    width: 27%;
+    width: 30%;
 }
 div.title-box {  
     width: 85%;
@@ -390,32 +396,23 @@ figure > img.img-size-top-2 {
     max-height: 100%;
     max-width: 100%;
     height: 9.3rem;
-    width: 55%;
+    width: 48%;
 }
-ul.fig-content-popular {     
+ul.fig-content-popular {  
     height: 90%;
-    width: 9.5rem;
+    width: 100%;
     margin-top: 8%;
     margin-left: 8%;
-
 }
-b.bold-text-popular {    
-    font-size: 12.5pt;
-    margin-top: 5%;
-}
+b.bold-text-popular,
 b.bold-text-popular-2 { 
-    font-size: 12.5pt;
+    font-size: 12pt;
     margin-top: 5%;
 }
-li.grey-text-popular { 
-    font-size: 11.5pt;
+li.grey-text-popular,
+li.price-text-popular { 
+    font-size: 11pt;
     margin-top: 8%;
-}
-b.price-text-popular {
-
-}
-li.star-popular {  
-    margin-top: 22%;
 }
 
 /*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
