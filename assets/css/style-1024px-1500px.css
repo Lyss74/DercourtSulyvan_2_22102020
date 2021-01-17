@@ -148,7 +148,7 @@
     b.bold-text-accomodation {   
         font-size: 11pt;
     }
-    li.price-text-accomodation,
+    b.price-text-accomodation,
     li.grey-text-accomodation {
         font-size: 10pt;
     }
@@ -214,7 +214,7 @@
         margin-top: 5%;
     }
     li.grey-text-popular,
-    li.price-text-popular { 
+    b.price-text-popular { 
         font-size: 10pt;
         margin-top: 8%;
     }
@@ -437,12 +437,11 @@
         width: 98%;
         margin-left: 0%;
     }
-    li.grey-text-accomodation,
-    li.bold-text-accomodation {   
+    b.bold-text-accomodation {   
         font-size: 10pt;
         margin-top: 1.5%;
     }
-    li.price-text-accomodation,
+    b.price-text-accomodation,
     li.grey-text-accomodation {
         font-size: 11pt;
     }
@@ -500,7 +499,7 @@
         margin-top: 5%;
     }
     li.grey-text-popular,
-    li.price-text-popular { 
+    b.price-text-popular { 
         font-size: 10pt;
         margin-top: 8%;
     }

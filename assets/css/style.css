@@ -153,8 +153,8 @@ a.black-text {
 
 
 /*  MAIN-TOP FILTER CONFIGURATION   */
-div.main-top {                                                          
-    height: 15rem;
+div.main-top {                                                       
+    height: 15.5rem;
     width: 100%; 
     margin-top: 5%;
 }
@@ -226,9 +226,10 @@ button.button-search {
 button.button-text {
     margin: 0.5rem;
 }
-div.filter  { 
+div.filter  {  
     height: auto;
     width: 700px;
+    margin-bottom: 3%;
     padding: 10px 5px;
 }
 b.title-filter {
@@ -341,7 +342,7 @@ figure > img.img-size-top {
     height: 8rem;
     width: 100%;
 }
-ul.fig-content-accomodation {    
+ul.fig-content-accomodation {     
     height: 4.5rem;
     width: 95%;
     margin-top: 3%;
@@ -350,11 +351,13 @@ ul.fig-content-accomodation {
 b.bold-text-accomodation {   
     font-size: 12pt;
 }
-li.price-text-accomodation,
+b.price-text-accomodation,
 li.grey-text-accomodation {
-    font-size: 11pt;
+    font-size: 11.5pt;
 }
-
+li.star-hebergement {
+    margin-top: 5%;
+}
 
 /*  MAIN-MIDDLE · html > head > body > header > main.middle.popular-box    */
 
@@ -410,8 +413,8 @@ b.bold-text-popular-2 {
     margin-top: 5%;
 }
 li.grey-text-popular,
-li.price-text-popular { 
-    font-size: 11pt;
+b.price-text-popular { 
+    font-size: 11.5pt;
     margin-top: 8%;
 }
 

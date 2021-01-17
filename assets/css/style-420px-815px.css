@@ -10,7 +10,7 @@
     /*  HEADER NAVIGATION CONFIGURATION    */
     nav.nav-top {   
         height: 100%;
-        width: 100%;
+        width: 97%;
     }
     ul.header {   
         -webkit-box-orient: horizontal;   
@@ -206,8 +206,8 @@
         font-size: 11pt;
     }
     li.price-text-accomodation,
-    li.grey-text-accomodation {
-        font-size: 10pt;
+    b.grey-text-accomodation {
+        font-size: 11pt;
     }
 
 
@@ -267,8 +267,8 @@
         margin-top: 5%;
     }
     li.grey-text-popular,
-    li.price-text-popular { 
-        font-size: 10pt;
+    b.price-text-popular { 
+        font-size: 11pt;
         margin-top: 8%;
     }
 
@@ -351,7 +351,7 @@
 
     nav.nav-top {   
         height: 40px;
-        width: 100%;
+        width: 97%;
     }
     ul.header {   
         -webkit-box-orient: horizontal;   
@@ -396,6 +396,10 @@
         font-size: 13.5pt;
     } 
     div.filter {  
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         -ms-flex-wrap: wrap;  
             flex-wrap: wrap;
         -ms-flex-line-pack: justify;
@@ -403,8 +407,7 @@
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        height: 3.5rem;
-        width: 80%;
+                width: 90%;
     }
     b.title-filter { 
         margin-bottom: 3%;
@@ -412,8 +415,7 @@
     ul.filter-list {   
         -ms-flex-wrap: wrap;   
             flex-wrap: wrap;
-        height: 140%;
-        width: 75%;
+        width: 100%;
     } 
     input.input-size {
         width: 20rem;
@@ -471,8 +473,8 @@
         font-size: 11pt;
     }
     li.price-text-accomodation,
-    li.grey-text-accomodation {
-        font-size: 10pt;
+    b.grey-text-accomodation {
+        font-size: 11pt;
     }
     
     /*  MAIN-MIDDLE · html > head > body > header > main.middle.popular-box    */
@@ -540,8 +542,8 @@
         margin-top: 5%;
     }
     li.grey-text-popular,
-    li.price-text-popular { 
-        font-size: 10pt;
+    b.price-text-popular { 
+        font-size: 11pt;
         margin-top: 8%;
     }
 
