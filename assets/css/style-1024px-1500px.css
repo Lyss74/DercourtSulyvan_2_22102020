@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@media only screen and (min-width: 815px) and (max-width: 1030px) {    
+@media (min-width: 815px) and (max-width: 1030px) {   
 
     /*  HEADER NAVIGATION CONFIGURATION    */
 
@@ -145,7 +145,11 @@
         width: 100%;
         max-width: 100%;
     }
-    b.bold-text-accomodation {   
+    ul.fig-content-accomodation {
+        margin-top: 6%;
+        margin-left: 6%;
+    }
+b.bold-text-accomodation {   
         font-size: 11pt;
     }
     b.price-text-accomodation,
@@ -166,7 +170,7 @@
         width: 97.5%;
         margin-left: 1%;
     }
-    h2.title-popular {  
+    h3.title-popular {  
         font-size: 18pt;
     }
     i.icon-popular { 
@@ -305,7 +309,7 @@
 
 
 
-@media only screen and (min-width: 1030px) and (max-width: 1500px) {    
+@media (min-width: 1030px) and (max-width: 1500px) {  
 
     /*  HEADER NAVIGATION CONFIGURATION    */
 
@@ -352,9 +356,15 @@
         margin-left: 22%; 
         padding: 20px 20px 0px 20px;
     }
+    a.blue-text {         
+        color: #0065FC;
+        font-size: 15pt;
+        margin-left: 15%;
+        padding: 16px 50px 0px 30px;
+    }
     a.black-text { 
         color: black;
-        font-size: 12pt;
+        font-size: 15pt;
         margin-left: 30%; 
         padding: 20px 20px 0px 20px;
     }

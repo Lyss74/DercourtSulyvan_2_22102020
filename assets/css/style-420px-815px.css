@@ -5,8 +5,13 @@
 * Browsers: last 4 version
 */
 
-@media only screen and (max-width: 420px) {   
+@media (max-width: 420px) {   
 
+    /*  MARGIN - PADDING   */
+    div.main-middle {
+        margin-left: 0%;
+        margin-right: 0%;
+        }
     /*  HEADER NAVIGATION CONFIGURATION    */
     nav.nav-top {   
         height: 100%;
@@ -55,6 +60,12 @@
     }
     a.black-text {         
         color: black;
+        font-size: 12pt;
+        margin-left: 10%;
+        padding: 16px 50px 0px 30px;
+    }
+    a.blue-text {         
+        color: #0065FC;
         font-size: 12pt;
         margin-left: 10%;
         padding: 16px 50px 0px 30px;
@@ -172,13 +183,14 @@
         -webkit-box-direction: reverse;       
             -ms-flex-direction: column-reverse;       
                 flex-direction: column-reverse;
-        height: 130rem;
+        height: 131rem;
         width: 100%;
+        margin-top: 2%;
     }
     section.accommodation-box {  
         background-color: white;
         border-radius: 0px 0px 0px 0px;
-        height: 100%;
+        height: 98%;
         width: 100%;	
     }
     h3.title-size-hebergement { 
@@ -186,21 +198,26 @@
         height: 20px;
         width: 100%;
         margin-top: 5%;																
-        margin-left: 0.5%;
+        margin-left: 2%;
     }
-    p.title-size-bottom-hebergement {   
-        font-size: 10pt;
+    b.title-size-bottom-hebergement {    
+        font-size: 12pt;
         height: 20px;
-        width: 100%;
+        width: 95%;
+        margin-left: 2%;
     }
     div.image-box {  
         height: 12.5rem;
-        width: 99%;																	
+        width: 90%;																	
         margin-left: 1%;															
     }
     figure > img.img-size-top {
-        height: 7rem;
+        height: 6.5rem;
         width: 100%;																
+    }
+    ul.fig-content-accomodation {
+        margin-top: 4%;
+        margin-left: 4%;    
     }
     b.bold-text-accomodation {   
         font-size: 11pt;
@@ -216,7 +233,7 @@
     section.popular-box {  
         background-color: #F2F2F2;
         border-radius: 0px 0px 0px 0px;
-        height: 32%;
+        height: 28%;
         width: 100%;		
         margin-bottom: 5%;
     }
@@ -239,7 +256,7 @@
     }
     div.image-box-2 {  
         border-radius: 20px 20px 20px 20px;
-        width: 85%;																	
+        width: 90%;																	
         padding: 0.5%;
     }    
     figure > img.img-size-top-2 {  
@@ -304,31 +321,35 @@
     div.image-box-large,
     div.image-box-small {  
         height: 10rem;
-        width: 98%;																	
+        width: 96%;																	
         margin-left: 1.5%;
     }
     figure > img.image-size-large,
     figure > img.image-size-small { 
-        height: 7rem;
+        height: 7.5rem;
         width: 100%;
     }
     b.text-size-activities {  
         font-size: 11pt;
+        margin-left: 5%;
     }
 
     /*  MAIN-BOTTOM · html > head > body > footer  */
 
-    section.section-footer {         
-        height: 28rem;
-        width: 100%;	
+    section.section-footer {    
+        height: 25rem;     
+        width: 95%;	
+        padding-top: 5%;
+        padding-left: 5%;
+
     }
     div.footer-box{   
         -webkit-box-orient: vertical;   
         -webkit-box-direction: normal;   
             -ms-flex-direction: column;   
                 flex-direction: column;
-        height: 90%;
-        width: 100%;		
+        height: 85%;
+        width: 80%;		
     } 
     h3.title-size-footer,
     a.link-size-footer {
@@ -346,7 +367,7 @@
 
 
 
-@media only screen and (min-width: 420px) and (max-width: 815px) {   
+@media (min-width: 420px) and (max-width: 815px) {  
     /*  HEADER NAVIGATION CONFIGURATION    */
 
     nav.nav-top {   
@@ -501,6 +522,11 @@
         width: 1rem;
         max-width: 100%;
     }
+    div.image-box-2 {  
+        border-radius: 20px 20px 20px 20px;
+        height: 9rem;
+        width: 75%;		
+    }
     div.thumbnail-box {  
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -509,11 +535,6 @@
         height: 33rem;
         width: 100%;	
         margin: auto;	
-    }
-    div.image-box-2 {  
-        border-radius: 20px 20px 20px 20px;
-        height: 9rem;
-        width: 85%;		
     }
     figure.figure-size {   
             -webkit-box-orient: horizontal; 
@@ -528,13 +549,14 @@
         border-radius: 20px 0px 0px 20px;
         max-width: 100%;
         height: 100%;
-        width: 50%;
+        width: 55%;
     }
-    ul.fig-content-popular {
+    ul.fig-content-popular {  
         display: flex;
         align-content: space-around;
         justify-content: space-around;
         height: 90%;
+        margin-left: 5%;
     }
     b.bold-text-popular,
     b.bold-text-popular-2 { 
