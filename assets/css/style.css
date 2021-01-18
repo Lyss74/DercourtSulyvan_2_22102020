@@ -250,6 +250,7 @@ ul.filter-list > li.filter-item > input {
 }
 ul.filter-list > li.filter-item > label.filter-name { 
     background-color: white;
+    font-size: 10pt;
     border-radius: 25px;
     height: 34px;
     border: 0.5px solid rgb(199, 196, 196);

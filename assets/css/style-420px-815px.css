@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@media (max-width: 420px) {   
+@media screen and (max-width: 420px) {   
 
     /*  MARGIN - PADDING   */
     div.main-middle {
@@ -144,7 +144,7 @@
         height: 15rem;
         width: 15rem;	
     }
-    ul.filter-list { 
+    ul.filter-list {  background-color: #0065FC;
         -webkit-box-orient: horizontal;   
         -webkit-box-direction: normal;   
             -ms-flex-direction: row;   
@@ -152,7 +152,7 @@
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         height: 8rem;
-        width: 95%;
+        width: 81%;
     }
     div.container-info {  
         width: 100%;
@@ -367,7 +367,7 @@
 
 
 
-@media (min-width: 420px) and (max-width: 815px) {  
+@media screen and (min-width: 420px) and (max-width: 815px) {  
     /*  HEADER NAVIGATION CONFIGURATION    */
 
     nav.nav-top {   
