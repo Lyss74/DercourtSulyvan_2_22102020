@@ -132,12 +132,12 @@
         width: 97.5%;
         margin-left: 0.5%;
     }
-    div.image-box {   
-        border-radius: 20px 20px 20px 20px;
-        height: 18.5rem;
-        width: 30%;
-        min-width: 25%;
-    }
+                        div.image-box {   
+                            border-radius: 20px 20px 20px 20px;
+                            height: 18.5rem;
+                            width: 30%;
+                            min-width: 25%;
+                        }
     figure > img.img-size-top {
         background-position: top;
         border-radius: 20px 20px 0px 0px;
@@ -439,8 +439,8 @@ b.bold-text-accomodation {
         width: 98%;
         margin-left: 0%;
     }
-    div.image-box {     
-        height: 15rem;
+    div.image-box {       
+        height: 13.5rem;
         width: 30%;																	
     }
     p.title-size-1 {  
