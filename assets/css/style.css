@@ -491,7 +491,7 @@ figure > img.frioul-img {
     width: 100%;
 }
 figure > img.calanques-img,
-figure > img.vieux-port-img { background-color: purple;
+figure > img.vieux-port-img { 
     background-position: top;
     max-height: 100%;
     max-width: 100%;
