@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@media screen and (max-width: 420px) {   
+@media screen and (max-width: 525px) {   
 
     /*  MARGIN - PADDING   */
     div.main-middle {
@@ -144,7 +144,7 @@
         height: 15rem;
         width: 15rem;	
     }
-    ul.filter-list {  background-color: #0065FC;
+    ul.filter-list {  
         -webkit-box-orient: horizontal;   
         -webkit-box-direction: normal;   
             -ms-flex-direction: row;   
@@ -289,7 +289,8 @@
         margin-top: 8%;
     }
 
-/*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
+
+    /*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
 
     section.activities-box {      
         height: 100%;
@@ -367,7 +368,7 @@
 
 
 
-@media screen and (min-width: 420px) and (max-width: 815px) {  
+@media screen and (min-width: 525px) and (max-width: 815px) {  
     /*  HEADER NAVIGATION CONFIGURATION    */
 
     nav.nav-top {   
@@ -497,6 +498,7 @@
     b.grey-text-accomodation {
         font-size: 11pt;
     }
+
     
     /*  MAIN-MIDDLE · html > head > body > header > main.middle.popular-box    */
 
@@ -568,6 +570,7 @@
         font-size: 11pt;
         margin-top: 8%;
     }
+
 
     /*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
 

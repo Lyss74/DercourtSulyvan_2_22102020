@@ -132,12 +132,12 @@
         width: 97.5%;
         margin-left: 0.5%;
     }
-                        div.image-box {   
-                            border-radius: 20px 20px 20px 20px;
-                            height: 18.5rem;
-                            width: 30%;
-                            min-width: 25%;
-                        }
+    div.image-box {   
+        border-radius: 20px 20px 20px 20px;
+        height: 18.5rem;
+        width: 30%;
+        min-width: 25%;
+    }
     figure > img.img-size-top {
         background-position: top;
         border-radius: 20px 20px 0px 0px;
@@ -145,11 +145,12 @@
         width: 100%;
         max-width: 100%;
     }
-    ul.fig-content-accomodation {
-        margin-top: 6%;
-        margin-left: 6%;
+    ul.fig-content-accomodation {   
+        height: 5.5rem;
+        margin-top: 4%;
+        margin-left: 4%;
     }
-b.bold-text-accomodation {   
+    b.bold-text-accomodation {   
         font-size: 11pt;
     }
     b.price-text-accomodation,
@@ -205,13 +206,10 @@ b.bold-text-accomodation {
         width: 100%;
         max-width: 100%;
     }
-    ul.fig-content-popular {
-        display: flex;
-        align-content: space-around;
-        justify-content: space-around;
-        height: 100%;
-        margin-top: 6%;
-        margin-left: 6%;
+    ul.fig-content-popular {  
+        height: 6.5rem;
+        margin-top: 5%;
+        margin-left: 5%;
     }
     b.bold-text-popular,
     b.bold-text-popular-2 { 
@@ -221,8 +219,12 @@ b.bold-text-accomodation {
     li.grey-text-popular,
     b.price-text-popular { 
         font-size: 10pt;
-        margin-top: 8%;
+        margin-top: 2%;
     }
+    li.star-popular {
+        margin-top: 5%;
+    }
+
     
     /*  MAIN-BOTTOM · html > head > body > header > main.bottom.activities-box  */
 
@@ -410,7 +412,7 @@ b.bold-text-accomodation {
     i.search-glass {
         display: none;
     }
-        li.border { 
+    li.border { 
         margin-bottom: 3%;
     }
     li.typo-grey {   
@@ -447,6 +449,11 @@ b.bold-text-accomodation {
         font-size: 15pt;
         width: 98%;
         margin-left: 0%;
+    }
+    ul.fig-content-accomodation {  
+        height: 5.5rem;
+        margin-top: 4%;
+        margin-left: 4%;
     }
     b.bold-text-accomodation {   
         font-size: 10pt;
